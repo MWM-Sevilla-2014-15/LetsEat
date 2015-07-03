@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LEMainController.h
 //  LetsEat
 //
 //  Created by Daniel Martin Jimenez on 3/7/15.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MPSkewedCell.h"
+#import "MPSkewedParallaxLayout.h"
 
-@interface ViewController : UIViewController
-
+@interface LEMainController : UIViewController
 
 @end
-

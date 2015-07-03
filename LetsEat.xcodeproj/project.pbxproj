@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		33DEFA621B46E69400053B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA611B46E69400053B72 /* main.m */; };
 		33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA641B46E69400053B72 /* AppDelegate.m */; };
-		33DEFA681B46E69400053B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA671B46E69400053B72 /* ViewController.m */; };
 		33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA691B46E69400053B72 /* Main.storyboard */; };
 		33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA6C1B46E69400053B72 /* Images.xcassets */; };
 		33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA6E1B46E69400053B72 /* LaunchScreen.xib */; };
 		33DEFA7C1B46E69500053B72 /* LetsEatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA7B1B46E69500053B72 /* LetsEatTests.m */; };
+		33DEFA891B46E90400053B72 /* LEMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA871B46E90400053B72 /* LEMainController.m */; };
+		33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA881B46E90400053B72 /* LEMainController.xib */; };
+		33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA8C1B46EFB100053B72 /* LELoginController.m */; };
+		33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA8D1B46EFB100053B72 /* LELoginController.xib */; };
+		33DEFAB01B46F7B400053B72 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAA81B46F7B400053B72 /* bg1@2x.png */; };
+		33DEFAB11B46F7B400053B72 /* bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAA91B46F7B400053B72 /* bg2@2x.png */; };
+		33DEFAB21B46F7B400053B72 /* bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAA1B46F7B400053B72 /* bg3@2x.png */; };
+		33DEFAB31B46F7B400053B72 /* bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAB1B46F7B400053B72 /* bg4@2x.png */; };
+		33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAC1B46F7B400053B72 /* title1@2x.png */; };
+		33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAD1B46F7B400053B72 /* title2@2x.png */; };
+		33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAE1B46F7B400053B72 /* title3@2x.png */; };
+		33DEFAB71B46F7B400053B72 /* title4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAF1B46F7B400053B72 /* title4@2x.png */; };
+		722E8782988FD7A7D2F01F4A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB559C7CF248DF51723F8172 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +39,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17F90F6F848538FD278AB938 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		33DEFA5C1B46E69400053B72 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DEFA601B46E69400053B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DEFA611B46E69400053B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33DEFA631B46E69400053B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33DEFA641B46E69400053B72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33DEFA661B46E69400053B72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33DEFA671B46E69400053B72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33DEFA6A1B46E69400053B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33DEFA6C1B46E69400053B72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		33DEFA6F1B46E69400053B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		33DEFA751B46E69500053B72 /* LetsEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DEFA7A1B46E69500053B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DEFA7B1B46E69500053B72 /* LetsEatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetsEatTests.m; sourceTree = "<group>"; };
+		33DEFA861B46E90400053B72 /* LEMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMainController.h; sourceTree = "<group>"; };
+		33DEFA871B46E90400053B72 /* LEMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMainController.m; sourceTree = "<group>"; };
+		33DEFA881B46E90400053B72 /* LEMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMainController.xib; sourceTree = "<group>"; };
+		33DEFA8B1B46EFB100053B72 /* LELoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LELoginController.h; sourceTree = "<group>"; };
+		33DEFA8C1B46EFB100053B72 /* LELoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LELoginController.m; sourceTree = "<group>"; };
+		33DEFA8D1B46EFB100053B72 /* LELoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LELoginController.xib; sourceTree = "<group>"; };
+		33DEFAA81B46F7B400053B72 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
+		33DEFAA91B46F7B400053B72 /* bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg2@2x.png"; sourceTree = "<group>"; };
+		33DEFAAA1B46F7B400053B72 /* bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3@2x.png"; sourceTree = "<group>"; };
+		33DEFAAB1B46F7B400053B72 /* bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg4@2x.png"; sourceTree = "<group>"; };
+		33DEFAAC1B46F7B400053B72 /* title1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title1@2x.png"; sourceTree = "<group>"; };
+		33DEFAAD1B46F7B400053B72 /* title2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title2@2x.png"; sourceTree = "<group>"; };
+		33DEFAAE1B46F7B400053B72 /* title3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title3@2x.png"; sourceTree = "<group>"; };
+		33DEFAAF1B46F7B400053B72 /* title4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title4@2x.png"; sourceTree = "<group>"; };
+		9626DFAB740A2734B873B5C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FB559C7CF248DF51723F8172 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722E8782988FD7A7D2F01F4A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +88,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31215B0515DA5CFAE98CEF4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB559C7CF248DF51723F8172 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33DEFA531B46E69400053B72 = {
 			isa = PBXGroup;
 			children = (
 				33DEFA5E1B46E69400053B72 /* LetsEat */,
 				33DEFA781B46E69500053B72 /* LetsEatTests */,
 				33DEFA5D1B46E69400053B72 /* Products */,
+				E20D3EB5A07702DDDEBA3BCC /* Pods */,
+				31215B0515DA5CFAE98CEF4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +119,11 @@
 		33DEFA5E1B46E69400053B72 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				33DEFA921B46F23800053B72 /* IntroViewResources */,
+				33DEFA911B46EFC400053B72 /* Main */,
+				33DEFA901B46EFB700053B72 /* Login */,
 				33DEFA631B46E69400053B72 /* AppDelegate.h */,
 				33DEFA641B46E69400053B72 /* AppDelegate.m */,
-				33DEFA661B46E69400053B72 /* ViewController.h */,
-				33DEFA671B46E69400053B72 /* ViewController.m */,
 				33DEFA691B46E69400053B72 /* Main.storyboard */,
 				33DEFA6C1B46E69400053B72 /* Images.xcassets */,
 				33DEFA6E1B46E69400053B72 /* LaunchScreen.xib */,
@@ -119,6 +158,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		33DEFA901B46EFB700053B72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				33DEFA8B1B46EFB100053B72 /* LELoginController.h */,
+				33DEFA8C1B46EFB100053B72 /* LELoginController.m */,
+				33DEFA8D1B46EFB100053B72 /* LELoginController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		33DEFA911B46EFC400053B72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33DEFA861B46E90400053B72 /* LEMainController.h */,
+				33DEFA871B46E90400053B72 /* LEMainController.m */,
+				33DEFA881B46E90400053B72 /* LEMainController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		33DEFA921B46F23800053B72 /* IntroViewResources */ = {
+			isa = PBXGroup;
+			children = (
+				33DEFAA81B46F7B400053B72 /* bg1@2x.png */,
+				33DEFAA91B46F7B400053B72 /* bg2@2x.png */,
+				33DEFAAA1B46F7B400053B72 /* bg3@2x.png */,
+				33DEFAAB1B46F7B400053B72 /* bg4@2x.png */,
+				33DEFAAC1B46F7B400053B72 /* title1@2x.png */,
+				33DEFAAD1B46F7B400053B72 /* title2@2x.png */,
+				33DEFAAE1B46F7B400053B72 /* title3@2x.png */,
+				33DEFAAF1B46F7B400053B72 /* title4@2x.png */,
+			);
+			name = IntroViewResources;
+			sourceTree = "<group>";
+		};
+		E20D3EB5A07702DDDEBA3BCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9626DFAB740A2734B873B5C3 /* Pods.debug.xcconfig */,
+				17F90F6F848538FD278AB938 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33DEFA7F1B46E69500053B72 /* Build configuration list for PBXNativeTarget "LetsEat" */;
 			buildPhases = (
+				D9CE6F956BAEF8A7A1EDC2F9 /* Check Pods Manifest.lock */,
 				33DEFA581B46E69400053B72 /* Sources */,
 				33DEFA591B46E69400053B72 /* Frameworks */,
 				33DEFA5A1B46E69400053B72 /* Resources */,
+				7AAFA9C3DB930FB38EEEA3EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,8 +285,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */,
+				33DEFAB21B46F7B400053B72 /* bg3@2x.png in Resources */,
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,
+				33DEFAB11B46F7B400053B72 /* bg2@2x.png in Resources */,
+				33DEFAB31B46F7B400053B72 /* bg4@2x.png in Resources */,
+				33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */,
 				33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */,
+				33DEFAB71B46F7B400053B72 /* title4@2x.png in Resources */,
+				33DEFAB01B46F7B400053B72 /* bg1@2x.png in Resources */,
+				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
+				33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */,
+				33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */,
+				33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +309,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AAFA9C3DB930FB38EEEA3EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9CE6F956BAEF8A7A1EDC2F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33DEFA581B46E69400053B72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DEFA681B46E69400053B72 /* ViewController.m in Sources */,
+				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
+				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +474,7 @@
 		};
 		33DEFA801B46E69500053B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9626DFAB740A2734B873B5C3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsEat/Info.plist;
@@ -355,6 +485,7 @@
 		};
 		33DEFA811B46E69500053B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F90F6F848538FD278AB938 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsEat/Info.plist;
@@ -416,6 +547,7 @@
 				33DEFA811B46E69500053B72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33DEFA821B46E69500053B72 /* Build configuration list for PBXNativeTarget "LetsEatTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +556,7 @@
 				33DEFA841B46E69500053B72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
