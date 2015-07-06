@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */; };
 		33DEFA621B46E69400053B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA611B46E69400053B72 /* main.m */; };
 		33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA641B46E69400053B72 /* AppDelegate.m */; };
 		33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA691B46E69400053B72 /* Main.storyboard */; };
@@ -17,10 +18,6 @@
 		33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA881B46E90400053B72 /* LEMainController.xib */; };
 		33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA8C1B46EFB100053B72 /* LELoginController.m */; };
 		33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFA8D1B46EFB100053B72 /* LELoginController.xib */; };
-		33DEFAB01B46F7B400053B72 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAA81B46F7B400053B72 /* bg1@2x.png */; };
-		33DEFAB11B46F7B400053B72 /* bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAA91B46F7B400053B72 /* bg2@2x.png */; };
-		33DEFAB21B46F7B400053B72 /* bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAA1B46F7B400053B72 /* bg3@2x.png */; };
-		33DEFAB31B46F7B400053B72 /* bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAB1B46F7B400053B72 /* bg4@2x.png */; };
 		33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAC1B46F7B400053B72 /* title1@2x.png */; };
 		33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAD1B46F7B400053B72 /* title2@2x.png */; };
 		33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFAAE1B46F7B400053B72 /* title3@2x.png */; };
@@ -40,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		17F90F6F848538FD278AB938 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3347E8DD1B4844DA00F9F754 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
+		3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
+		3347E8E01B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		3347E8E11B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		33DEFA5C1B46E69400053B72 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DEFA601B46E69400053B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DEFA611B46E69400053B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,10 +58,6 @@
 		33DEFA8B1B46EFB100053B72 /* LELoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LELoginController.h; sourceTree = "<group>"; };
 		33DEFA8C1B46EFB100053B72 /* LELoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LELoginController.m; sourceTree = "<group>"; };
 		33DEFA8D1B46EFB100053B72 /* LELoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LELoginController.xib; sourceTree = "<group>"; };
-		33DEFAA81B46F7B400053B72 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
-		33DEFAA91B46F7B400053B72 /* bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg2@2x.png"; sourceTree = "<group>"; };
-		33DEFAAA1B46F7B400053B72 /* bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3@2x.png"; sourceTree = "<group>"; };
-		33DEFAAB1B46F7B400053B72 /* bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg4@2x.png"; sourceTree = "<group>"; };
 		33DEFAAC1B46F7B400053B72 /* title1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title1@2x.png"; sourceTree = "<group>"; };
 		33DEFAAD1B46F7B400053B72 /* title2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title2@2x.png"; sourceTree = "<group>"; };
 		33DEFAAE1B46F7B400053B72 /* title3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title3@2x.png"; sourceTree = "<group>"; };
@@ -96,6 +93,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3347E8DA1B4844C400F9F754 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3347E8DC1B4844CE00F9F754 /* utils */,
+				3347E8DB1B4844CA00F9F754 /* api */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3347E8DB1B4844CA00F9F754 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		3347E8DC1B4844CE00F9F754 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3347E8DD1B4844DA00F9F754 /* UIColor+MyColor.h */,
+				3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		33DEFA531B46E69400053B72 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +141,7 @@
 		33DEFA5E1B46E69400053B72 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				3347E8DA1B4844C400F9F754 /* model */,
 				33DEFA921B46F23800053B72 /* IntroViewResources */,
 				33DEFA911B46EFC400053B72 /* Main */,
 				33DEFA901B46EFB700053B72 /* Login */,
@@ -181,10 +204,6 @@
 		33DEFA921B46F23800053B72 /* IntroViewResources */ = {
 			isa = PBXGroup;
 			children = (
-				33DEFAA81B46F7B400053B72 /* bg1@2x.png */,
-				33DEFAA91B46F7B400053B72 /* bg2@2x.png */,
-				33DEFAAA1B46F7B400053B72 /* bg3@2x.png */,
-				33DEFAAB1B46F7B400053B72 /* bg4@2x.png */,
 				33DEFAAC1B46F7B400053B72 /* title1@2x.png */,
 				33DEFAAD1B46F7B400053B72 /* title2@2x.png */,
 				33DEFAAE1B46F7B400053B72 /* title3@2x.png */,
@@ -285,14 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */,
-				33DEFAB21B46F7B400053B72 /* bg3@2x.png in Resources */,
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,
-				33DEFAB11B46F7B400053B72 /* bg2@2x.png in Resources */,
-				33DEFAB31B46F7B400053B72 /* bg4@2x.png in Resources */,
 				33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */,
 				33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */,
 				33DEFAB71B46F7B400053B72 /* title4@2x.png in Resources */,
-				33DEFAB01B46F7B400053B72 /* bg1@2x.png in Resources */,
 				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
 				33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */,
 				33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */,
@@ -351,6 +366,7 @@
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
+				3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +393,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				33DEFA6A1B46E69400053B72 /* Base */,
+				3347E8E01B48458800F9F754 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -385,6 +402,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				33DEFA6F1B46E69400053B72 /* Base */,
+				3347E8E11B48458800F9F754 /* es */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -409,6 +427,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -431,6 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -452,6 +472,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -467,6 +488,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -477,9 +499,12 @@
 			baseConfigurationReference = 9626DFAB740A2734B873B5C3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -488,9 +513,12 @@
 			baseConfigurationReference = 17F90F6F848538FD278AB938 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

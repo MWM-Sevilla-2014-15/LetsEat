@@ -254,7 +254,7 @@
 - (UIButton *)skipButton {
     if (!_skipButton) {
         _skipButton = [[UIButton alloc] init];
-        [_skipButton setTitle:NSLocalizedString(@"Saltar", nil) forState:UIControlStateNormal];
+        [_skipButton setTitle:NSLocalizedString(@"Skip", nil) forState:UIControlStateNormal];
         [self applyDefaultsToSkipButton];
     }
     return _skipButton;

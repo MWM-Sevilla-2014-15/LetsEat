@@ -11,7 +11,7 @@
                     <navigationItem key="navigationItem" id="gOD-Yd-Jnj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <segue destination="vzv-qg-yRZ" kind="show" identifier="openLogin" id="dcw-pz-fZw"/>
+                        <segue destination="vzv-qg-yRZ" kind="show" identifier="openLogin" id="vCe-yN-XKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eU7-cO-lZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,11 +39,12 @@
         <scene sceneID="KEo-L7-kHa">
             <objects>
                 <viewController id="vzv-qg-yRZ" customClass="LELoginController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hrd-C8-mq1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJC-uW-kCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="603" y="520"/>
+            <point key="canvasLocation" x="585" y="520"/>
         </scene>
     </scenes>
 </document>

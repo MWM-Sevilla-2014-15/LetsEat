@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MPSkewedCell.h"
 #import "MPSkewedParallaxLayout.h"
+#import <EAIntroView/EAIntroView.h>
 
-@interface LEMainController : UIViewController
+@interface LEMainController : UIViewController <EAIntroDelegate>
+
+@property (strong, nonatomic) NSUserDefaults *userData;
 
 @end

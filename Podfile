@@ -3,5 +3,6 @@
 
 pod 'MPSkewed'
 pod 'EAIntroView'
+pod 'SMPageControl'
 
 

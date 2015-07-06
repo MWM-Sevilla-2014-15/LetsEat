@@ -10,4 +10,10 @@
 
 @interface LELoginController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *logoApp;
+@property (strong, nonatomic) IBOutlet UILabel *labelCity;
+
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSUserDefaults *userData;
+
 @end

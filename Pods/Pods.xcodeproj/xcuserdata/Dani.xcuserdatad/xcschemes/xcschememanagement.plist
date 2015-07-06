@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SMPageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4ED3938A136A14B0C1CE7C81</key>
+		<key>4173E647674C8F37D79AE8DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>817197EE5C6BC45AAADEF7A6</key>
+		<key>50546E792DEFAC2FC43C4560</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C369EF9A1BDF07C86D72DA5</key>
+		<key>82BB86B066AD1D944FA67831</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4A6FA03AB3C7FFFAC33B43C</key>
+		<key>F820402FEAE3523A39D7B9F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDD77BADD6EDF353A167CBF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -17,21 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    [self createView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createView
+{
+    self.userData = [[NSUserDefaults alloc] init];
+    self.labelCity.text = [self.userData stringForKey:@"Ciudad"];
+    self.labelCity.font = [UIFont fontWithName:@"Chalkduster" size:30];
+    UIImage *image = [UIImage imageNamed:@"title1"];
+    [self.logoApp setImage:image];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
