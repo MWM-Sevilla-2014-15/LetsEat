@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
+		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
+		330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B431B4B22EF006920C4 /* LERecoverController.m */; };
+		330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B441B4B22EF006920C4 /* LERecoverController.xib */; };
 		3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */; };
 		33DEFA621B46E69400053B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA611B46E69400053B72 /* main.m */; };
 		33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DEFA641B46E69400053B72 /* AppDelegate.m */; };
@@ -37,6 +41,12 @@
 
 /* Begin PBXFileReference section */
 		17F90F6F848538FD278AB938 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		330D5B3D1B4B22DE006920C4 /* LERegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERegisterController.h; sourceTree = "<group>"; };
+		330D5B3E1B4B22DE006920C4 /* LERegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERegisterController.m; sourceTree = "<group>"; };
+		330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERegisterController.xib; sourceTree = "<group>"; };
+		330D5B421B4B22EF006920C4 /* LERecoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERecoverController.h; sourceTree = "<group>"; };
+		330D5B431B4B22EF006920C4 /* LERecoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERecoverController.m; sourceTree = "<group>"; };
+		330D5B441B4B22EF006920C4 /* LERecoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERecoverController.xib; sourceTree = "<group>"; };
 		3347E8DD1B4844DA00F9F754 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
 		3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
 		3347E8E01B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -93,6 +103,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		330D5B311B4B1810006920C4 /* Recover */ = {
+			isa = PBXGroup;
+			children = (
+				330D5B421B4B22EF006920C4 /* LERecoverController.h */,
+				330D5B431B4B22EF006920C4 /* LERecoverController.m */,
+				330D5B441B4B22EF006920C4 /* LERecoverController.xib */,
+			);
+			name = Recover;
+			sourceTree = "<group>";
+		};
+		330D5B321B4B1817006920C4 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				330D5B3D1B4B22DE006920C4 /* LERegisterController.h */,
+				330D5B3E1B4B22DE006920C4 /* LERegisterController.m */,
+				330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
 		3347E8DA1B4844C400F9F754 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +175,8 @@
 				33DEFA921B46F23800053B72 /* IntroViewResources */,
 				33DEFA911B46EFC400053B72 /* Main */,
 				33DEFA901B46EFB700053B72 /* Login */,
+				330D5B321B4B1817006920C4 /* Register */,
+				330D5B311B4B1810006920C4 /* Recover */,
 				33DEFA631B46E69400053B72 /* AppDelegate.h */,
 				33DEFA641B46E69400053B72 /* AppDelegate.m */,
 				33DEFA691B46E69400053B72 /* Main.storyboard */,
@@ -306,8 +338,10 @@
 				33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */,
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,
 				33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */,
+				330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */,
 				33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */,
 				33DEFAB71B46F7B400053B72 /* title4@2x.png in Resources */,
+				330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */,
 				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
 				33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */,
 				33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */,
@@ -362,7 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */,
 				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
+				330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,

@@ -10,10 +10,16 @@
 
 @interface LELoginController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIImageView *logoApp;
 @property (strong, nonatomic) IBOutlet UILabel *labelCity;
 
 @property (strong, nonatomic) NSString *city;
 @property (strong, nonatomic) NSUserDefaults *userData;
+
+@property (weak, nonatomic) IBOutlet UIView *viewForm;
+@property (weak, nonatomic) IBOutlet UITextField *textUser;
+@property (weak, nonatomic) IBOutlet UITextField *textPwd;
+@property (weak, nonatomic) IBOutlet UIButton *buttonLog;
+@property (weak, nonatomic) IBOutlet UIButton *buttonRegister;
+@property (weak, nonatomic) IBOutlet UIButton *buttonRecover;
 
 @end

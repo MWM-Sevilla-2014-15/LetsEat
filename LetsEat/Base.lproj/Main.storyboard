@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gKe-wj-RXA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gKe-wj-RXA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -35,16 +35,40 @@
             </objects>
             <point key="canvasLocation" x="-348" y="520"/>
         </scene>
+        <!--Recover Controller-->
+        <scene sceneID="4LZ-MQ-nUC">
+            <objects>
+                <viewController id="kYE-FG-x2y" customClass="LERecoverController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uS-Vs-Hic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="108"/>
+        </scene>
         <!--Login Controller-->
         <scene sceneID="KEo-L7-kHa">
             <objects>
                 <viewController id="vzv-qg-yRZ" customClass="LELoginController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hrd-C8-mq1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="kYE-FG-x2y" kind="show" identifier="openRecover" id="mR5-jg-72V"/>
+                        <segue destination="42Y-YE-a3b" kind="show" identifier="openRegister" id="zdX-kI-9C6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJC-uW-kCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="585" y="520"/>
+        </scene>
+        <!--Register Controller-->
+        <scene sceneID="ZSZ-V3-YQt">
+            <objects>
+                <viewController id="42Y-YE-a3b" customClass="LERegisterController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vx8-NK-fqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="948"/>
         </scene>
     </scenes>
 </document>

@@ -11,5 +11,10 @@
 @interface UIColor (MyColor)
 
 + (instancetype)customMainColor;
++ (instancetype)customSecondColor;
++ (instancetype)customThirdColor;
++ (instancetype)customSecondColorPress;
++ (instancetype)customThirdColorPress;
+
 
 @end
