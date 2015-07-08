@@ -9,7 +9,6 @@
                 <outlet property="buttonLog" destination="JDb-os-29V" id="JvG-ca-PmA"/>
                 <outlet property="buttonRecover" destination="Gpn-XJ-vC5" id="d0N-kK-Fr7"/>
                 <outlet property="buttonRegister" destination="TPQ-LM-0M3" id="waP-Vk-Ktr"/>
-                <outlet property="labelCity" destination="Etg-le-7cs" id="LkN-dF-D3V"/>
                 <outlet property="textPwd" destination="KMS-Hk-G9b" id="Hlj-ua-kYf"/>
                 <outlet property="textUser" destination="PFk-qE-ido" id="lf8-Kj-JXH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,12 +23,6 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgk-dr-ZC0">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etg-le-7cs">
-                            <rect key="frame" x="37" y="150" width="300" height="50"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-6h-2Xb">
                             <rect key="frame" x="37" y="223" width="300" height="108"/>
                             <subviews>

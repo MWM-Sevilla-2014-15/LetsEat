@@ -69,15 +69,18 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     NSString *text = nil;
     switch (index - 1) {
         case 0:
-            text = @"¿Qué es LETsEAT?";
+            text = @"¿Qué es LET'sEAT?";
             break;
         case 1:
-            text = @"Sevilla";
+            text = @"Ubicación actual";
             break;
         case 2:
-            text = @"Cádiz";
+            text = @"Sevilla";
             break;
         case 3:
+            text = @"Cádiz";
+            break;
+        case 4:
             text = @"Granada";
             break;
         default:
@@ -89,11 +92,11 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger index = indexPath.item % 4 + 1;
+    NSInteger index = indexPath.item % 5 + 1;
     MPSkewedCell* cell = (MPSkewedCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kCellId forIndexPath:indexPath];
     cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", index]];
     cell.text = [self titleForIndex:index];
@@ -109,20 +112,13 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     if(indexPath.item == 0){
         [self createIntroView];
     } else if(indexPath.item == 1){
-        [self performSegueWithIdentifier:@"openLogin" sender:self];
-        self.city = @"Sevilla";
-        [self.userData setObject:self.city forKey:@"Ciudad"];
-        [self.userData synchronize];
+        [self performSegueWithIdentifier:@"openMap" sender:nil];
     } else if(indexPath.item == 2){
-        [self performSegueWithIdentifier:@"openLogin" sender:self];
-        self.city = @"Cádiz";
-        [self.userData setObject:self.city forKey:@"Ciudad"];
-        [self.userData synchronize];
+        [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 3){
-        [self performSegueWithIdentifier:@"openLogin" sender:self];
-        self.city = @"Granada";
-        [self.userData setObject:self.city forKey:@"Ciudad"];
-        [self.userData synchronize];
+        [self performSegueWithIdentifier:@"openMenuList" sender:nil];
+    } else if(indexPath.item == 4){
+        [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     }
 }
 
@@ -144,9 +140,6 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     page2.descColor = [UIColor customMainColor];
     page2.bgColor = [UIColor whiteColor];
     page2.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title2"]];
-    page2.onPageDidAppear = ^{
-        NSLog(@"Page 2 did appear block");
-    };
     
     EAIntroPage *page3 = [EAIntroPage page];
     page3.title = @"This is page 3";

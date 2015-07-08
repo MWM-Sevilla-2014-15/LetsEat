@@ -26,7 +26,7 @@
 
 -(IBAction)doLogin
 {
-    
+    [self performSegueWithIdentifier:@"openMain" sender:nil];
 }
 
 -(IBAction)openRecover
@@ -41,13 +41,9 @@
 
 - (void)createView
 {
-    //Label ciudad actual
-    self.userData = [[NSUserDefaults alloc] init];
-    self.labelCity.text = [self.userData stringForKey:@"Ciudad"];
-    self.labelCity.font = [UIFont fontWithName:@"Chalkduster" size:45];
-    
     //Label recuperar contraseña
     [self.buttonRecover setTitle:@"¿Olvidaste tu contraseña o nombre de usuario?" forState:UIControlStateNormal];
+    [self.buttonRecover setTitleColor:[UIColor customThirdColor] forState:UIControlStateNormal];
     self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:14];
     
     //Linea entre user y pwd

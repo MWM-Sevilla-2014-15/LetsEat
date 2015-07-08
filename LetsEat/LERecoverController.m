@@ -41,6 +41,7 @@
 
 -(IBAction)backToLogin
 {
+    [self.textEmail resignFirstResponder];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -58,6 +59,11 @@
 -(IBAction) buttonTouchUpInside:(id)sender {
     self.buttonSend.backgroundColor = [UIColor customSecondColor];
     [self.buttonSend setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted & UIControlStateSelected];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.textEmail resignFirstResponder];
 }
 
 @end
