@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_MPSkewed 9
 #define COCOAPODS_VERSION_PATCH_MPSkewed 0
 
+// SCLAlertView-Objective-C
+#define COCOAPODS_POD_AVAILABLE_SCLAlertView_Objective_C
+#define COCOAPODS_VERSION_MAJOR_SCLAlertView_Objective_C 0
+#define COCOAPODS_VERSION_MINOR_SCLAlertView_Objective_C 7
+#define COCOAPODS_VERSION_PATCH_SCLAlertView_Objective_C 3
+
 // SMPageControl
 #define COCOAPODS_POD_AVAILABLE_SMPageControl
 #define COCOAPODS_VERSION_MAJOR_SMPageControl 1

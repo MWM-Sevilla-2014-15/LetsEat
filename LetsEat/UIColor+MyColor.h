@@ -15,6 +15,8 @@
 + (instancetype)customThirdColor;
 + (instancetype)customSecondColorPress;
 + (instancetype)customThirdColorPress;
-
++ (instancetype)customSuccessColor;
++ (instancetype)customErrorColor;
++ (instancetype)customWarningColor;
 
 @end

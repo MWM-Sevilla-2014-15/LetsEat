@@ -8,6 +8,7 @@
 
 #import "LERecoverController.h"
 #import "UIColor+MyColor.h"
+#import "SCLAlertView.h"
 
 @interface LERecoverController ()
 
@@ -42,6 +43,27 @@
 -(IBAction)backToLogin
 {
     [self.textEmail resignFirstResponder];
+    if(self.textEmail.text.length > 0){
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+        SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+        button.buttonFormatBlock = ^NSDictionary* (void)
+        {
+            NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+            buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+            buttonConfig[@"textColor"] = [UIColor blackColor];
+            return buttonConfig;
+        };
+        [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];
+        [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
+    }
+}
+
+- (void)successButton
+{
     [self.navigationController popViewControllerAnimated:YES];
 }
 

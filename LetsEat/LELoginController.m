@@ -8,6 +8,7 @@
 
 #import "LELoginController.h"
 #import "UIColor+MyColor.h"
+#import "SCLAlertView.h"
 
 @interface LELoginController ()
 
@@ -26,7 +27,12 @@
 
 -(IBAction)doLogin
 {
-    [self performSegueWithIdentifier:@"openMain" sender:nil];
+    if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
+        [self performSegueWithIdentifier:@"openMain" sender:nil];
+    } else {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
+    }
 }
 
 -(IBAction)openRecover

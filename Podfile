@@ -4,5 +4,4 @@
 pod 'MPSkewed'
 pod 'EAIntroView'
 pod 'SMPageControl'
-
-
+pod 'SCLAlertView-Objective-C'
