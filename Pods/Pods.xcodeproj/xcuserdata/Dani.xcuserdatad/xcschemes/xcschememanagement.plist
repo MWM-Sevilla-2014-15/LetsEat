@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-REFrostedViewController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-SCLAlertView-Objective-C.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B7FA210F9D9A66D1C9F8BD2</key>
+		<key>0BD020220B59A38AEC8C63E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A97E95DE8A769736168909E</key>
+		<key>113471A03CA1AEF1C290A44A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5595D6CFF2CC8B16EEE14DB4</key>
+		<key>1B2BC3EACD31665C29B8D574</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E9D12AFB128845AB3850C4B</key>
+		<key>3CC7BD3A37EBED9B973EB747</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A06106B73A855390FCFAE053</key>
+		<key>7F88BE1FC1D5F7886CE59152</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0CFDB843B55A47BE1578FCC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA25B952B53D1B206DD1BBBE</key>
+		<key>EF165AC72392CAA0666E61A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

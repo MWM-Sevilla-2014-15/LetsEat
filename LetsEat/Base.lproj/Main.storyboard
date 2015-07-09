@@ -55,11 +55,12 @@
                     <connections>
                         <segue destination="xzw-iK-bNX" kind="presentation" identifier="openMap" id="XcZ-O4-dbY"/>
                         <segue destination="B8g-DY-cyi" kind="presentation" identifier="openMenuList" id="kXb-m7-6Iq"/>
+                        <segue destination="fWk-tG-Rxs" kind="custom" identifier="openLogin" customClass="CustomSegue" id="WYC-Zc-yqk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6e-Cq-ykp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="926"/>
+            <point key="canvasLocation" x="-1028" y="858"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="EUB-Dj-04k">

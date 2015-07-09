@@ -10,9 +10,11 @@
 #import "MPSkewedCell.h"
 #import "MPSkewedParallaxLayout.h"
 #import <EAIntroView/EAIntroView.h>
+#import "QuartzCore/QuartzCore.h"
 
 @interface LEMainController : UIViewController <EAIntroDelegate>
 
 @property (strong, nonatomic) NSUserDefaults *userData;
+@property (strong, nonatomic) UIWindow *window;
 
 @end

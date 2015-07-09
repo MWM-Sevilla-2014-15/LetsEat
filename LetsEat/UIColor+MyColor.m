@@ -42,12 +42,12 @@
 
 + (instancetype)customErrorColor
 {
-    return [UIColor colorWithRed:132.0/255.0 green:132./255.0 blue:132./255.0 alpha:1.0];
+    return [UIColor colorWithRed:193.0/255.0 green:39.0/255.0 blue:45.0/255.0 alpha:1.0];
 }
 
 + (instancetype)customWarningColor
 {
-    return [UIColor colorWithRed:132.0/255.0 green:132./255.0 blue:132./255.0 alpha:1.0];
+    return [UIColor colorWithRed:255.0/255.0 green:209.0/255.0 blue:16.0/255.0 alpha:1.0];
 }
 
 @end

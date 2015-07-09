@@ -33,12 +33,12 @@
         {
             NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
             buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-            buttonConfig[@"textColor"] = [UIColor blackColor];
+            buttonConfig[@"textColor"] = [UIColor whiteColor];
             return buttonConfig;
         };
         [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
     } else {
-        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
     }
 }

@@ -50,7 +50,7 @@
         {
             NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
             buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-            buttonConfig[@"textColor"] = [UIColor blackColor];
+            buttonConfig[@"textColor"] = [UIColor whiteColor];
             return buttonConfig;
         };
         [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];

@@ -10,6 +10,7 @@
 #import "LELoginController.h"
 #import "UIColor+MyColor.h"
 #import <SMPageControl/SMPageControl.h>
+#import "SCLAlertView.h"
 
 static NSString *kCellId = @"cellId";
 static NSString * const sampleDescription1 = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
@@ -35,6 +36,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     [self createMPSkewed];
     
     rootView = self.navigationController.view;
+    self.userData = [NSUserDefaults standardUserDefaults];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,6 +85,9 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
         case 4:
             text = @"Granada";
             break;
+        case 5:
+            text = @"Cerrar sesión";
+            break;
         default:
             break;
     }
@@ -92,11 +97,11 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger index = indexPath.item % 5 + 1;
+    NSInteger index = indexPath.item % 6 + 1;
     MPSkewedCell* cell = (MPSkewedCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kCellId forIndexPath:indexPath];
     cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", index]];
     cell.text = [self titleForIndex:index];
@@ -119,6 +124,11 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 4){
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
+    } else if(indexPath.item == 5){
+        [self.userData setObject:@"" forKey:@"User"];
+        [self.userData setObject:@"" forKey:@"Password"];
+        [self.userData synchronize];
+        [self performSegueWithIdentifier:@"openLogin" sender:nil];
     }
 }
 
@@ -184,7 +194,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     };
     
     [intro setPages:@[page1,page2,page3,page4]];    
-    [intro showInView:rootView animateDuration:0.8];
+    [intro showInView:rootView animateDuration:0.5];
 }
 
 @end

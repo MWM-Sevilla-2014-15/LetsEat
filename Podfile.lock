@@ -3,14 +3,12 @@ PODS:
     - EARestrictedScrollView (~> 0.2.0)
   - EARestrictedScrollView (0.2.0)
   - MPSkewed (0.9.0)
-  - REFrostedViewController (2.4.8)
   - SCLAlertView-Objective-C (0.7.3)
   - SMPageControl (1.2)
 
 DEPENDENCIES:
   - EAIntroView
   - MPSkewed
-  - REFrostedViewController (~> 2.4)
   - SCLAlertView-Objective-C
   - SMPageControl
 
@@ -18,7 +16,6 @@ SPEC CHECKSUMS:
   EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
   EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
   MPSkewed: 53d2f5ae0ce57c2ee475107cfb8899426f0b68fa
-  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
   SCLAlertView-Objective-C: 4bf9a07c8a8d1840e5174e643e16bc032239914d
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
 

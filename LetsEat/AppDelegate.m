@@ -42,7 +42,7 @@
     NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
     NSString *usr = [userData objectForKey:@"User"];
     
-    if (usr == nil)
+    if (usr == nil || [usr isEqualToString:@""])
     {
         self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
     }

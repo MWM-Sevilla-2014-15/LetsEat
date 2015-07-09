@@ -863,7 +863,7 @@ NSTimer *durationTimer;
     {
         if (style == Warning)
         {
-            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         }
         
         if (!btn.defaultBackgroundColor) {

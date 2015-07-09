@@ -7,6 +7,7 @@
 //
 
 #import "LEMapController.h"
+#import "LEMainController.h"
 
 @interface LEMapController ()
 
@@ -24,10 +25,22 @@
     [button setImage:[UIImage imageNamed:@"burgerIcon"] forState:UIControlStateNormal];
     
     UIBarButtonItem* menuButton = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.leftBarButtonItem = menuButton;
+    self.navigationItem.rightBarButtonItem = menuButton;
+    
+    UIBarButtonItem* backButton = [[UIBarButtonItem alloc]init];
+    backButton.title=@"Atrás";
+    [backButton setTarget:self];
+    [backButton setAction:@selector(backController)];
+    
+    self.navigationItem.leftBarButtonItem = backButton;
     
     self.title = @"Restaurantes cercanos";
     [self setMapView];
+}
+
+- (void)backController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)setMapView
@@ -44,6 +57,30 @@
     
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError: %@", error);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSLog(@"didUpdateToLocation: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+    
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    
+    if (currentLocation != nil) {
+        region.center.latitude = self.locationManager.location.coordinate.latitude;
+        region.center.longitude = self.locationManager.location.coordinate.longitude;
+    }
+    
+    region.span.longitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [self.mapView setRegion:region animated:YES];
 }
 
 @end

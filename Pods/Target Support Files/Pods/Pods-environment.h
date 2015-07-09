@@ -24,12 +24,6 @@
 #define COCOAPODS_VERSION_MINOR_MPSkewed 9
 #define COCOAPODS_VERSION_PATCH_MPSkewed 0
 
-// REFrostedViewController
-#define COCOAPODS_POD_AVAILABLE_REFrostedViewController
-#define COCOAPODS_VERSION_MAJOR_REFrostedViewController 2
-#define COCOAPODS_VERSION_MINOR_REFrostedViewController 4
-#define COCOAPODS_VERSION_PATCH_REFrostedViewController 8
-
 // SCLAlertView-Objective-C
 #define COCOAPODS_POD_AVAILABLE_SCLAlertView_Objective_C
 #define COCOAPODS_VERSION_MAJOR_SCLAlertView_Objective_C 0
