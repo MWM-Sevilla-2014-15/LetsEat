@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FXBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MPSkewed.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +29,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SIFloatingMenuViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SMPageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TDBadgedCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VBFPopFlatButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0159AD14D4221BBF509EDDEF</key>
+		<key>1E04461BC41437E31FCD14FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31FD1B29236FE04300AC0AAA</key>
+		<key>320FBE1FAF992CCC520C5F3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3416E67C8828E239B9B2E075</key>
+		<key>3DD195C5D53B30D6DDA8073C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4921F2C5E1DC39498C43C230</key>
+		<key>4D80576D4B1E7261B100C1DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84AFB9909F35B29E12DB9238</key>
+		<key>55C9C22FDDDB762655349BEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ED5CFFFAC21AE8BD3140CB1E</key>
+		<key>8BDC26AD7E16DCF5E45BFC09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C39E5699F5993E56312A5AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9C7EA853B010D9A0EF3FC6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F46FF2E22F4E9E8A65D733F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F50C0C8713FB26BF5CD70625</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9A6CE197DF46A6601019627</key>
 		<dict>
 			<key>primary</key>
 			<true/>

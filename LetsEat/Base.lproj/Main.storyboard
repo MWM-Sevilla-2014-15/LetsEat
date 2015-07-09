@@ -24,7 +24,7 @@
         <!--Login Controller-->
         <scene sceneID="xBy-yl-W2R">
             <objects>
-                <viewController id="NA9-xi-dAT" customClass="LELoginController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginController" id="NA9-xi-dAT" customClass="LELoginController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="cQ4-fx-69o"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>

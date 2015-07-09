@@ -38,7 +38,7 @@
     //VALORES DE LA STATUSBAR EN BLANCO
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    //COMPROBAR SI EXISTE USUARIO EN MEMORIA PARA DECIDIR CUAL SERA LA INIT CONTROLLER    
+    //COMPROBAR SI EXISTE USUARIO EN MEMORIA PARA DECIDIR CUAL SERA LA initCONTROLLER
     NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
     NSString *usr = [userData objectForKey:@"User"];
     

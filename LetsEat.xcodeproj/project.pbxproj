@@ -16,7 +16,6 @@
 		33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C3033D1B4D78560058C9E3 /* LEMapController.xib */; };
 		33C303451B4D787D0058C9E3 /* LEMenuListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C303431B4D787D0058C9E3 /* LEMenuListController.m */; };
 		33C303461B4D787D0058C9E3 /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C303441B4D787D0058C9E3 /* LEMenuListController.xib */; };
-		33C3034A1B4D7DFE0058C9E3 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C303491B4D7DFE0058C9E3 /* CustomIOSAlertView.m */; };
 		33C3034C1B4D812F0058C9E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3034B1B4D812F0058C9E3 /* MapKit.framework */; };
 		33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C303511B4D8B820058C9E3 /* CustomCell.m */; };
 		33C303541B4D8B820058C9E3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C303521B4D8B820058C9E3 /* CustomCell.xib */; };
@@ -65,8 +64,6 @@
 		33C303421B4D787D0058C9E3 /* LEMenuListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMenuListController.h; sourceTree = "<group>"; };
 		33C303431B4D787D0058C9E3 /* LEMenuListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMenuListController.m; sourceTree = "<group>"; };
 		33C303441B4D787D0058C9E3 /* LEMenuListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMenuListController.xib; sourceTree = "<group>"; };
-		33C303481B4D7DFE0058C9E3 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
-		33C303491B4D7DFE0058C9E3 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		33C3034B1B4D812F0058C9E3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		33C303501B4D8B820058C9E3 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		33C303511B4D8B820058C9E3 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
@@ -166,7 +163,6 @@
 		3347E8DC1B4844CE00F9F754 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				33C303471B4D7DED0058C9E3 /* CustomAlertView */,
 				3347E8DD1B4844DA00F9F754 /* UIColor+MyColor.h */,
 				3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */,
 			);
@@ -191,15 +187,6 @@
 				33C303441B4D787D0058C9E3 /* LEMenuListController.xib */,
 			);
 			name = MenuList;
-			sourceTree = "<group>";
-		};
-		33C303471B4D7DED0058C9E3 /* CustomAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				33C303481B4D7DFE0058C9E3 /* CustomIOSAlertView.h */,
-				33C303491B4D7DFE0058C9E3 /* CustomIOSAlertView.m */,
-			);
-			name = CustomAlertView;
 			sourceTree = "<group>";
 		};
 		33C3034F1B4D8B6A0058C9E3 /* CustomCell */ = {
@@ -474,7 +461,6 @@
 				33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */,
 				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
 				330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */,
-				33C3034A1B4D7DFE0058C9E3 /* CustomIOSAlertView.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
