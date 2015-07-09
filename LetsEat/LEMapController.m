@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];    
+    //[[self navigationController] setNavigationBarHidden:NO animated:YES];
     self.title = @"Restaurantes cercanos";
     [self setMapView];
 }

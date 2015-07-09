@@ -59,15 +59,12 @@
     self.labelPwd.textColor = [UIColor customSecondColor];
     
     //Cadena para labelInfo
-       
-    
     self.labelInfo.text = @"Tu nombre de usuario te servirá para iniciar sesión juto con tu contraseña.";
     self.labelInfo.textColor = [UIColor customThirdColor];
     self.labelInfo.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
     self.labelInfo2.text = @"Introduce un email válido, será útil para recuperar tu contraseña.";
     self.labelInfo2.textColor = [UIColor customThirdColor];
     self.labelInfo2.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
-
     
     //Customizar textfield
     self.textNameUser.textColor = [UIColor customThirdColor];

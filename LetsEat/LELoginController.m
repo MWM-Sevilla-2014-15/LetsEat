@@ -23,11 +23,16 @@
     
     self.title = @"Bienvenido";
     [self createView];
+    
+    self.userData = [NSUserDefaults standardUserDefaults];
 }
 
 -(IBAction)doLogin
 {
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
+        [self.userData setObject:self.textUser.text forKey:@"User"];
+        [self.userData setObject:self.textPwd.text forKey:@"Password"];
+        [self.userData synchronize];
         [self performSegueWithIdentifier:@"openMain" sender:nil];
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] init];

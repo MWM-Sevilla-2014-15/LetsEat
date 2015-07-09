@@ -38,6 +38,22 @@
     //VALORES DE LA STATUSBAR EN BLANCO
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    //COMPROBAR SI EXISTE USUARIO EN MEMORIA PARA DECIDIR CUAL SERA LA INIT CONTROLLER    
+    NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
+    NSString *usr = [userData objectForKey:@"User"];
+    
+    if (usr == nil)
+    {
+        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
+    else
+    {
+        UIViewController* rootController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"mainController"];
+        UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:rootController];
+        
+        self.window.rootViewController = navigation;
+    }
+    
     return YES;
 }
 
