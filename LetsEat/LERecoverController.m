@@ -54,8 +54,6 @@
             return buttonConfig;
         };
         [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];
-        [self.navigationController popViewControllerAnimated:YES];
-        [self.navigationController popViewControllerAnimated:YES];
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];

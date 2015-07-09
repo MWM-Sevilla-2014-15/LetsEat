@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "SIFloatingMenuViewController.h"
 
-@interface LEMapController : SIFloatingMenuViewController <MKMapViewDelegate,  CLLocationManagerDelegate>
+@interface LEMapController : UIViewController <MKMapViewDelegate,  CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property(nonatomic, retain) CLLocationManager *locationManager;

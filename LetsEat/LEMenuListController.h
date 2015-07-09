@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LEMenuListController : UITableViewController
+@interface LEMenuListController : UIViewController
 
 @end

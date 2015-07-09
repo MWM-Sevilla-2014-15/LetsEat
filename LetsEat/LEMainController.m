@@ -69,7 +69,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     NSString *text = nil;
     switch (index - 1) {
         case 0:
-            text = @"¿Qué es LET'sEAT?";
+            text = @"¿Qué es LET'sGoEAT?";
             break;
         case 1:
             text = @"Ubicación actual";
