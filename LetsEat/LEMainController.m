@@ -185,6 +185,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     [intro setDelegate:self];
     
     SMPageControl *pageControl = [[SMPageControl alloc] init];
+    pageControl.pageIndicatorTintColor = [UIColor customThirdColor];
     pageControl.currentPageIndicatorTintColor = [UIColor customMainColor];
     [pageControl sizeToFit];
     intro.pageControl = (UIPageControl *)pageControl;

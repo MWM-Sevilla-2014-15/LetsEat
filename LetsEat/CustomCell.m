@@ -19,7 +19,7 @@
     self.customView.layer.shadowOffset = CGSizeMake(1, 0);
     self.customView.layer.shadowColor = [[UIColor customSecondColor] CGColor];
     self.customView.layer.shadowRadius = 5;
-    self.customView.layer.shadowOpacity = .25;    
+    self.customView.layer.shadowOpacity = 1.0;
     self.customView.layer.cornerRadius = 5.0;
     
     //Configurar labels
