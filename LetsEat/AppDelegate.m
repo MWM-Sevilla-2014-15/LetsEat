@@ -9,6 +9,7 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #import "AppDelegate.h"
+#import <Mint.h>
 
 @interface AppDelegate ()
 
@@ -41,6 +42,9 @@
     //COMPROBAR SI EXISTE USUARIO EN MEMORIA PARA DECIDIR CUAL SERA LA initCONTROLLER
     NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
     NSString *usr = [userData objectForKey:@"User"];
+    
+    //Init SPLUNK
+    [[Mint sharedInstance] initAndStartSession:@"a77620ba"];
     
     if (usr == nil || [usr isEqualToString:@""])
     {

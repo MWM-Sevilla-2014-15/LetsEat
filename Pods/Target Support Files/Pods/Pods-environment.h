@@ -42,3 +42,9 @@
 #define COCOAPODS_VERSION_MINOR_SMPageControl 2
 #define COCOAPODS_VERSION_PATCH_SMPageControl 0
 
+// SplunkMint
+#define COCOAPODS_POD_AVAILABLE_SplunkMint
+#define COCOAPODS_VERSION_MAJOR_SplunkMint 4
+#define COCOAPODS_VERSION_MINOR_SplunkMint 2
+#define COCOAPODS_VERSION_PATCH_SplunkMint 2
+

@@ -6,6 +6,7 @@ PODS:
   - MPSkewed (0.9.0)
   - SCLAlertView-Objective-C (0.7.3)
   - SMPageControl (1.2)
+  - SplunkMint (4.2.2)
 
 DEPENDENCIES:
   - EAIntroView
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - MPSkewed
   - SCLAlertView-Objective-C
   - SMPageControl
+  - SplunkMint
 
 SPEC CHECKSUMS:
   EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
@@ -21,5 +23,6 @@ SPEC CHECKSUMS:
   MPSkewed: 53d2f5ae0ce57c2ee475107cfb8899426f0b68fa
   SCLAlertView-Objective-C: 4bf9a07c8a8d1840e5174e643e16bc032239914d
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
+  SplunkMint: 5bc47a97e867e891a983655e30c8c14618e967e6
 
 COCOAPODS: 0.37.2
