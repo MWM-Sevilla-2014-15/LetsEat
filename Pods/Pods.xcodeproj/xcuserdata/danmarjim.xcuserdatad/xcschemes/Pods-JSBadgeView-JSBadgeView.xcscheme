@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "320FBE1FAF992CCC520C5F3D"
-               BuildableName = "libPods-VBFPopFlatButton.a"
-               BlueprintName = "Pods-VBFPopFlatButton"
+               BlueprintIdentifier = "0B8F14D5FE1129A964562C39"
+               BuildableName = "JSBadgeView.bundle"
+               BlueprintName = "Pods-JSBadgeView-JSBadgeView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

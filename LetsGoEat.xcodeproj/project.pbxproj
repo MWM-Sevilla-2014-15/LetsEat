@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D78429E1B4FCE710056A40D /* LEMenuListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78429C1B4FCE710056A40D /* LEMenuListController.m */; };
+		1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D78429D1B4FCE710056A40D /* LEMenuListController.xib */; };
+		1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7842A21B4FE8E80056A40D /* LEDetailController.m */; };
+		1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7842A31B4FE8E80056A40D /* LEDetailController.xib */; };
 		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
 		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
 		330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B431B4B22EF006920C4 /* LERecoverController.m */; };
@@ -14,8 +18,6 @@
 		3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */; };
 		33C3033E1B4D78560058C9E3 /* LEMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C3033C1B4D78560058C9E3 /* LEMapController.m */; };
 		33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C3033D1B4D78560058C9E3 /* LEMapController.xib */; };
-		33C303451B4D787D0058C9E3 /* LEMenuListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C303431B4D787D0058C9E3 /* LEMenuListController.m */; };
-		33C303461B4D787D0058C9E3 /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C303441B4D787D0058C9E3 /* LEMenuListController.xib */; };
 		33C3034C1B4D812F0058C9E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3034B1B4D812F0058C9E3 /* MapKit.framework */; };
 		33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C303511B4D8B820058C9E3 /* CustomCell.m */; };
 		33C303541B4D8B820058C9E3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C303521B4D8B820058C9E3 /* CustomCell.xib */; };
@@ -49,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		17F90F6F848538FD278AB938 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D78429B1B4FCE710056A40D /* LEMenuListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMenuListController.h; sourceTree = "<group>"; };
+		1D78429C1B4FCE710056A40D /* LEMenuListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMenuListController.m; sourceTree = "<group>"; };
+		1D78429D1B4FCE710056A40D /* LEMenuListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMenuListController.xib; sourceTree = "<group>"; };
+		1D7842A11B4FE8E80056A40D /* LEDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDetailController.h; sourceTree = "<group>"; };
+		1D7842A21B4FE8E80056A40D /* LEDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDetailController.m; sourceTree = "<group>"; };
+		1D7842A31B4FE8E80056A40D /* LEDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEDetailController.xib; sourceTree = "<group>"; };
 		330D5B3D1B4B22DE006920C4 /* LERegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERegisterController.h; sourceTree = "<group>"; };
 		330D5B3E1B4B22DE006920C4 /* LERegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERegisterController.m; sourceTree = "<group>"; };
 		330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERegisterController.xib; sourceTree = "<group>"; };
@@ -62,9 +70,6 @@
 		33C3033B1B4D78560058C9E3 /* LEMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMapController.h; sourceTree = "<group>"; };
 		33C3033C1B4D78560058C9E3 /* LEMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMapController.m; sourceTree = "<group>"; };
 		33C3033D1B4D78560058C9E3 /* LEMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMapController.xib; sourceTree = "<group>"; };
-		33C303421B4D787D0058C9E3 /* LEMenuListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMenuListController.h; sourceTree = "<group>"; };
-		33C303431B4D787D0058C9E3 /* LEMenuListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMenuListController.m; sourceTree = "<group>"; };
-		33C303441B4D787D0058C9E3 /* LEMenuListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMenuListController.xib; sourceTree = "<group>"; };
 		33C3034B1B4D812F0058C9E3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		33C303501B4D8B820058C9E3 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		33C303511B4D8B820058C9E3 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
@@ -116,11 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D7DA8D41B4FC19D00B832FF /* New Group */ = {
+		1D7842A01B4FE8790056A40D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				1D7842A11B4FE8E80056A40D /* LEDetailController.h */,
+				1D7842A21B4FE8E80056A40D /* LEDetailController.m */,
+				1D7842A31B4FE8E80056A40D /* LEDetailController.xib */,
 			);
-			name = "New Group";
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		31215B0515DA5CFAE98CEF4B /* Frameworks */ = {
@@ -204,9 +212,9 @@
 		33C303401B4D785E0058C9E3 /* MenuList */ = {
 			isa = PBXGroup;
 			children = (
-				33C303421B4D787D0058C9E3 /* LEMenuListController.h */,
-				33C303431B4D787D0058C9E3 /* LEMenuListController.m */,
-				33C303441B4D787D0058C9E3 /* LEMenuListController.xib */,
+				1D78429B1B4FCE710056A40D /* LEMenuListController.h */,
+				1D78429C1B4FCE710056A40D /* LEMenuListController.m */,
+				1D78429D1B4FCE710056A40D /* LEMenuListController.xib */,
 			);
 			name = MenuList;
 			sourceTree = "<group>";
@@ -242,7 +250,6 @@
 		33DEFA5E1B46E69400053B72 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
-				1D7DA8D41B4FC19D00B832FF /* New Group */,
 				3347E8DA1B4844C400F9F754 /* Model */,
 				33DEFA901B46EFB700053B72 /* Login */,
 				33DEFA911B46EFC400053B72 /* Main */,
@@ -250,6 +257,7 @@
 				330D5B311B4B1810006920C4 /* Recover */,
 				33C303401B4D785E0058C9E3 /* MenuList */,
 				33C3033A1B4D78410058C9E3 /* Map */,
+				1D7842A01B4FE8790056A40D /* Detail */,
 				33DEFA631B46E69400053B72 /* AppDelegate.h */,
 				33DEFA641B46E69400053B72 /* AppDelegate.m */,
 				33DEFA691B46E69400053B72 /* Main.storyboard */,
@@ -417,16 +425,17 @@
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,
 				33C303541B4D8B820058C9E3 /* CustomCell.xib in Resources */,
 				33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */,
+				1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */,
 				330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */,
 				33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */,
 				33DEFAB71B46F7B400053B72 /* title4@2x.png in Resources */,
 				330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */,
 				33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */,
 				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
-				33C303461B4D787D0058C9E3 /* LEMenuListController.xib in Resources */,
 				33DEFAB41B46F7B400053B72 /* title1@2x.png in Resources */,
 				33DEFAB51B46F7B400053B72 /* title2@2x.png in Resources */,
 				33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */,
+				1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,12 +487,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */,
-				33C303451B4D787D0058C9E3 /* LEMenuListController.m in Sources */,
 				33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */,
 				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
+				1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */,
 				330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
 				33F275F11B4F208C00E45EB6 /* CustomSegue.m in Sources */,
+				1D78429E1B4FCE710056A40D /* LEMenuListController.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
 				3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */,

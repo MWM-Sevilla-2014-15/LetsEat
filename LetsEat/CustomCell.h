@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSBadgeView.h"
 
 @interface CustomCell : UITableViewCell
 
@@ -17,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageRest;
 @property (strong, nonatomic) IBOutlet UILabel *labelNumberTables;
 @property (strong, nonatomic) IBOutlet UIView *customView;
+@property (strong, nonatomic) JSBadgeView *badgeView;
 
 @end

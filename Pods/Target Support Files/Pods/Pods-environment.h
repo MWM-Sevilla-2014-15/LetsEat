@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_EARestrictedScrollView 2
 #define COCOAPODS_VERSION_PATCH_EARestrictedScrollView 0
 
+// JSBadgeView
+#define COCOAPODS_POD_AVAILABLE_JSBadgeView
+#define COCOAPODS_VERSION_MAJOR_JSBadgeView 1
+#define COCOAPODS_VERSION_MINOR_JSBadgeView 4
+#define COCOAPODS_VERSION_PATCH_JSBadgeView 1
+
 // MPSkewed
 #define COCOAPODS_POD_AVAILABLE_MPSkewed
 #define COCOAPODS_VERSION_MAJOR_MPSkewed 0

@@ -52,7 +52,7 @@
 
 + (instancetype)customBGColor
 {
-    return [UIColor colorWithRed:184.0/255.0 green:184.0/255.0 blue:184.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:242.0/255.0 green:242.0/255.0 blue:242.0/255.0 alpha:1.0];
 }
 
 @end

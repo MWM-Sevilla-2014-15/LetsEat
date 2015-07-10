@@ -8,6 +8,7 @@
 
 #import "CustomCell.h"
 #import "UIColor+MyColor.h"
+#import "JSBadgeView.h"
 
 @implementation CustomCell
 
@@ -16,9 +17,25 @@
     
     //Aplicar Sombra a la View
     self.customView.layer.shadowOffset = CGSizeMake(1, 0);
-    self.customView.layer.shadowColor = [[UIColor customThirdColor] CGColor];
+    self.customView.layer.shadowColor = [[UIColor customSecondColor] CGColor];
     self.customView.layer.shadowRadius = 5;
-    self.customView.layer.shadowOpacity = .25;
+    self.customView.layer.shadowOpacity = .25;    
+    self.customView.layer.cornerRadius = 5.0;
+    
+    //Configurar labels
+    self.labelName.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:24];
+    self.labelType.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
+    self.labelHour.font = [UIFont fontWithName:@"AppleSDGothicNeo-Thin" size:12];
+    self.labelTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:18];
+    self.labelNumberTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Thin" size:14];
+    
+    self.labelName.textColor = [UIColor customThirdColor];
+    self.labelType.textColor = [UIColor customThirdColor];
+    self.labelHour.textColor = [UIColor customThirdColor];
+    self.labelTables.textColor = [UIColor customThirdColor];
+    self.labelNumberTables.textColor = [UIColor customThirdColor];
+    
+    self.badgeView = [[JSBadgeView alloc] initWithParentView:self.customView alignment:JSBadgeViewAlignmentTopRight];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

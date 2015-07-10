@@ -1,8 +1,8 @@
 //
 //  LEMenuListController.m
-//  LetsEat
+//  LetsGoEat
 //
-//  Created by Daniel Martin Jimenez on 8/7/15.
+//  Created by Daniel Martin Jimenez on 10/7/15.
 //  Copyright (c) 2015 Daniel Martin Jimenez. All rights reserved.
 //
 
@@ -18,16 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
     
-    //[[self navigationController] setNavigationBarHidden:NO animated:YES];
     self.title = @"Restaurantes";
     
-    UIBarButtonItem* menuButton = [[UIBarButtonItem alloc]init];
-    menuButton.title=@"Atrás";
-    [menuButton setTarget:self];
-    [menuButton setAction:@selector(backController)];
+    UIBarButtonItem* backButton = [[UIBarButtonItem alloc]init];
+    backButton.title=@"Atrás";
+    [backButton setTarget:self];
+    [backButton setAction:@selector(backController)];
     
-    self.navigationItem.leftBarButtonItem = menuButton;
+    self.navigationItem.leftBarButtonItem = backButton;
+    
+    //TableView
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)backController
@@ -56,9 +61,23 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     }
     
-    cell.labelName.text = @"Hola";
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    cell.labelName.text = @"La Mafia se sienta a la mesa";
+    cell.labelType.text = @"Italiano";
+    cell.labelHour.text = @"Abierto: 12:30 - 16:30 / 21:00 - 00:00";
+    cell.labelTables.text = @"Mesas disponibles:";
+    cell.labelNumberTables.text = @"15";
+    
+    //Añadir badge
+    cell.badgeView.badgeText = @"15";
+    [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customSuccessColor]];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"openDetail" sender:nil];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,20 +86,12 @@
     return indexPath.row == 1 - 1 ? 200 : 200;
 }
 
-/*
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-}
-*/
+//#pragma mark - Navigation
+//
+////In a storyboard-based application, you will often want to do a little preparation before navigation
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//     //Get the new view controller using [segue destinationViewController].
+//     //Pass the selected object to the new view controller.
+//}
 
 @end

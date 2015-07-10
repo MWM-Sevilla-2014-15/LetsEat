@@ -55,7 +55,7 @@
                     <connections>
                         <segue destination="xzw-iK-bNX" kind="presentation" identifier="openMap" id="XcZ-O4-dbY"/>
                         <segue destination="B8g-DY-cyi" kind="presentation" identifier="openMenuList" id="kXb-m7-6Iq"/>
-                        <segue destination="fWk-tG-Rxs" kind="custom" identifier="openLogin" customClass="CustomSegue" id="WYC-Zc-yqk"/>
+                        <segue destination="NA9-xi-dAT" kind="custom" identifier="openLogin" customClass="CustomSegue" id="bWX-kD-Q7v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6e-Cq-ykp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,10 +123,26 @@
                 <viewController id="aek-RD-NhZ" customClass="LEMenuListController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="e5D-6G-9Gd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="xsu-4u-Ajn" kind="show" identifier="openDetail" id="FZs-9t-cSm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhO-nX-deN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="342" y="1258"/>
         </scene>
+        <!--Detail Controller-->
+        <scene sceneID="0Mw-gH-PDu">
+            <objects>
+                <viewController id="xsu-4u-Ajn" customClass="LEDetailController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccn-Yw-2YI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="1258"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bWX-kD-Q7v"/>
+    </inferredMetricsTieBreakers>
 </document>
