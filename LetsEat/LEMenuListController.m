@@ -8,6 +8,7 @@
 
 #import "LEMenuListController.h"
 #import "CustomCell.h"
+#import "UIColor+MyColor.h"
 
 @interface LEMenuListController ()
 
@@ -43,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 3;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -56,13 +57,14 @@
     }
     
     cell.labelName.text = @"Hola";
+    
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //return [indexPath row];
-    return indexPath.row == 3 - 1 ? 140 : 140;
+    return indexPath.row == 1 - 1 ? 200 : 200;
 }
 
 /*

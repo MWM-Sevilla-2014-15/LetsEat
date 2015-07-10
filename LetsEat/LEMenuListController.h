@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LEMenuListController : UIViewController
+@interface LEMenuListController : UITableViewController
+
+@property (strong, nonatomic) IBOutlet UITableView *tView;
 
 @end

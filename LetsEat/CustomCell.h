@@ -11,5 +11,11 @@
 @interface CustomCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *labelName;
+@property (strong, nonatomic) IBOutlet UILabel *labelType;
+@property (strong, nonatomic) IBOutlet UILabel *labelHour;
+@property (strong, nonatomic) IBOutlet UILabel *labelTables;
+@property (strong, nonatomic) IBOutlet UIImageView *imageRest;
+@property (strong, nonatomic) IBOutlet UILabel *labelNumberTables;
+@property (strong, nonatomic) IBOutlet UIView *customView;
 
 @end

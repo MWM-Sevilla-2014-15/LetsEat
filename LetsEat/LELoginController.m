@@ -30,6 +30,9 @@
 
 -(IBAction)doLogin
 {
+    [self.textUser resignFirstResponder];
+    [self.textPwd resignFirstResponder];
+    
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
         [self.userData setObject:self.textUser.text forKey:@"User"];
         [self.userData setObject:self.textPwd.text forKey:@"Password"];
@@ -70,7 +73,7 @@
     
     self.buttonRegister.backgroundColor = [UIColor customThirdColor];
     [self.buttonRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.buttonRegister setTitle:@"¿Eres nuevo? Registrate" forState:UIControlStateNormal];
+    [self.buttonRegister setTitle:@"¿Eres nuevo? Regístrate" forState:UIControlStateNormal];
     
     //Customizar textfield
     self.textUser.textColor = [UIColor customThirdColor];

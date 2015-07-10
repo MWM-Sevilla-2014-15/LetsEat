@@ -116,6 +116,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7DA8D41B4FC19D00B832FF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		31215B0515DA5CFAE98CEF4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +242,7 @@
 		33DEFA5E1B46E69400053B72 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				1D7DA8D41B4FC19D00B832FF /* New Group */,
 				3347E8DA1B4844C400F9F754 /* Model */,
 				33DEFA901B46EFB700053B72 /* Login */,
 				33DEFA911B46EFC400053B72 /* Main */,

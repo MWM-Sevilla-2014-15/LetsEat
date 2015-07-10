@@ -18,5 +18,6 @@
 + (instancetype)customSuccessColor;
 + (instancetype)customErrorColor;
 + (instancetype)customWarningColor;
++ (instancetype)customBGColor;
 
 @end

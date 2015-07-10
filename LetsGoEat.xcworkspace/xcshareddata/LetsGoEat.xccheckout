@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1BCA0F9A-FA5D-4250-8908-E47268BCA883</string>
+	<string>DCDEFFC9-8B1F-476D-9D73-A3434F53B902</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LetsEat</string>
+	<string>LetsGoEat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BBC715142166738AEBCA8DC10FA31FC5E359E068</key>
 		<string>https://github.com/MWM-Sevilla-2014-15/LetsEat.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LetsEat.xcworkspace</string>
+	<string>LetsGoEat.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BBC715142166738AEBCA8DC10FA31FC5E359E068</key>

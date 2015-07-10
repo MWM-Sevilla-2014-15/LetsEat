@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33DEFA5B1B46E69400053B72"
-            BuildableName = "LetsEat.app"
-            BlueprintName = "LetsEat"
-            ReferencedContainer = "container:LetsEat.xcodeproj">
+            BuildableName = "LetsGoEat.app"
+            BlueprintName = "LetsGoEat"
+            ReferencedContainer = "container:LetsGoEat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33DEFA5B1B46E69400053B72"
-            BuildableName = "LetsEat.app"
-            BlueprintName = "LetsEat"
-            ReferencedContainer = "container:LetsEat.xcodeproj">
+            BuildableName = "LetsGoEat.app"
+            BlueprintName = "LetsGoEat"
+            ReferencedContainer = "container:LetsGoEat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

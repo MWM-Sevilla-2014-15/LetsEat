@@ -125,11 +125,25 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     } else if(indexPath.item == 4){
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 5){
-        [self.userData setObject:@"" forKey:@"User"];
-        [self.userData setObject:@"" forKey:@"Password"];
-        [self.userData synchronize];
-        [self performSegueWithIdentifier:@"openLogin" sender:nil];
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(logOut)];
+        button.buttonFormatBlock = ^NSDictionary* (void)
+        {
+            NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+            buttonConfig[@"backgroundColor"] = [UIColor customSecondColor];
+            buttonConfig[@"textColor"] = [UIColor whiteColor];
+            return buttonConfig;
+        };
+        [alert showNotice:self title:@"AVISO" subTitle:@"¿Desea cerrar sesión?" closeButtonTitle:@"Cancelar" duration:0.0f];
     }
+}
+
+- (void)logOut
+{
+    [self.userData setObject:@"" forKey:@"User"];
+    [self.userData setObject:@"" forKey:@"Password"];
+    [self.userData synchronize];
+    [self performSegueWithIdentifier:@"openLogin" sender:nil];
 }
 
 - (void)createIntroView
