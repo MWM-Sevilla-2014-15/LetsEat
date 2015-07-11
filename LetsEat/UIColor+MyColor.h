@@ -13,6 +13,7 @@
 + (instancetype)customMainColor;
 + (instancetype)customSecondColor;
 + (instancetype)customThirdColor;
++ (instancetype)customMainColorPress;
 + (instancetype)customSecondColorPress;
 + (instancetype)customThirdColorPress;
 + (instancetype)customSuccessColor;

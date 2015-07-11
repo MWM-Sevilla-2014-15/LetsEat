@@ -16,6 +16,42 @@
 		330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B431B4B22EF006920C4 /* LERecoverController.m */; };
 		330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B441B4B22EF006920C4 /* LERecoverController.xib */; };
 		3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */; };
+		33595E451B517C8B00254DE7 /* LetsGoEat.xml in Resources */ = {isa = PBXBuildFile; fileRef = 33595E441B517C8B00254DE7 /* LetsGoEat.xml */; };
+		33595F2D1B51812E00254DE7 /* RegisterDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F2C1B51812E00254DE7 /* RegisterDTO.m */; };
+		33595F781B518FF900254DE7 /* SecondCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F771B518FF900254DE7 /* SecondCustomSegue.m */; };
+		33595F7B1B51B6B400254DE7 /* LoginDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F7A1B51B6B400254DE7 /* LoginDTO.m */; };
+		33595FC81B51B6CD00254DE7 /* BaseLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F801B51B6CD00254DE7 /* BaseLogic.m */; };
+		33595FC91B51B6CD00254DE7 /* LogicFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F821B51B6CD00254DE7 /* LogicFilter.m */; };
+		33595FCA1B51B6CD00254DE7 /* DummyCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F861B51B6CD00254DE7 /* DummyCache.m */; };
+		33595FCB1B51B6CD00254DE7 /* LimitedAgeMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F881B51B6CD00254DE7 /* LimitedAgeMemoryCache.m */; };
+		33595FCC1B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F8A1B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.m */; };
+		33595FCD1B51B6CD00254DE7 /* UnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F8C1B51B6CD00254DE7 /* UnlimitedDiskCache.m */; };
+		33595FCE1B51B6CD00254DE7 /* UnlimitedMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F8E1B51B6CD00254DE7 /* UnlimitedMemoryCache.m */; };
+		33595FCF1B51B6CD00254DE7 /* BaseSignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F921B51B6CD00254DE7 /* BaseSignInLogic.m */; };
+		33595FD01B51B6CD00254DE7 /* BaseSignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F941B51B6CD00254DE7 /* BaseSignUpLogic.m */; };
+		33595FD11B51B6CD00254DE7 /* LetsGoEatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F961B51B6CD00254DE7 /* LetsGoEatHelper.m */; };
+		33595FD21B51B6CD00254DE7 /* SignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F981B51B6CD00254DE7 /* SignInLogic.m */; };
+		33595FD31B51B6CD00254DE7 /* SignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F9A1B51B6CD00254DE7 /* SignUpLogic.m */; };
+		33595FD41B51B6CD00254DE7 /* SignInActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F9D1B51B6CD00254DE7 /* SignInActionTask.m */; };
+		33595FD51B51B6CD00254DE7 /* SignUpActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F9F1B51B6CD00254DE7 /* SignUpActionTask.m */; };
+		33595FD61B51B6CD00254DE7 /* SignInDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FA31B51B6CD00254DE7 /* SignInDAO.m */; };
+		33595FD71B51B6CD00254DE7 /* SignInRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FA51B51B6CD00254DE7 /* SignInRequestDAO.m */; };
+		33595FD81B51B6CD00254DE7 /* SignInResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FA71B51B6CD00254DE7 /* SignInResponseDAO.m */; };
+		33595FD91B51B6CD00254DE7 /* SignUpDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FA91B51B6CD00254DE7 /* SignUpDAO.m */; };
+		33595FDA1B51B6CD00254DE7 /* SignUpRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FAB1B51B6CD00254DE7 /* SignUpRequestDAO.m */; };
+		33595FDB1B51B6CD00254DE7 /* SignUpResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FAD1B51B6CD00254DE7 /* SignUpResponseDAO.m */; };
+		33595FDC1B51B6CD00254DE7 /* BaseSignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FB11B51B6CD00254DE7 /* BaseSignInDTO.m */; };
+		33595FDD1B51B6CD00254DE7 /* BaseSignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FB31B51B6CD00254DE7 /* BaseSignInRequestDTO.m */; };
+		33595FDE1B51B6CD00254DE7 /* BaseSignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FB51B51B6CD00254DE7 /* BaseSignInResponseDTO.m */; };
+		33595FDF1B51B6CD00254DE7 /* BaseSignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FB71B51B6CD00254DE7 /* BaseSignUpDTO.m */; };
+		33595FE01B51B6CD00254DE7 /* BaseSignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FB91B51B6CD00254DE7 /* BaseSignUpRequestDTO.m */; };
+		33595FE11B51B6CD00254DE7 /* BaseSignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FBB1B51B6CD00254DE7 /* BaseSignUpResponseDTO.m */; };
+		33595FE21B51B6CD00254DE7 /* SignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FBD1B51B6CD00254DE7 /* SignInDTO.m */; };
+		33595FE31B51B6CD00254DE7 /* SignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FBF1B51B6CD00254DE7 /* SignInRequestDTO.m */; };
+		33595FE41B51B6CD00254DE7 /* SignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FC11B51B6CD00254DE7 /* SignInResponseDTO.m */; };
+		33595FE51B51B6CD00254DE7 /* SignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FC31B51B6CD00254DE7 /* SignUpDTO.m */; };
+		33595FE61B51B6CD00254DE7 /* SignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FC51B51B6CD00254DE7 /* SignUpRequestDTO.m */; };
+		33595FE71B51B6CD00254DE7 /* SignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595FC71B51B6CD00254DE7 /* SignUpResponseDTO.m */; };
 		33C3033E1B4D78560058C9E3 /* LEMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C3033C1B4D78560058C9E3 /* LEMapController.m */; };
 		33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C3033D1B4D78560058C9E3 /* LEMapController.xib */; };
 		33C3034C1B4D812F0058C9E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3034B1B4D812F0058C9E3 /* MapKit.framework */; };
@@ -67,6 +103,79 @@
 		3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
 		3347E8E01B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3347E8E11B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		33595E431B517B5B00254DE7 /* GenDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenDefines.h; sourceTree = "<group>"; };
+		33595E441B517C8B00254DE7 /* LetsGoEat.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LetsGoEat.xml; sourceTree = "<group>"; };
+		33595F2B1B51812E00254DE7 /* RegisterDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterDTO.h; sourceTree = "<group>"; };
+		33595F2C1B51812E00254DE7 /* RegisterDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterDTO.m; sourceTree = "<group>"; };
+		33595F761B518FF900254DE7 /* SecondCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCustomSegue.h; sourceTree = "<group>"; };
+		33595F771B518FF900254DE7 /* SecondCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomSegue.m; sourceTree = "<group>"; };
+		33595F791B51B6B400254DE7 /* LoginDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDTO.h; sourceTree = "<group>"; };
+		33595F7A1B51B6B400254DE7 /* LoginDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDTO.m; sourceTree = "<group>"; };
+		33595F7F1B51B6CD00254DE7 /* BaseLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogic.h; sourceTree = "<group>"; };
+		33595F801B51B6CD00254DE7 /* BaseLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogic.m; sourceTree = "<group>"; };
+		33595F811B51B6CD00254DE7 /* LogicFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicFilter.h; sourceTree = "<group>"; };
+		33595F821B51B6CD00254DE7 /* LogicFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicFilter.m; sourceTree = "<group>"; };
+		33595F841B51B6CD00254DE7 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		33595F851B51B6CD00254DE7 /* DummyCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyCache.h; sourceTree = "<group>"; };
+		33595F861B51B6CD00254DE7 /* DummyCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyCache.m; sourceTree = "<group>"; };
+		33595F871B51B6CD00254DE7 /* LimitedAgeMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeMemoryCache.h; sourceTree = "<group>"; };
+		33595F881B51B6CD00254DE7 /* LimitedAgeMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeMemoryCache.m; sourceTree = "<group>"; };
+		33595F891B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeUnlimitedDiskCache.h; sourceTree = "<group>"; };
+		33595F8A1B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeUnlimitedDiskCache.m; sourceTree = "<group>"; };
+		33595F8B1B51B6CD00254DE7 /* UnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedDiskCache.h; sourceTree = "<group>"; };
+		33595F8C1B51B6CD00254DE7 /* UnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedDiskCache.m; sourceTree = "<group>"; };
+		33595F8D1B51B6CD00254DE7 /* UnlimitedMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedMemoryCache.h; sourceTree = "<group>"; };
+		33595F8E1B51B6CD00254DE7 /* UnlimitedMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedMemoryCache.m; sourceTree = "<group>"; };
+		33595F911B51B6CD00254DE7 /* BaseSignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInLogic.h; sourceTree = "<group>"; };
+		33595F921B51B6CD00254DE7 /* BaseSignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInLogic.m; sourceTree = "<group>"; };
+		33595F931B51B6CD00254DE7 /* BaseSignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpLogic.h; sourceTree = "<group>"; };
+		33595F941B51B6CD00254DE7 /* BaseSignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpLogic.m; sourceTree = "<group>"; };
+		33595F951B51B6CD00254DE7 /* LetsGoEatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetsGoEatHelper.h; sourceTree = "<group>"; };
+		33595F961B51B6CD00254DE7 /* LetsGoEatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetsGoEatHelper.m; sourceTree = "<group>"; };
+		33595F971B51B6CD00254DE7 /* SignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInLogic.h; sourceTree = "<group>"; };
+		33595F981B51B6CD00254DE7 /* SignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInLogic.m; sourceTree = "<group>"; };
+		33595F991B51B6CD00254DE7 /* SignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLogic.h; sourceTree = "<group>"; };
+		33595F9A1B51B6CD00254DE7 /* SignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLogic.m; sourceTree = "<group>"; };
+		33595F9C1B51B6CD00254DE7 /* SignInActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInActionTask.h; sourceTree = "<group>"; };
+		33595F9D1B51B6CD00254DE7 /* SignInActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInActionTask.m; sourceTree = "<group>"; };
+		33595F9E1B51B6CD00254DE7 /* SignUpActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpActionTask.h; sourceTree = "<group>"; };
+		33595F9F1B51B6CD00254DE7 /* SignUpActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpActionTask.m; sourceTree = "<group>"; };
+		33595FA21B51B6CD00254DE7 /* SignInDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDAO.h; sourceTree = "<group>"; };
+		33595FA31B51B6CD00254DE7 /* SignInDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDAO.m; sourceTree = "<group>"; };
+		33595FA41B51B6CD00254DE7 /* SignInRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDAO.h; sourceTree = "<group>"; };
+		33595FA51B51B6CD00254DE7 /* SignInRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDAO.m; sourceTree = "<group>"; };
+		33595FA61B51B6CD00254DE7 /* SignInResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDAO.h; sourceTree = "<group>"; };
+		33595FA71B51B6CD00254DE7 /* SignInResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDAO.m; sourceTree = "<group>"; };
+		33595FA81B51B6CD00254DE7 /* SignUpDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDAO.h; sourceTree = "<group>"; };
+		33595FA91B51B6CD00254DE7 /* SignUpDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDAO.m; sourceTree = "<group>"; };
+		33595FAA1B51B6CD00254DE7 /* SignUpRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDAO.h; sourceTree = "<group>"; };
+		33595FAB1B51B6CD00254DE7 /* SignUpRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDAO.m; sourceTree = "<group>"; };
+		33595FAC1B51B6CD00254DE7 /* SignUpResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDAO.h; sourceTree = "<group>"; };
+		33595FAD1B51B6CD00254DE7 /* SignUpResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDAO.m; sourceTree = "<group>"; };
+		33595FB01B51B6CD00254DE7 /* BaseSignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInDTO.h; sourceTree = "<group>"; };
+		33595FB11B51B6CD00254DE7 /* BaseSignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInDTO.m; sourceTree = "<group>"; };
+		33595FB21B51B6CD00254DE7 /* BaseSignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInRequestDTO.h; sourceTree = "<group>"; };
+		33595FB31B51B6CD00254DE7 /* BaseSignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInRequestDTO.m; sourceTree = "<group>"; };
+		33595FB41B51B6CD00254DE7 /* BaseSignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInResponseDTO.h; sourceTree = "<group>"; };
+		33595FB51B51B6CD00254DE7 /* BaseSignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInResponseDTO.m; sourceTree = "<group>"; };
+		33595FB61B51B6CD00254DE7 /* BaseSignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpDTO.h; sourceTree = "<group>"; };
+		33595FB71B51B6CD00254DE7 /* BaseSignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpDTO.m; sourceTree = "<group>"; };
+		33595FB81B51B6CD00254DE7 /* BaseSignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpRequestDTO.h; sourceTree = "<group>"; };
+		33595FB91B51B6CD00254DE7 /* BaseSignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpRequestDTO.m; sourceTree = "<group>"; };
+		33595FBA1B51B6CD00254DE7 /* BaseSignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpResponseDTO.h; sourceTree = "<group>"; };
+		33595FBB1B51B6CD00254DE7 /* BaseSignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpResponseDTO.m; sourceTree = "<group>"; };
+		33595FBC1B51B6CD00254DE7 /* SignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDTO.h; sourceTree = "<group>"; };
+		33595FBD1B51B6CD00254DE7 /* SignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDTO.m; sourceTree = "<group>"; };
+		33595FBE1B51B6CD00254DE7 /* SignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDTO.h; sourceTree = "<group>"; };
+		33595FBF1B51B6CD00254DE7 /* SignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDTO.m; sourceTree = "<group>"; };
+		33595FC01B51B6CD00254DE7 /* SignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDTO.h; sourceTree = "<group>"; };
+		33595FC11B51B6CD00254DE7 /* SignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDTO.m; sourceTree = "<group>"; };
+		33595FC21B51B6CD00254DE7 /* SignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDTO.h; sourceTree = "<group>"; };
+		33595FC31B51B6CD00254DE7 /* SignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDTO.m; sourceTree = "<group>"; };
+		33595FC41B51B6CD00254DE7 /* SignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDTO.h; sourceTree = "<group>"; };
+		33595FC51B51B6CD00254DE7 /* SignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDTO.m; sourceTree = "<group>"; };
+		33595FC61B51B6CD00254DE7 /* SignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDTO.h; sourceTree = "<group>"; };
+		33595FC71B51B6CD00254DE7 /* SignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDTO.m; sourceTree = "<group>"; };
 		33C3033B1B4D78560058C9E3 /* LEMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMapController.h; sourceTree = "<group>"; };
 		33C3033C1B4D78560058C9E3 /* LEMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMapController.m; sourceTree = "<group>"; };
 		33C3033D1B4D78560058C9E3 /* LEMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMapController.xib; sourceTree = "<group>"; };
@@ -163,6 +272,7 @@
 		3347E8DA1B4844C400F9F754 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33595E8E1B517F0400254DE7 /* DTOs */,
 				33C3034F1B4D8B6A0058C9E3 /* CustomCell */,
 				33DEFA921B46F23800053B72 /* IntroViewResources */,
 				3347E8DC1B4844CE00F9F754 /* utils */,
@@ -174,6 +284,9 @@
 		3347E8DB1B4844CA00F9F754 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				33595F7C1B51B6CD00254DE7 /* Classes */,
+				33595E441B517C8B00254DE7 /* LetsGoEat.xml */,
+				33595E431B517B5B00254DE7 /* GenDefines.h */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -185,8 +298,173 @@
 				3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */,
 				33F275EF1B4F208C00E45EB6 /* CustomSegue.h */,
 				33F275F01B4F208C00E45EB6 /* CustomSegue.m */,
+				33595F761B518FF900254DE7 /* SecondCustomSegue.h */,
+				33595F771B518FF900254DE7 /* SecondCustomSegue.m */,
 			);
 			name = utils;
+			sourceTree = "<group>";
+		};
+		33595E8E1B517F0400254DE7 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				33595F2B1B51812E00254DE7 /* RegisterDTO.h */,
+				33595F2C1B51812E00254DE7 /* RegisterDTO.m */,
+				33595F791B51B6B400254DE7 /* LoginDTO.h */,
+				33595F7A1B51B6B400254DE7 /* LoginDTO.m */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		33595F7C1B51B6CD00254DE7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				33595F7D1B51B6CD00254DE7 /* gen */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		33595F7D1B51B6CD00254DE7 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				33595F7E1B51B6CD00254DE7 /* Base */,
+				33595F831B51B6CD00254DE7 /* Cache */,
+				33595F8F1B51B6CD00254DE7 /* Logic */,
+				33595FA01B51B6CD00254DE7 /* Model */,
+			);
+			path = gen;
+			sourceTree = "<group>";
+		};
+		33595F7E1B51B6CD00254DE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33595F7F1B51B6CD00254DE7 /* BaseLogic.h */,
+				33595F801B51B6CD00254DE7 /* BaseLogic.m */,
+				33595F811B51B6CD00254DE7 /* LogicFilter.h */,
+				33595F821B51B6CD00254DE7 /* LogicFilter.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		33595F831B51B6CD00254DE7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				33595F841B51B6CD00254DE7 /* Cache.h */,
+				33595F851B51B6CD00254DE7 /* DummyCache.h */,
+				33595F861B51B6CD00254DE7 /* DummyCache.m */,
+				33595F871B51B6CD00254DE7 /* LimitedAgeMemoryCache.h */,
+				33595F881B51B6CD00254DE7 /* LimitedAgeMemoryCache.m */,
+				33595F891B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.h */,
+				33595F8A1B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.m */,
+				33595F8B1B51B6CD00254DE7 /* UnlimitedDiskCache.h */,
+				33595F8C1B51B6CD00254DE7 /* UnlimitedDiskCache.m */,
+				33595F8D1B51B6CD00254DE7 /* UnlimitedMemoryCache.h */,
+				33595F8E1B51B6CD00254DE7 /* UnlimitedMemoryCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		33595F8F1B51B6CD00254DE7 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				33595F901B51B6CD00254DE7 /* Base */,
+				33595F951B51B6CD00254DE7 /* LetsGoEatHelper.h */,
+				33595F961B51B6CD00254DE7 /* LetsGoEatHelper.m */,
+				33595F971B51B6CD00254DE7 /* SignInLogic.h */,
+				33595F981B51B6CD00254DE7 /* SignInLogic.m */,
+				33595F991B51B6CD00254DE7 /* SignUpLogic.h */,
+				33595F9A1B51B6CD00254DE7 /* SignUpLogic.m */,
+				33595F9B1B51B6CD00254DE7 /* Tasks */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		33595F901B51B6CD00254DE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33595F911B51B6CD00254DE7 /* BaseSignInLogic.h */,
+				33595F921B51B6CD00254DE7 /* BaseSignInLogic.m */,
+				33595F931B51B6CD00254DE7 /* BaseSignUpLogic.h */,
+				33595F941B51B6CD00254DE7 /* BaseSignUpLogic.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		33595F9B1B51B6CD00254DE7 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				33595F9C1B51B6CD00254DE7 /* SignInActionTask.h */,
+				33595F9D1B51B6CD00254DE7 /* SignInActionTask.m */,
+				33595F9E1B51B6CD00254DE7 /* SignUpActionTask.h */,
+				33595F9F1B51B6CD00254DE7 /* SignUpActionTask.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		33595FA01B51B6CD00254DE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33595FA11B51B6CD00254DE7 /* DAO */,
+				33595FAE1B51B6CD00254DE7 /* DTO */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33595FA11B51B6CD00254DE7 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				33595FA21B51B6CD00254DE7 /* SignInDAO.h */,
+				33595FA31B51B6CD00254DE7 /* SignInDAO.m */,
+				33595FA41B51B6CD00254DE7 /* SignInRequestDAO.h */,
+				33595FA51B51B6CD00254DE7 /* SignInRequestDAO.m */,
+				33595FA61B51B6CD00254DE7 /* SignInResponseDAO.h */,
+				33595FA71B51B6CD00254DE7 /* SignInResponseDAO.m */,
+				33595FA81B51B6CD00254DE7 /* SignUpDAO.h */,
+				33595FA91B51B6CD00254DE7 /* SignUpDAO.m */,
+				33595FAA1B51B6CD00254DE7 /* SignUpRequestDAO.h */,
+				33595FAB1B51B6CD00254DE7 /* SignUpRequestDAO.m */,
+				33595FAC1B51B6CD00254DE7 /* SignUpResponseDAO.h */,
+				33595FAD1B51B6CD00254DE7 /* SignUpResponseDAO.m */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		33595FAE1B51B6CD00254DE7 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				33595FAF1B51B6CD00254DE7 /* Base */,
+				33595FBC1B51B6CD00254DE7 /* SignInDTO.h */,
+				33595FBD1B51B6CD00254DE7 /* SignInDTO.m */,
+				33595FBE1B51B6CD00254DE7 /* SignInRequestDTO.h */,
+				33595FBF1B51B6CD00254DE7 /* SignInRequestDTO.m */,
+				33595FC01B51B6CD00254DE7 /* SignInResponseDTO.h */,
+				33595FC11B51B6CD00254DE7 /* SignInResponseDTO.m */,
+				33595FC21B51B6CD00254DE7 /* SignUpDTO.h */,
+				33595FC31B51B6CD00254DE7 /* SignUpDTO.m */,
+				33595FC41B51B6CD00254DE7 /* SignUpRequestDTO.h */,
+				33595FC51B51B6CD00254DE7 /* SignUpRequestDTO.m */,
+				33595FC61B51B6CD00254DE7 /* SignUpResponseDTO.h */,
+				33595FC71B51B6CD00254DE7 /* SignUpResponseDTO.m */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		33595FAF1B51B6CD00254DE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33595FB01B51B6CD00254DE7 /* BaseSignInDTO.h */,
+				33595FB11B51B6CD00254DE7 /* BaseSignInDTO.m */,
+				33595FB21B51B6CD00254DE7 /* BaseSignInRequestDTO.h */,
+				33595FB31B51B6CD00254DE7 /* BaseSignInRequestDTO.m */,
+				33595FB41B51B6CD00254DE7 /* BaseSignInResponseDTO.h */,
+				33595FB51B51B6CD00254DE7 /* BaseSignInResponseDTO.m */,
+				33595FB61B51B6CD00254DE7 /* BaseSignUpDTO.h */,
+				33595FB71B51B6CD00254DE7 /* BaseSignUpDTO.m */,
+				33595FB81B51B6CD00254DE7 /* BaseSignUpRequestDTO.h */,
+				33595FB91B51B6CD00254DE7 /* BaseSignUpRequestDTO.m */,
+				33595FBA1B51B6CD00254DE7 /* BaseSignUpResponseDTO.h */,
+				33595FBB1B51B6CD00254DE7 /* BaseSignUpResponseDTO.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		33BB443A1B4EEBBA0060FA7E /* CustomCellTable */ = {
@@ -425,6 +703,7 @@
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,
 				33C303541B4D8B820058C9E3 /* CustomCell.xib in Resources */,
 				33DEFAB61B46F7B400053B72 /* title3@2x.png in Resources */,
+				33595E451B517C8B00254DE7 /* LetsGoEat.xml in Resources */,
 				1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */,
 				330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */,
 				33DEFA6D1B46E69400053B72 /* Images.xcassets in Resources */,
@@ -486,18 +765,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33595F781B518FF900254DE7 /* SecondCustomSegue.m in Sources */,
+				33595FE61B51B6CD00254DE7 /* SignUpRequestDTO.m in Sources */,
+				33595F7B1B51B6B400254DE7 /* LoginDTO.m in Sources */,
+				33595FDA1B51B6CD00254DE7 /* SignUpRequestDAO.m in Sources */,
+				33595FDE1B51B6CD00254DE7 /* BaseSignInResponseDTO.m in Sources */,
+				33595FD21B51B6CD00254DE7 /* SignInLogic.m in Sources */,
 				330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */,
 				33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */,
+				33595FE11B51B6CD00254DE7 /* BaseSignUpResponseDTO.m in Sources */,
+				33595FCF1B51B6CD00254DE7 /* BaseSignInLogic.m in Sources */,
+				33595FD41B51B6CD00254DE7 /* SignInActionTask.m in Sources */,
+				33595FCD1B51B6CD00254DE7 /* UnlimitedDiskCache.m in Sources */,
+				33595FD31B51B6CD00254DE7 /* SignUpLogic.m in Sources */,
+				33595FCC1B51B6CD00254DE7 /* LimitedAgeUnlimitedDiskCache.m in Sources */,
+				33595FD61B51B6CD00254DE7 /* SignInDAO.m in Sources */,
+				33595FD11B51B6CD00254DE7 /* LetsGoEatHelper.m in Sources */,
+				33595FE51B51B6CD00254DE7 /* SignUpDTO.m in Sources */,
+				33595FDF1B51B6CD00254DE7 /* BaseSignUpDTO.m in Sources */,
+				33595FE31B51B6CD00254DE7 /* SignInRequestDTO.m in Sources */,
 				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
+				33595FCE1B51B6CD00254DE7 /* UnlimitedMemoryCache.m in Sources */,
 				1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */,
+				33595FD91B51B6CD00254DE7 /* SignUpDAO.m in Sources */,
 				330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */,
+				33595FD01B51B6CD00254DE7 /* BaseSignUpLogic.m in Sources */,
+				33595FD51B51B6CD00254DE7 /* SignUpActionTask.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
+				33595FC91B51B6CD00254DE7 /* LogicFilter.m in Sources */,
+				33595FDB1B51B6CD00254DE7 /* SignUpResponseDAO.m in Sources */,
 				33F275F11B4F208C00E45EB6 /* CustomSegue.m in Sources */,
+				33595FE41B51B6CD00254DE7 /* SignInResponseDTO.m in Sources */,
+				33595FD71B51B6CD00254DE7 /* SignInRequestDAO.m in Sources */,
+				33595FE71B51B6CD00254DE7 /* SignUpResponseDTO.m in Sources */,
+				33595F2D1B51812E00254DE7 /* RegisterDTO.m in Sources */,
 				1D78429E1B4FCE710056A40D /* LEMenuListController.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
+				33595FE21B51B6CD00254DE7 /* SignInDTO.m in Sources */,
+				33595FD81B51B6CD00254DE7 /* SignInResponseDAO.m in Sources */,
+				33595FCB1B51B6CD00254DE7 /* LimitedAgeMemoryCache.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
 				3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */,
+				33595FE01B51B6CD00254DE7 /* BaseSignUpRequestDTO.m in Sources */,
+				33595FDC1B51B6CD00254DE7 /* BaseSignInDTO.m in Sources */,
+				33595FCA1B51B6CD00254DE7 /* DummyCache.m in Sources */,
 				33C3033E1B4D78560058C9E3 /* LEMapController.m in Sources */,
+				33595FC81B51B6CD00254DE7 /* BaseLogic.m in Sources */,
+				33595FDD1B51B6CD00254DE7 /* BaseSignInRequestDTO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +972,7 @@
 		33DEFA831B46E69500053B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -677,7 +991,7 @@
 		33DEFA841B46E69500053B72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

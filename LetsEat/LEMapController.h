@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "PopMenu.h"
 
 @interface LEMapController : UIViewController <MKMapViewDelegate,  CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property(nonatomic, retain) CLLocationManager *locationManager;
+
+@property (strong, nonatomic) NSUserDefaults *userData;
+@property (nonatomic, strong) PopMenu *popMenu;
+
 
 @end

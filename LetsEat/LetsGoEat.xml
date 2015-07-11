@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol>
+    <messages>
+        <message name="signUpAction" service="SignUp" method="signUpAction" description="Realiza registro de usuario" type="PostJSON">
+            <urlPattern>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/singup"/>
+            </urlPattern>
+            <request type="SignUpRequestDTO">
+                <field name="request" serviceName="request" type="SignUpDTO" description="DTO que engloba los valores a enviar en el signup"/>
+            </request>
+            <response type="SignUpResponseDTO" typeRef="true"/>
+        </message>
+        <message name="signInAction" service="SignIn" method="signInAction" description="Realiza login de usuario" type="PostJSON">
+            <urlPattern>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/singin"/>
+            </urlPattern>
+            <request type="SignInRequestDTO">
+                <field name="request" serviceName="request" type="SignInDTO" description="DTO que engloba los valores a enviar en el signin"/>
+            </request>
+            <response type="SignInResponseDTO" typeRef="true"/>
+        </message>
+    </messages>
+    <types>
+        <type name="SignUpDTO">
+            <field name="email" serviceName="email" type="string" description="Campo de usuario"/>
+            <field name="name" serviceName="name" type="string" description="Campo de usuario"/>
+            <field name="pass" serviceName="pass" type="string" description="Campo de usuario"/>
+        </type>
+        <type name="SignUpResponseDTO">
+            <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
+            <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
+        </type>
+        <type name="SignInDTO">
+            <field name="name" serviceName="name" type="string" description="Campo de usuario"/>
+            <field name="pass" serviceName="pass" type="string" description="Campo de usuario"/>
+        </type>
+        <type name="SignInResponseDTO">
+            <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
+            <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
+        </type>
+    </types>
+</protocol>

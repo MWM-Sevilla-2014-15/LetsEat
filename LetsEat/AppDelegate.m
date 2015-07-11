@@ -27,7 +27,8 @@
     //CONFIGURAR EL TEXTO DE LA NAVBAR
     NSDictionary *textTitleOptions = [NSDictionary dictionaryWithObjectsAndKeys:
                                       [UIColor whiteColor], NSForegroundColorAttributeName,
-                                      [UIColor blackColor], NSForegroundColorAttributeName, nil];
+                                      [UIColor blackColor], NSForegroundColorAttributeName,
+                                      nil];
     
     [[UINavigationBar appearance] setTitleTextAttributes: textTitleOptions];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
@@ -39,12 +40,12 @@
     //VALORES DE LA STATUSBAR EN BLANCO
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    //Init SPLUNK
+    [[Mint sharedInstance] initAndStartSession:@"a77620ba"];
+    
     //COMPROBAR SI EXISTE USUARIO EN MEMORIA PARA DECIDIR CUAL SERA LA initCONTROLLER
     NSUserDefaults *userData = [NSUserDefaults standardUserDefaults];
     NSString *usr = [userData objectForKey:@"User"];
-    
-    //Init SPLUNK
-    [[Mint sharedInstance] initAndStartSession:@"a77620ba"];
     
     if (usr == nil || [usr isEqualToString:@""])
     {

@@ -9,6 +9,9 @@
 #import "LELoginController.h"
 #import "UIColor+MyColor.h"
 #import "SCLAlertView.h"
+#import "SignInRequestDTO.h"
+#import "SignInActionTask.h"
+#import "LoginDTO.h"
 
 @interface LELoginController ()
 
@@ -21,11 +24,13 @@
     // Do any additional setup after loading the view from its nib.
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.hidesBackButton = YES;
-    
+        
     self.title = @"Bienvenido";
     [self createView];
     
     self.userData = [NSUserDefaults standardUserDefaults];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 -(IBAction)doLogin
@@ -34,10 +39,28 @@
     [self.textPwd resignFirstResponder];
     
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
-        [self.userData setObject:self.textUser.text forKey:@"User"];
-        [self.userData setObject:self.textPwd.text forKey:@"Password"];
-        [self.userData synchronize];
-        [self performSegueWithIdentifier:@"openMain" sender:nil];
+        LoginDTO *login = [LoginDTO alloc];
+        login.name = self.textUser.text;
+        login.pass = self.textPwd.text;
+        
+        SignInRequestDTO *request = [SignInRequestDTO new];
+        request.request = (SignInDTO *)login;
+        
+        [SignInActionTask signInActionTaskForRequest:request showLoadingView:YES completed:^(NSInteger statusCode, SignInResponseDTO *response) {
+            if([response.code isEqualToString:@"SI_OK"]){
+                [self.userData setObject:self.textUser.text forKey:@"User"];
+                [self.userData setObject:self.textPwd.text forKey:@"Password"];
+                [self.userData synchronize];
+                [self performSegueWithIdentifier:@"openMain" sender:nil];
+            } else {
+                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                [alert showError:self title:@"ERROR"
+                        subTitle:response.desc
+                closeButtonTitle:@"Continuar" duration:0.0f];
+            }
+        } error:^(NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];

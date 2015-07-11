@@ -1,28 +1,63 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - EAIntroView (2.7.4):
     - EARestrictedScrollView (~> 0.2.0)
   - EARestrictedScrollView (0.2.0)
   - JSBadgeView (1.4.1)
+  - MAKImageGalleryView (0.0.6)
   - MPSkewed (0.9.0)
+  - pop (1.0.7)
+  - PopMenu (2.4):
+    - pop
+    - XHRealTimeBlur
   - SCLAlertView-Objective-C (0.7.3)
   - SMPageControl (1.2)
   - SplunkMint (4.2.2)
+  - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
+  - AFNetworking
   - EAIntroView
   - JSBadgeView
+  - MAKImageGalleryView
   - MPSkewed
+  - PopMenu
   - SCLAlertView-Objective-C
   - SMPageControl
   - SplunkMint
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
   EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
   JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  MAKImageGalleryView: 1a47a103a2b9a9d2ccaba81677b05dfd18deabe9
   MPSkewed: 53d2f5ae0ce57c2ee475107cfb8899426f0b68fa
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
   SCLAlertView-Objective-C: 4bf9a07c8a8d1840e5174e643e16bc032239914d
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
   SplunkMint: 5bc47a97e867e891a983655e30c8c14618e967e6
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
 
 COCOAPODS: 0.37.2

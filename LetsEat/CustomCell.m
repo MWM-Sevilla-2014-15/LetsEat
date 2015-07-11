@@ -23,17 +23,24 @@
     self.customView.layer.cornerRadius = 5.0;
     
     //Configurar labels
-    self.labelName.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:24];
-    self.labelType.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
-    self.labelHour.font = [UIFont fontWithName:@"AppleSDGothicNeo-Thin" size:12];
-    self.labelTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:18];
-    self.labelNumberTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Thin" size:14];
+    self.labelName.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:24];
+    self.labelType.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:14];
+    self.labelHour.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:12];
+    self.labelTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18];
+    self.labelNumberTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
+    self.labelDesc.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18];
+    self.labelInfoDesc.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
     
     self.labelName.textColor = [UIColor customThirdColor];
     self.labelType.textColor = [UIColor customThirdColor];
     self.labelHour.textColor = [UIColor customThirdColor];
     self.labelTables.textColor = [UIColor customThirdColor];
     self.labelNumberTables.textColor = [UIColor customThirdColor];
+    self.labelDesc.textColor = [UIColor customThirdColor];
+    self.labelInfoDesc.textColor = [UIColor customThirdColor];
+    
+    self.imageRest.contentMode   = UIViewContentModeScaleAspectFit;
+    self.imageRest.clipsToBounds = YES;
     
     self.badgeView = [[JSBadgeView alloc] initWithParentView:self.customView alignment:JSBadgeViewAlignmentTopRight];
 }

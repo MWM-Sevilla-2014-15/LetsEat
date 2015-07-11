@@ -8,6 +8,7 @@
 
 #import "LEMenuListController.h"
 #import "CustomCell.h"
+#import "SCLAlertView.h"
 #import "UIColor+MyColor.h"
 
 @interface LEMenuListController ()
@@ -22,12 +23,13 @@
     
     self.title = @"Restaurantes";
     
-    UIBarButtonItem* backButton = [[UIBarButtonItem alloc]init];
-    backButton.title=@"Atrás";
-    [backButton setTarget:self];
-    [backButton setAction:@selector(backController)];
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0.0, 2.0, 25.0, 20.0)];
+    [button addTarget:self action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
+    [button setImage:[UIImage imageNamed:@"burgerIcon"] forState:UIControlStateNormal];
     
-    self.navigationItem.leftBarButtonItem = backButton;
+    UIBarButtonItem* menuButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = menuButton;
     
     //TableView
     self.tableView.delegate = self;
@@ -35,9 +37,55 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)backController
+- (void)showMenu
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
+    
+    MenuItem *menuItem = [MenuItem itemWithTitle:@"Cambiar ciudad" iconName:@"post_type_bubble_flickr"];
+    [items addObject:menuItem];
+    
+    menuItem = [MenuItem itemWithTitle:@"Compartir" iconName:@"post_type_bubble_youtube"];
+    [items addObject:menuItem];
+    
+    menuItem = [MenuItem itemWithTitle:@"Cerrar sesión" iconName:@"post_type_bubble_facebook"];
+    [items addObject:menuItem];
+    
+    if (!self.popMenu) {
+        self.popMenu = [[PopMenu alloc] initWithFrame:self.view.bounds items:items];
+        self.popMenu.menuAnimationType = kPopMenuAnimationTypeNetEase;
+    }
+    if (self.popMenu.isShowed) {
+        return;
+    }
+    __weak typeof(self) weakSelf = self;
+    self.popMenu.didSelectedItemCompletion = ^(MenuItem *selectedItem) {
+        NSLog(@"%@",selectedItem.title);
+        if([selectedItem.title isEqualToString:@"Cerrar sesión"])
+        {
+            SCLAlertView *alert = [[SCLAlertView alloc] init];
+            SCLButton *button = [alert addButton:@"Continuar" target:weakSelf selector:@selector(logOut)];
+            button.buttonFormatBlock = ^NSDictionary* (void)
+            {
+                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                buttonConfig[@"backgroundColor"] = [UIColor customSecondColor];
+                buttonConfig[@"textColor"] = [UIColor whiteColor];
+                return buttonConfig;
+            };
+            [alert showNotice:weakSelf title:@"AVISO" subTitle:@"¿Desea cerrar sesión?" closeButtonTitle:@"Cancelar" duration:0.0f];
+        } else if ([selectedItem.title isEqualToString:@"Cambiar ciudad"]) {
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        }
+    };
+    
+    [self.popMenu showMenuAtView:self.view];
+}
+
+- (void)logOut
+{
+    [self.userData setObject:@"" forKey:@"User"];
+    [self.userData setObject:@"" forKey:@"Password"];
+    [self.userData synchronize];
+    [self performSegueWithIdentifier:@"openLogin" sender:nil];
 }
 
 #pragma mark - Table view data source
@@ -49,11 +97,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 1;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSInteger index = indexPath.item % 5 + 1;
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     if(!cell)
     {
@@ -65,8 +114,9 @@
     cell.labelName.text = @"La Mafia se sienta a la mesa";
     cell.labelType.text = @"Italiano";
     cell.labelHour.text = @"Abierto: 12:30 - 16:30 / 21:00 - 00:00";
-    cell.labelTables.text = @"Mesas disponibles:";
-    cell.labelNumberTables.text = @"15";
+    cell.labelNumberTables.text = @"45";
+    cell.labelInfoDesc.text = @"10% en postres";
+    cell.imageRest.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", index]];
     
     //Añadir badge
     cell.badgeView.badgeText = @"15";
@@ -83,7 +133,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //return [indexPath row];
-    return indexPath.row == 1 - 1 ? 200 : 200;
+    return indexPath.row == 5 - 1 ? 200 : 200;
 }
 
 //#pragma mark - Navigation

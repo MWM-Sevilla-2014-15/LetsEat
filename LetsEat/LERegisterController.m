@@ -10,6 +10,10 @@
 #import "UIColor+MyColor.h"
 #import "SCLAlertView.h"
 
+#import "RegisterDTO.h"
+#import "SignUpRequestDTO.h"
+#import "SignUpActionTask.h"
+
 @interface LERegisterController ()
 
 @end
@@ -27,16 +31,31 @@
 {
     if(self.textEmail.text.length > 0 && self.textNameUser.text.length > 0 && self.textPwd.text.length > 0 && self.textRepeatPwd.text.length > 0)
     {
-        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-        SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
-        button.buttonFormatBlock = ^NSDictionary* (void)
-        {
-            NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-            buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-            buttonConfig[@"textColor"] = [UIColor whiteColor];
-            return buttonConfig;
-        };
-        [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
+        
+        //Realizar llamada al servicio SIGNUP
+        RegisterDTO *regis = [RegisterDTO alloc];
+        regis.email = self.textEmail.text;
+        regis.name = self.textNameUser.text;
+        regis.pass = self.textPwd.text;
+        
+        SignUpRequestDTO *request = [SignUpRequestDTO new];
+        request.request = (SignUpDTO *)regis;
+        
+        [SignUpActionTask signUpActionTaskForRequest:request showLoadingView:YES completed:^(NSInteger statusCode, SignUpResponseDTO *response) {
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+            button.buttonFormatBlock = ^NSDictionary* (void)
+            {
+                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                buttonConfig[@"textColor"] = [UIColor whiteColor];
+                return buttonConfig;
+            };
+            [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
+
+        } error:^(NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];

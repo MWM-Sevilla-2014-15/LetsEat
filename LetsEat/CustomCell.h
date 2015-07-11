@@ -17,6 +17,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelTables;
 @property (strong, nonatomic) IBOutlet UIImageView *imageRest;
 @property (strong, nonatomic) IBOutlet UILabel *labelNumberTables;
+@property (weak, nonatomic) IBOutlet UILabel *labelInfoDesc;
+@property (weak, nonatomic) IBOutlet UILabel *labelDesc;
 @property (strong, nonatomic) IBOutlet UIView *customView;
 @property (strong, nonatomic) JSBadgeView *badgeView;
 
