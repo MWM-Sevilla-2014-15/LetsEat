@@ -65,6 +65,7 @@
 		33942DDE1B52DE480001274D /* SignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33942DB11B52DE480001274D /* SignUpRequestDTO.m */; };
 		33942DDF1B52DE480001274D /* SignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33942DB31B52DE480001274D /* SignUpResponseDTO.m */; };
 		33942DE21B52DE590001274D /* RecoverDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33942DE11B52DE590001274D /* RecoverDTO.m */; };
+		33942DE91B52EEA80001274D /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33942DE81B52EEA80001274D /* CustomAnnotation.m */; };
 		33C3033E1B4D78560058C9E3 /* LEMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C3033C1B4D78560058C9E3 /* LEMapController.m */; };
 		33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C3033D1B4D78560058C9E3 /* LEMapController.xib */; };
 		33C3034C1B4D812F0058C9E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3034B1B4D812F0058C9E3 /* MapKit.framework */; };
@@ -211,6 +212,8 @@
 		33942DB31B52DE480001274D /* SignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDTO.m; sourceTree = "<group>"; };
 		33942DE01B52DE590001274D /* RecoverDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoverDTO.h; sourceTree = "<group>"; };
 		33942DE11B52DE590001274D /* RecoverDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoverDTO.m; sourceTree = "<group>"; };
+		33942DE71B52EEA80001274D /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		33942DE81B52EEA80001274D /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 		33C3033B1B4D78560058C9E3 /* LEMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMapController.h; sourceTree = "<group>"; };
 		33C3033C1B4D78560058C9E3 /* LEMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEMapController.m; sourceTree = "<group>"; };
 		33C3033D1B4D78560058C9E3 /* LEMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEMapController.xib; sourceTree = "<group>"; };
@@ -523,6 +526,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		33942DE31B52EBC10001274D /* CustomAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				33942DE71B52EEA80001274D /* CustomAnnotation.h */,
+				33942DE81B52EEA80001274D /* CustomAnnotation.m */,
+			);
+			name = CustomAnnotation;
+			sourceTree = "<group>";
+		};
 		33BB443A1B4EEBBA0060FA7E /* CustomCellTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +568,7 @@
 		33C3034F1B4D8B6A0058C9E3 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				33942DE31B52EBC10001274D /* CustomAnnotation */,
 				33BB443A1B4EEBBA0060FA7E /* CustomCellTable */,
 			);
 			name = CustomCell;
@@ -870,6 +883,7 @@
 				33942DC91B52DE480001274D /* SignInRequestDAO.m in Sources */,
 				33942DD71B52DE480001274D /* GetPassDTO.m in Sources */,
 				33942DC21B52DE480001274D /* GetPassActionTask.m in Sources */,
+				33942DE91B52EEA80001274D /* CustomAnnotation.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
 				3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */,
 				33942DB61B52DE480001274D /* DummyCache.m in Sources */,

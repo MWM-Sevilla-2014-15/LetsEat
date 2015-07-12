@@ -94,12 +94,65 @@
     [self.mapView setZoomEnabled:YES];
     [self.mapView setScrollEnabled:YES];
     
+    CLLocationCoordinate2D coord;
+    coord.latitude = 37.382942;
+    coord.longitude = -5.983440400000063;
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
+    annotation.coordinate = coord;
+    annotation.title = @"La Mafia se sienta a la mesa";
+    annotation.subtitle = @"Italiano";
+    
+    [self.mapView addAnnotation:annotation];
+    
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.distanceFilter = 100;
     
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    // If it's the user location, just return nil.
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+        return nil;
+    
+    // Handle any custom annotations.
+    if ([annotation isKindOfClass:[MKPointAnnotation class]])
+    {
+        // Try to dequeue an existing pin view first.
+        MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+        if (!pinView)
+        {
+            // If an existing pin view was not available, create one.
+            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            pinView.canShowCallout = YES;
+            pinView.image = [UIImage imageNamed:@"annotation"];
+            pinView.calloutOffset = CGPointMake(0, 32);
+            
+            // Add a detail disclosure button to the callout.
+            UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            pinView.rightCalloutAccessoryView = rightButton;
+            
+            // Add an image to the left callout.
+            UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"annotation"]];
+            pinView.leftCalloutAccessoryView = iconView;
+        } else {
+            pinView.annotation = annotation;
+        }
+        return pinView;
+    }
+    return nil;
+}
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    id <MKAnnotation> annotation = [view annotation];
+    if ([annotation isKindOfClass:[MKPointAnnotation class]])
+    {
+        NSLog(@"He pulsado sobre: %@", annotation);
+    }
+    [self performSegueWithIdentifier:@"openDetail" sender:nil];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -123,7 +176,7 @@
     
     region.span.longitudeDelta = 0.005f;
     region.span.longitudeDelta = 0.005f;
-    [self.mapView setRegion:region animated:YES];
+    [self.mapView setRegion:region animated:NO];
 }
 
 @end

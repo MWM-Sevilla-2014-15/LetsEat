@@ -166,19 +166,17 @@
     [self.mapView setZoomEnabled:YES];
     [self.mapView setScrollEnabled:YES];
     
-    MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
-    
     MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
     region.center.latitude = 37.382942;
     region.center.longitude = -5.983440400000063;
     region.span.longitudeDelta = 0.005f;
     region.span.longitudeDelta = 0.005f;
-    [self.mapView setRegion:region animated:YES];
+    [self.mapView setRegion:region animated:NO];
     
     CLLocationCoordinate2D coord;
     coord.latitude = 37.382942;
     coord.longitude = -5.983440400000063;
-    
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
     annotation.coordinate = coord;
     
     [self.mapView addAnnotation:annotation];
