@@ -115,6 +115,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     self.userData = [[NSUserDefaults alloc] init];
     
     if(indexPath.item == 0){
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
         [self createIntroView];
     } else if(indexPath.item == 1){
         [self performSegueWithIdentifier:@"openMap" sender:nil];
@@ -210,6 +211,11 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     
     [intro setPages:@[page1,page2,page3,page4]];    
     [intro showInView:rootView animateDuration:0.5];
+}
+
+- (void)introDidFinish:(EAIntroView *)introView
+{
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
 }
 
 @end

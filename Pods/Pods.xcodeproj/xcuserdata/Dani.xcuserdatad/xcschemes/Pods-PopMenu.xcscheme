@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2CBB4F3D22C246D193949DD"
+               BlueprintIdentifier = "92FCDD504792B697E19DFD46"
                BuildableName = "libPods-PopMenu.a"
                BlueprintName = "Pods-PopMenu"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,6 +9,7 @@
 #import "LERegisterController.h"
 #import "UIColor+MyColor.h"
 #import "SCLAlertView.h"
+#import "SVProgressHUD.h"
 
 #import "RegisterDTO.h"
 #import "SignUpRequestDTO.h"
@@ -31,6 +32,7 @@
 {
     if(self.textEmail.text.length > 0 && self.textNameUser.text.length > 0 && self.textPwd.text.length > 0 && self.textRepeatPwd.text.length > 0)
     {
+        [SVProgressHUD showWithStatus:@"Cargando..."];
         
         //Realizar llamada al servicio SIGNUP
         RegisterDTO *regis = [RegisterDTO alloc];
@@ -41,19 +43,32 @@
         SignUpRequestDTO *request = [SignUpRequestDTO new];
         request.request = (SignUpDTO *)regis;
         
-        [SignUpActionTask signUpActionTaskForRequest:request showLoadingView:YES completed:^(NSInteger statusCode, SignUpResponseDTO *response) {
-            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
-            button.buttonFormatBlock = ^NSDictionary* (void)
-            {
-                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-                buttonConfig[@"textColor"] = [UIColor whiteColor];
-                return buttonConfig;
-            };
-            [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
-
+        [SignUpActionTask signUpActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, SignUpResponseDTO *response) {
+            [SVProgressHUD dismiss];
+            if(response.desc == nil){
+                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                [alert showError:self title:@"ERROR"
+                        subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
+                closeButtonTitle:@"Continuar" duration:0.0f];
+            } else if([response.code isEqualToString:@"SI_OK"]){
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+                button.buttonFormatBlock = ^NSDictionary* (void)
+                {
+                    NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                    buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                    buttonConfig[@"textColor"] = [UIColor whiteColor];
+                    return buttonConfig;
+                };
+                [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
+            } else {
+                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                [alert showError:self title:@"ERROR"
+                        subTitle:response.desc
+                closeButtonTitle:@"Continuar" duration:0.0f];
+            }
         } error:^(NSError *error) {
+            [SVProgressHUD dismiss];
             NSLog(@"Error: %@", error);
         }];
     } else {

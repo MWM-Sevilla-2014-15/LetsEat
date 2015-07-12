@@ -62,6 +62,7 @@
 
 - (void)successButton
 {
+    [self.textEmail resignFirstResponder];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -9,6 +9,8 @@
 #import "LELoginController.h"
 #import "UIColor+MyColor.h"
 #import "SCLAlertView.h"
+#import "SVProgressHUD.h"
+
 #import "SignInRequestDTO.h"
 #import "SignInActionTask.h"
 #import "LoginDTO.h"
@@ -39,6 +41,9 @@
     [self.textPwd resignFirstResponder];
     
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
+        
+        [SVProgressHUD showWithStatus:@"Cargando..."];
+        
         LoginDTO *login = [LoginDTO alloc];
         login.name = self.textUser.text;
         login.pass = self.textPwd.text;
@@ -46,12 +51,18 @@
         SignInRequestDTO *request = [SignInRequestDTO new];
         request.request = (SignInDTO *)login;
         
-        [SignInActionTask signInActionTaskForRequest:request showLoadingView:YES completed:^(NSInteger statusCode, SignInResponseDTO *response) {
+        [SignInActionTask signInActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, SignInResponseDTO *response) {
+            [SVProgressHUD dismiss];
             if([response.code isEqualToString:@"SI_OK"]){
                 [self.userData setObject:self.textUser.text forKey:@"User"];
                 [self.userData setObject:self.textPwd.text forKey:@"Password"];
                 [self.userData synchronize];
                 [self performSegueWithIdentifier:@"openMain" sender:nil];
+            } else if(response.desc == nil){
+                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                [alert showError:self title:@"ERROR"
+                        subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
+                closeButtonTitle:@"Continuar" duration:0.0f];
             } else {
                 SCLAlertView *alert = [[SCLAlertView alloc] init];
                 [alert showError:self title:@"ERROR"
@@ -59,6 +70,7 @@
                 closeButtonTitle:@"Continuar" duration:0.0f];
             }
         } error:^(NSError *error) {
+            [SVProgressHUD dismiss];
             NSLog(@"Error: %@", error);
         }];
     } else {
