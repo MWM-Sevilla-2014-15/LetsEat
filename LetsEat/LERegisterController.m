@@ -78,7 +78,7 @@
         
         if([self.labelErrorPwd.text isEqualToString:@""] && [self.labelErrorEmail.text isEqualToString:@""] && [self.labelErrorName.text isEqualToString:@""])
         {
-            [SVProgressHUD showWithStatus:@"Cargando..."];
+            [SVProgressHUD showWithStatus:@"Registrando..."];
             
             //Realizar llamada al servicio SIGNUP
             RegisterDTO *regis = [RegisterDTO alloc];
@@ -96,7 +96,7 @@
                     [alert showError:self title:@"ERROR"
                             subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
                     closeButtonTitle:@"Continuar" duration:0.0f];
-                } else if([response.code isEqualToString:@"SI_OK"]){
+                } else if([response.code isEqualToString:@"SU_OK"]){
                     SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
                     button.buttonFormatBlock = ^NSDictionary* (void)
@@ -225,9 +225,13 @@
     
     //Customizar textfield
     self.textNameUser.textColor = [UIColor customThirdColor];
+    self.textNameUser.delegate = self;
     self.textEmail.textColor = [UIColor customThirdColor];
+    self.textEmail.delegate = self;
     self.textPwd.textColor = [UIColor customThirdColor];
+    self.textPwd.delegate = self;
     self.textRepeatPwd.textColor = [UIColor customThirdColor];
+    self.textRepeatPwd.delegate = self;
     
     //Button
     [self.buttonRegister setTitle:@"Continuar" forState:UIControlStateNormal];
@@ -274,6 +278,20 @@
     [self.textEmail resignFirstResponder];
     [self.textPwd resignFirstResponder];
     [self.textRepeatPwd resignFirstResponder];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if(textField == self.textNameUser){
+        NSUInteger newLength = [textField.text length] + [string length] - range.length;
+        return (newLength > 15) ? NO : YES;
+    } else if(textField == self.textEmail){
+        NSUInteger newLength = [textField.text length] + [string length] - range.length;
+        return (newLength > 30) ? NO : YES;
+    } else {
+        NSUInteger newLength = [textField.text length] + [string length] - range.length;
+        return (newLength > 20) ? NO : YES;
+    }
 }
 
 //Validar EMAIL

@@ -1,32 +1,23 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, ‘8.0’
 
-#Librearia para Listado MainController
+#Libreria para Listado MainController
 pod 'MPSkewed'
-
-#Librearia para tutorial de MainController
+#Libreria para tutorial de MainController
 pod 'EAIntroView'
-
-#Librearia para control páginas
+#Libreria para control páginas
 pod 'SMPageControl'
-
-#Librearia para custom AlertsView
+#Libreria para custom AlertsView
 pod 'SCLAlertView-Objective-C'
-
-#Librearia para crear Badges en MenuListController
+#Libreria para crear Badges en MenuListController
 pod 'JSBadgeView'
-
-#Librearia para control de la aplicacion
+#Libreria para control de la aplicacion
 pod 'SplunkMint'
-
-#Librearia para crear un carrousel de imagenes
+#Libreria para crear un carrousel de imagenes
 pod 'MAKImageGalleryView'
-
-#Librearia para llamadas a servidores (request, response JSON)
+#Libreria para llamadas a servidores (request, response JSON)
 pod 'AFNetworking'
-
-#Librearia para crear Menu en MapController y MenuListController
+#Libreria para crear Menu en MapController y MenuListController
 pod 'PopMenu'
-
-#Librearia para Progress en las llamadas a servicios
+#Libreria para Progress en las llamadas a servicios
 pod 'SVProgressHUD'

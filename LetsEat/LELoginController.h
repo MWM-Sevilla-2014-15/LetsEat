@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LELoginController : UIViewController
+@interface LELoginController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 

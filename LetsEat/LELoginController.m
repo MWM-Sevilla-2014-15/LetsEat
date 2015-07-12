@@ -41,7 +41,7 @@
     [self.textPwd resignFirstResponder];
     
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
-        [SVProgressHUD showWithStatus:@"Cargando..."];
+        [SVProgressHUD showWithStatus:@"Entrando..."];
 
         [self.labelErrorUsr setHidden:YES];
         self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
@@ -154,7 +154,9 @@
     
     //Customizar textfield
     self.textUser.textColor = [UIColor customThirdColor];
+    self.textUser.delegate = self;
     self.textPwd.textColor = [UIColor customThirdColor];
+    self.textPwd.delegate = self;
 }
 
 //MODIFICA EL COMPORTAMIENTO DEL BOTON CUANDO SE PULSA Y SE DEJA DE PULSAR
@@ -192,6 +194,17 @@
 {
     [self.textPwd resignFirstResponder];
     [self.textUser resignFirstResponder];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if(textField == self.textUser){
+        NSUInteger newLength = [textField.text length] + [string length] - range.length;
+        return (newLength > 15) ? NO : YES;
+    } else {
+        NSUInteger newLength = [textField.text length] + [string length] - range.length;
+        return (newLength > 20) ? NO : YES;
+    }
 }
 
 @end

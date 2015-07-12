@@ -19,6 +19,15 @@
             </request>
             <response type="SignInResponseDTO" typeRef="true"/>
         </message>
+        <message name="getPassAction" service="GetPass" method="getPassAction" description="Recupera creedenciales usuario mandandole un email" type="PostJSON">
+            <urlPattern>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/getpass"/>
+            </urlPattern>
+            <request type="GetPassRequestDTO">
+                <field name="request" serviceName="request" type="GetPassDTO" description="DTO que engloba los valores a enviar en el getpass"/>
+            </request>
+            <response type="GetPassResponseDTO" typeRef="true"/>
+        </message>
     </messages>
     <types>
         <type name="SignUpDTO">
@@ -35,6 +44,13 @@
             <field name="pass" serviceName="pass" type="string" description="Campo de usuario"/>
         </type>
         <type name="SignInResponseDTO">
+            <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
+            <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
+        </type>
+        <type name="GetPassDTO">
+            <field name="email" serviceName="email" type="string" description="Campo de usuario"/>
+        </type>
+        <type name="GetPassResponseDTO">
             <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
             <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
         </type>

@@ -9,6 +9,11 @@
 #import "LERecoverController.h"
 #import "UIColor+MyColor.h"
 #import "SCLAlertView.h"
+#import "SVProgressHUD.h"
+
+#import "GetPassActionTask.h"
+#import "GetPassRequestDTO.h"
+#import "RecoverDTO.h"
 
 @interface LERecoverController ()
 
@@ -43,13 +48,15 @@
     
     //Init textfield
     self.textEmail.textColor = [UIColor customThirdColor];
+    self.textEmail.delegate = self;
 }
 
--(IBAction)backToLogin
+-(IBAction)recoverData
 {
     [self.textEmail resignFirstResponder];
     if(self.textEmail.text.length > 0){
         if([self validateEmail:self.textEmail.text]){
+            [SVProgressHUD showWithStatus:@"Enviando..."];            
             
             [self.labelError setHidden:YES];
             self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
@@ -60,16 +67,45 @@
             self.textEmail.layer.cornerRadius = 7.0;
             self.textEmail.layer.borderColor = [UIColor clearColor].CGColor;
             
-            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
-            button.buttonFormatBlock = ^NSDictionary* (void)
-            {
-                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-                buttonConfig[@"textColor"] = [UIColor whiteColor];
-                return buttonConfig;
-            };
-            [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];
+            RecoverDTO *recover = [RecoverDTO alloc];
+            recover.email = self.textEmail.text;
+            
+            GetPassRequestDTO *request = [GetPassRequestDTO new];
+            request.request = (GetPassDTO *)recover;
+            
+            [GetPassActionTask getPassActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, GetPassResponseDTO *response) {
+                [SVProgressHUD dismiss];
+                if(response.desc == nil){
+                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    [alert showError:self title:@"ERROR"
+                            subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
+                    closeButtonTitle:@"Continuar" duration:0.0f];
+                } else if([response.code isEqualToString:@"GP_OK"]){
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                    SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+                    button.buttonFormatBlock = ^NSDictionary* (void)
+                    {
+                        NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                        buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                        buttonConfig[@"textColor"] = [UIColor whiteColor];
+                        return buttonConfig;
+                    };
+                    [alert showSuccess:@"Email Enviado" subTitle:response.desc closeButtonTitle:nil duration:0.0f];
+                } else if([response.code isEqualToString:@"GP_E_ENE"]){
+                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    [alert showError:self title:@"ERROR"
+                            subTitle:response.desc
+                    closeButtonTitle:@"Continuar" duration:0.0f];
+                } else if([response.code isEqualToString:@"GP_E_IE"]){
+                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    [alert showError:self title:@"ERROR"
+                            subTitle:response.desc
+                    closeButtonTitle:@"Continuar" duration:0.0f];
+                }
+            } error:^(NSError *error) {
+                [SVProgressHUD dismiss];
+                NSLog(@"Error: %@", error);
+            }];
         } else {
             SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
             [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen fallos en el formulario, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
@@ -123,6 +159,12 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.textEmail resignFirstResponder];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > 30) ? NO : YES;
 }
 
 //Validar EMAIL

@@ -39,6 +39,7 @@
     [self.labelInfoPhone setUserInteractionEnabled:YES];
     [self.labelInfoPhone addGestureRecognizer:singleFingerTapPhone];
     
+    [self initMapView];
     [self createView];
 }
 
@@ -155,6 +156,32 @@
     self.customScrollView.contentSize = CGSizeMake(375, 969);
     //Respuesta rapida del boton cuando esta dentro de un UIScrollView
     self.customScrollView.delaysContentTouches = NO;
+}
+
+- (void)initMapView
+{
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    [self.mapView setMapType:MKMapTypeStandard];
+    [self.mapView setZoomEnabled:YES];
+    [self.mapView setScrollEnabled:YES];
+    
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
+    
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = 37.382942;
+    region.center.longitude = -5.983440400000063;
+    region.span.longitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [self.mapView setRegion:region animated:YES];
+    
+    CLLocationCoordinate2D coord;
+    coord.latitude = 37.382942;
+    coord.longitude = -5.983440400000063;
+    
+    annotation.coordinate = coord;
+    
+    [self.mapView addAnnotation:annotation];
 }
 
 //MODIFICA EL COMPORTAMIENTO DEL BOTON CUANDO SE PULSA Y SE DEJA DE PULSAR

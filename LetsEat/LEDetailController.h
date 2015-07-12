@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "MAKImageGalleryView.h"
 
-@interface LEDetailController : UIViewController <MAKImageGalleryViewDataSource>
+@interface LEDetailController : UIViewController <MAKImageGalleryViewDataSource, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *customView;
 @property (weak, nonatomic) IBOutlet UIView *customViewName;

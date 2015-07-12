@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LERecoverController : UIViewController
+@interface LERecoverController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textEmail;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSend;

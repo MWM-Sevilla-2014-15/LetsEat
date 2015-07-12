@@ -39,16 +39,7 @@
 }
 
 - (NSString *)preprocessResponse:(NSString *)responseString  onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod{
-    NSString *fixedString=responseString;
-    if(responseString.length==0)
-    {
-        fixedString=@"{}";
-    }
-    if(responseString.length!=0 && [responseString characterAtIndex:0]=='[')
-    {
-        fixedString=[NSString stringWithFormat:@"{\"items\":%@}",fixedString];
-    }
-    return fixedString;
+	return responseString;
 }
 
 - (NSDictionary *) preprocessResponseAsDictionary:(NSDictionary *)responseDict  onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod{

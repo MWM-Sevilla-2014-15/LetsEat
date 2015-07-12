@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LERegisterController : UIViewController
+@interface LERegisterController : UIViewController <UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UILabel *labelNameUser;
 @property (strong, nonatomic) IBOutlet UILabel *labelEmail;
 @property (strong, nonatomic) IBOutlet UILabel *labelPwd;

@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LERecoverController">
             <connections>
-                <outlet property="buttonSend" destination="MDm-QN-W7l" id="Ok6-wx-9AQ"/>
+                <outlet property="buttonSend" destination="MDm-QN-W7l" id="H0U-K0-KYc"/>
                 <outlet property="labelError" destination="8Kg-Dw-g5O" id="QAb-CX-Maq"/>
                 <outlet property="labelInfo" destination="qso-Yc-Ndn" id="iiZ-Kx-k0p"/>
                 <outlet property="textEmail" destination="8lj-7f-lK8" id="sN5-67-mcK"/>
@@ -36,10 +36,10 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="backToLogin" destination="-1" eventType="touchUpInside" id="eXD-O5-8I3"/>
                         <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="gUD-6u-4j1"/>
                         <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="5cc-ah-Wyq"/>
                         <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="oNg-bA-sNY"/>
+                        <action selector="recoverData" destination="-1" eventType="touchUpInside" id="TWD-Lc-7p0"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kg-Dw-g5O">
