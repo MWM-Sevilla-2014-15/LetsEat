@@ -8,6 +8,9 @@
             <connections>
                 <outlet property="buttonRegister" destination="ulV-rp-Qf7" id="B6L-9w-z78"/>
                 <outlet property="labelEmail" destination="3PA-gt-DHS" id="yBA-qz-NFI"/>
+                <outlet property="labelErrorEmail" destination="KST-r2-3J2" id="eJr-3b-N2l"/>
+                <outlet property="labelErrorName" destination="9w1-9I-Duk" id="LHy-7k-V7e"/>
+                <outlet property="labelErrorPwd" destination="5fA-6W-xQ6" id="Jzj-pq-6qT"/>
                 <outlet property="labelInfo" destination="aSz-Jt-PIr" id="azM-rs-sEs"/>
                 <outlet property="labelInfo2" destination="6Ar-qK-zW8" id="ph3-mx-2wN"/>
                 <outlet property="labelNameUser" destination="8Cs-7s-iO2" id="Hct-gH-YE5"/>
@@ -43,22 +46,22 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Al menos 3 caracteres" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-5N-h0G">
-                    <rect key="frame" x="20" y="115" width="265" height="30"/>
+                    <rect key="frame" x="20" y="115" width="335" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-8j-8Lw">
-                    <rect key="frame" x="20" y="226" width="265" height="30"/>
+                    <rect key="frame" x="20" y="226" width="335" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Al menos 6 caracteres" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMU-0Y-JTO">
-                    <rect key="frame" x="20" y="327" width="265" height="30"/>
+                    <rect key="frame" x="20" y="327" width="335" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verificar contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6z-Zn-lOC">
-                    <rect key="frame" x="20" y="367" width="265" height="30"/>
+                    <rect key="frame" x="20" y="367" width="335" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
@@ -84,6 +87,24 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ar-qK-zW8">
                     <rect key="frame" x="126" y="513" width="228" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fA-6W-xQ6">
+                    <rect key="frame" x="25" y="400" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KST-r2-3J2">
+                    <rect key="frame" x="25" y="259" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-9I-Duk">
+                    <rect key="frame" x="25" y="149" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

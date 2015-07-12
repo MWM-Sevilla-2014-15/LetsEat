@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface LERecoverController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *textEmail;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSend;
 @property (weak, nonatomic) IBOutlet UILabel *labelInfo;
+@property (weak, nonatomic) IBOutlet UILabel *labelError;
 
 @end

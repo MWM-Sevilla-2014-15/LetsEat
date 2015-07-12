@@ -23,13 +23,13 @@
     self.customView.layer.cornerRadius = 5.0;
     
     //Configurar labels
-    self.labelName.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:24];
-    self.labelType.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:14];
-    self.labelHour.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:12];
-    self.labelTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18];
-    self.labelNumberTables.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
-    self.labelDesc.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18];
-    self.labelInfoDesc.font = [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:14];
+    self.labelName.font = [UIFont fontWithName:@"Helvetica" size:24];
+    self.labelType.font = [UIFont fontWithName:@"Helvetica" size:14];
+    self.labelHour.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelTables.font = [UIFont fontWithName:@"Helvetica" size:16];
+    self.labelNumberTables.font = [UIFont fontWithName:@"Helvetica" size:14];
+    self.labelDesc.font = [UIFont fontWithName:@"Helvetica" size:16];
+    self.labelInfoDesc.font = [UIFont fontWithName:@"Helvetica" size:14];
     
     self.labelName.textColor = [UIColor customThirdColor];
     self.labelType.textColor = [UIColor customThirdColor];

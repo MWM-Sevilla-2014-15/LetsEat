@@ -33,7 +33,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelCirclePrice;
 @property (weak, nonatomic) IBOutlet UILabel *customLabelCircleTable;
 @property (weak, nonatomic) IBOutlet UILabel *customLabelCircleScore;
-@property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 @property (weak, nonatomic) IBOutlet UILabel *labelInfoDesc;
+@property (weak, nonatomic) IBOutlet UILabel *labelHour;
+@property (weak, nonatomic) IBOutlet UILabel *labelPhone;
+@property (weak, nonatomic) IBOutlet UILabel *labelDiscount;
+@property (weak, nonatomic) IBOutlet UILabel *labelInfoHour;
+@property (weak, nonatomic) IBOutlet UILabel *labelInfoPhone;
+@property (weak, nonatomic) IBOutlet UILabel *labelInfoDiscount;
 
 @end

@@ -20,5 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonLog;
 @property (weak, nonatomic) IBOutlet UIButton *buttonRegister;
 @property (weak, nonatomic) IBOutlet UIButton *buttonRecover;
+@property (weak, nonatomic) IBOutlet UILabel *labelErrorUsr;
+@property (weak, nonatomic) IBOutlet UILabel *labelErrorPwd;
 
 @end

@@ -30,9 +30,14 @@
     self.labelInfo.text = @"Introduce tu correo electrónico y te enviaremos información sobre tu usuario y contraseña.";
     self.labelInfo.textColor = [UIColor customThirdColor];
     
+    [self.labelError setHidden:YES];
+    self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+    [self.labelError setTextColor: [UIColor customErrorColor]];
+    [self.labelError setText:@""];
+    
     //Init button
     [self.buttonSend setTitle:@"Enviar" forState:UIControlStateNormal];
-    self.buttonSend.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:14];
+    self.buttonSend.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14];
     [self.buttonSend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.buttonSend.backgroundColor = [UIColor customSecondColor];
     
@@ -44,19 +49,52 @@
 {
     [self.textEmail resignFirstResponder];
     if(self.textEmail.text.length > 0){
-        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-        SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
-        button.buttonFormatBlock = ^NSDictionary* (void)
-        {
-            NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-            buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-            buttonConfig[@"textColor"] = [UIColor whiteColor];
-            return buttonConfig;
-        };
-        [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];
+        if([self validateEmail:self.textEmail.text]){
+            
+            [self.labelError setHidden:YES];
+            self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelError setTextColor: [UIColor customErrorColor]];
+            [self.labelError setText:@""];
+            
+            self.textEmail.layer.borderWidth = 1.0;
+            self.textEmail.layer.cornerRadius = 7.0;
+            self.textEmail.layer.borderColor = [UIColor clearColor].CGColor;
+            
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+            button.buttonFormatBlock = ^NSDictionary* (void)
+            {
+                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                buttonConfig[@"textColor"] = [UIColor whiteColor];
+                return buttonConfig;
+            };
+            [alert showSuccess:@"Email Enviado" subTitle:@"Se ha enviado un email a su dirección de correo." closeButtonTitle:nil duration:0.0f];
+        } else {
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+            [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen fallos en el formulario, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
+            
+            [self.labelError setHidden:NO];
+            self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelError setTextColor: [UIColor customErrorColor]];
+            [self.labelError setText:@"Formato email incorrecto. Inténtelo de nuevo."];
+            
+            self.textEmail.layer.borderWidth = 1.0;
+            self.textEmail.layer.cornerRadius = 7.0;
+            self.textEmail.layer.borderColor = [UIColor customErrorColor].CGColor;
+        }
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
+        
+        [self.labelError setHidden:NO];
+        self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+        [self.labelError setTextColor: [UIColor customErrorColor]];
+        [self.labelError setText:@"Campo obligatorio."];
+        
+        self.textEmail.layer.borderWidth = 1.0;
+        self.textEmail.layer.cornerRadius = 7.0;
+        self.textEmail.layer.borderColor = [UIColor customErrorColor].CGColor;
     }
 }
 
@@ -85,6 +123,13 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.textEmail resignFirstResponder];
+}
+
+//Validar EMAIL
+- (BOOL) validateEmail: (NSString *) candidate {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:candidate];
 }
 
 @end

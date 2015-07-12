@@ -10,6 +10,8 @@
                 <outlet property="buttonRecover" destination="Gpn-XJ-vC5" id="d0N-kK-Fr7"/>
                 <outlet property="buttonRegister" destination="TPQ-LM-0M3" id="waP-Vk-Ktr"/>
                 <outlet property="contentView" destination="i5M-Pr-FkT" id="4gE-Ba-b3p"/>
+                <outlet property="labelErrorPwd" destination="3lV-P7-qLD" id="lzE-Lc-bpM"/>
+                <outlet property="labelErrorUsr" destination="iaZ-PZ-uuB" id="BSO-yS-ZjY"/>
                 <outlet property="textPwd" destination="KMS-Hk-G9b" id="Hlj-ua-kYf"/>
                 <outlet property="textUser" destination="PFk-qE-ido" id="lf8-Kj-JXH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,10 +24,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-6h-2Xb">
-                    <rect key="frame" x="37" y="287" width="300" height="108"/>
+                    <rect key="frame" x="37" y="263" width="300" height="122"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-Hk-G9b">
-                            <rect key="frame" x="17" y="67" width="275" height="30"/>
+                            <rect key="frame" x="17" y="81" width="275" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
@@ -37,6 +39,12 @@
                     </subviews>
                     <color key="backgroundColor" red="0.28627450980000002" green="0.74509803919999995" blue="0.7725490196" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lV-P7-qLD">
+                    <rect key="frame" x="54" y="387" width="275" height="13"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-os-29V">
                     <rect key="frame" x="37" y="403" width="300" height="43"/>
                     <state key="normal" title="Button">
@@ -73,6 +81,12 @@
                         <action selector="openRegister" destination="-1" eventType="touchUpInside" id="evn-aW-HB4"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaZ-PZ-uuB">
+                    <rect key="frame" x="54" y="319" width="275" height="13"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

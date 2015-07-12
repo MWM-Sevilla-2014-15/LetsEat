@@ -21,9 +21,14 @@
                 <outlet property="labelCirclePrice" destination="LU6-Fs-EXe" id="XAZ-59-xxu"/>
                 <outlet property="labelCircleScore" destination="DaG-GB-6SI" id="dBe-A0-3TP"/>
                 <outlet property="labelCircleTable" destination="nR4-5k-t76" id="x7c-Xw-pdu"/>
-                <outlet property="labelDescription" destination="UgG-Er-xlE" id="gpo-aJ-naM"/>
+                <outlet property="labelDiscount" destination="LQK-hV-Dyj" id="IHI-JI-czA"/>
+                <outlet property="labelHour" destination="ygn-zp-cM4" id="Ez7-da-Qh2"/>
                 <outlet property="labelInfoDesc" destination="YQC-X2-KX3" id="Dfp-tJ-s8h"/>
+                <outlet property="labelInfoDiscount" destination="gsg-4K-awS" id="aa5-5M-OLJ"/>
+                <outlet property="labelInfoHour" destination="2Cr-J3-UHR" id="K7y-pP-s5g"/>
+                <outlet property="labelInfoPhone" destination="MVv-ZW-TbJ" id="iL2-Kb-8yV"/>
                 <outlet property="labelNameRest" destination="wpG-0q-i8o" id="6Cj-KS-5lB"/>
+                <outlet property="labelPhone" destination="Sd9-7b-eRa" id="0LT-hw-8Fb"/>
                 <outlet property="labelPrice" destination="2UZ-ha-t21" id="kxa-Bp-VJj"/>
                 <outlet property="labelScore" destination="weO-Qg-sbx" id="Rll-FO-AMz"/>
                 <outlet property="labelTable" destination="gjN-YI-Vv6" id="zAc-TI-EdK"/>
@@ -154,14 +159,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgG-Er-xlE">
-                                            <rect key="frame" x="8" y="340" width="109" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQC-X2-KX3">
-                                            <rect key="frame" x="8" y="369" width="359" height="125"/>
+                                            <rect key="frame" x="20" y="340" width="339" height="125"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -169,6 +168,42 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygn-zp-cM4">
+                                    <rect key="frame" x="20" y="481" width="70" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-7b-eRa">
+                                    <rect key="frame" x="20" y="515" width="70" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQK-hV-Dyj">
+                                    <rect key="frame" x="20" y="549" width="110" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-J3-UHR">
+                                    <rect key="frame" x="90" y="481" width="250" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVv-ZW-TbJ">
+                                    <rect key="frame" x="100" y="515" width="250" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsg-4K-awS">
+                                    <rect key="frame" x="130" y="549" width="250" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                         </scrollView>
                     </subviews>

@@ -19,5 +19,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *textPwd;
 @property (strong, nonatomic) IBOutlet UITextField *textRepeatPwd;
 @property (strong, nonatomic) IBOutlet UIButton *buttonRegister;
+@property (weak, nonatomic) IBOutlet UILabel *labelErrorEmail;
+@property (weak, nonatomic) IBOutlet UILabel *labelErrorPwd;
+@property (weak, nonatomic) IBOutlet UILabel *labelErrorName;
 
 @end

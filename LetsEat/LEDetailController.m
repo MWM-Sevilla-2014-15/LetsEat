@@ -33,13 +33,19 @@
                                             action:@selector(expandView)];
     [self.customView addGestureRecognizer:singleFingerTapView];
     
+    UITapGestureRecognizer *singleFingerTapPhone =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(callNumber)];
+    [self.labelInfoPhone setUserInteractionEnabled:YES];
+    [self.labelInfoPhone addGestureRecognizer:singleFingerTapPhone];
+    
     [self createView];
 }
 
 - (void)createView
 {
     //Customizar label
-    self.labelNameRest.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:28];
+    self.labelNameRest.font = [UIFont fontWithName:@"Helvetica" size:28];
     self.labelNameRest.textColor = [UIColor whiteColor];
     self.labelNameRest.text = @"La Mafia se sienta a la mesa";
     
@@ -75,11 +81,26 @@
     self.labelCirclePrice.textColor = [UIColor customThirdColor];
     self.labelCirclePrice.text = @"20€";
     
-    self.labelDescription.textColor = [UIColor customThirdColor];
-    self.labelDescription.text = @"Descripción:";
-    
     self.labelInfoDesc.textColor = [UIColor customThirdColor];
-    self.labelInfoDesc.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    self.labelInfoDesc.text = @"Para nosotros cenar en La Mafia es permitirnos un homenaje, porque nos deja la sensación de haber tenido una cena algo más especial. El sitio es muy agradable, lleno de rincones y detalles.";
+    
+    self.labelHour.textColor = [UIColor customThirdColor];
+    self.labelHour.text = @"Horario:";
+    
+    self.labelPhone.textColor = [UIColor customThirdColor];
+    self.labelPhone.text = @"Teléfono:";
+    
+    self.labelDiscount.textColor = [UIColor customThirdColor];
+    self.labelDiscount.text = @"Descuentos:";
+    
+    self.labelInfoHour.textColor = [UIColor customThirdColor];
+    self.labelInfoHour.text = @"12:30 - 16:30 / 21:00 - 00:00";
+    
+    self.labelInfoPhone.textColor = [UIColor customThirdColor];
+    self.labelInfoPhone.text = @"954532872";
+    
+    self.labelInfoDiscount.textColor = [UIColor customThirdColor];
+    self.labelInfoDiscount.text = @"10% en postres";
     
     //Customizar button
     [self.buttonBook setTitle:@"Reservar" forState:UIControlStateNormal];
@@ -122,6 +143,14 @@
     UIView *lineView2 = [[UIView alloc] initWithFrame:CGRectMake(5, 332, 365, 2)];
     lineView2.backgroundColor = [UIColor customSecondColor];
     [self.customViewContent addSubview:lineView2];
+    
+    UIView *lineView3 = [[UIView alloc] initWithFrame:CGRectMake(5, 473, 365, 2)];
+    lineView3.backgroundColor = [UIColor customSecondColor];
+    [self.customViewContent addSubview:lineView3];
+    
+    UIView *lineView4 = [[UIView alloc] initWithFrame:CGRectMake(5, 578, 365, 2)];
+    lineView4.backgroundColor = [UIColor customSecondColor];
+    [self.customViewContent addSubview:lineView4];
     
     self.customScrollView.contentSize = CGSizeMake(375, 969);
     //Respuesta rapida del boton cuando esta dentro de un UIScrollView
@@ -195,6 +224,15 @@
     [UIView setAnimationDuration:animationDurationMap];
     self.mapView.frame = newFrameSizeMap;
     [MKMapView commitAnimations];
+}
+
+- (void)callNumber
+{
+    UIDevice *device = [UIDevice currentDevice];
+    if ([[device model] isEqualToString:@"iPhone"] ) {
+        NSString *phoneNumber = [@"tel://" stringByAppendingString:self.labelInfoPhone.text];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+    }
 }
 
 #pragma mark - MAKImageGalleryViewDataSource

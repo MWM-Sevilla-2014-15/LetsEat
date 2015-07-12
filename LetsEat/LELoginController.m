@@ -41,8 +41,16 @@
     [self.textPwd resignFirstResponder];
     
     if(self.textUser.text.length > 0 && self.textPwd.text.length > 0){
-        
         [SVProgressHUD showWithStatus:@"Cargando..."];
+
+        [self.labelErrorUsr setHidden:YES];
+        self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+        [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
+        [self.labelErrorUsr setText:@""];
+        [self.labelErrorPwd setHidden:YES];
+        self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+        [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
+        [self.labelErrorPwd setText:@""];
         
         LoginDTO *login = [LoginDTO alloc];
         login.name = self.textUser.text;
@@ -76,6 +84,29 @@
     } else {
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
+        
+        if(self.textUser.text.length == 0){
+            [self.labelErrorUsr setHidden:NO];
+            self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
+            [self.labelErrorUsr setText:@"Campo obligatorio."];
+        } else if(self.textUser.text.length > 0){
+            [self.labelErrorUsr setHidden:YES];
+            self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
+            [self.labelErrorUsr setText:@""];
+        }
+        if(self.textPwd.text.length == 0){
+            [self.labelErrorPwd setHidden:NO];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
+            [self.labelErrorPwd setText:@"Campo obligatorio."];
+        } else if(self.textPwd.text.length > 0){
+            [self.labelErrorPwd setHidden:YES];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
+            [self.labelErrorPwd setText:@""];
+        }
     }
 }
 
@@ -91,13 +122,24 @@
 
 - (void)createView
 {
-    //Label recuperar contraseña
+    //Customizar labels
+    [self.labelErrorUsr setHidden:YES];
+    self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+    [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
+    [self.labelErrorUsr setText:@""];
+    
+    [self.labelErrorPwd setHidden:YES];
+    self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+    [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
+    [self.labelErrorPwd setText:@""];
+    
+    //Button recuperar contraseña
     [self.buttonRecover setTitle:@"¿Olvidaste tu contraseña o nombre de usuario?" forState:UIControlStateNormal];
     [self.buttonRecover setTitleColor:[UIColor customThirdColor] forState:UIControlStateNormal];
     self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:14];
     
     //Linea entre user y pwd
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 54, self.view.bounds.size.width, 2)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 53, self.view.bounds.size.width, 18)];
     lineView.backgroundColor = [UIColor whiteColor];
     [self.viewForm addSubview:lineView];
     
