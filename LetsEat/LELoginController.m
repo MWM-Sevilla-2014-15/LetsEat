@@ -135,8 +135,8 @@
     
     //Button recuperar contraseña
     [self.buttonRecover setTitle:@"¿Olvidaste tu contraseña o nombre de usuario?" forState:UIControlStateNormal];
+    self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Avenir" size:14];
     [self.buttonRecover setTitleColor:[UIColor customThirdColor] forState:UIControlStateNormal];
-    self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:14];
     
     //Linea entre user y pwd
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 53, self.view.bounds.size.width, 18)];
@@ -145,10 +145,12 @@
     
     //Customizar los botones
     self.buttonLog.backgroundColor = [UIColor customSecondColor];
+    self.buttonLog.titleLabel.font = [UIFont fontWithName:@"Dosis-Light" size:18];
     [self.buttonLog setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonLog setTitle:@"Iniciar sesión" forState:UIControlStateNormal];
     
     self.buttonRegister.backgroundColor = [UIColor customThirdColor];
+    self.buttonRegister.titleLabel.font = [UIFont fontWithName:@"Dosis-Light" size:18];
     [self.buttonRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonRegister setTitle:@"¿Eres nuevo? Regístrate" forState:UIControlStateNormal];
     

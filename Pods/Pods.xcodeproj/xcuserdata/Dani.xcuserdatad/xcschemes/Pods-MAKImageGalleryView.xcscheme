@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F8714AC342D213F7B3228DC"
+               BlueprintIdentifier = "75F368E1213A8871E561D0E9"
                BuildableName = "libPods-MAKImageGalleryView.a"
                BlueprintName = "Pods-MAKImageGalleryView"
                ReferencedContainer = "container:Pods.xcodeproj">

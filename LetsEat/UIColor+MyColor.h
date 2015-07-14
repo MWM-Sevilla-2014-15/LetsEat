@@ -20,5 +20,6 @@
 + (instancetype)customErrorColor;
 + (instancetype)customWarningColor;
 + (instancetype)customBGColor;
++ (instancetype)customShadowColor;
 
 @end

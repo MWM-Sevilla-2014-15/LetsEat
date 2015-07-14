@@ -29,7 +29,7 @@
     UIBarButtonItem* menuButton = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = menuButton;
     
-    self.title = @"Restaurantes cercanos";
+    self.title = @"Mapa de restaurantes";
     [self setMapView];
     
     self.userData = [NSUserDefaults standardUserDefaults];
@@ -122,11 +122,11 @@
     if ([annotation isKindOfClass:[MKPointAnnotation class]])
     {
         // Try to dequeue an existing pin view first.
-        MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+        MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomAnnotation"];
         if (!pinView)
         {
             // If an existing pin view was not available, create one.
-            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomAnnotation"];
             pinView.canShowCallout = YES;
             pinView.image = [UIImage imageNamed:@"annotation"];
             pinView.calloutOffset = CGPointMake(0, 32);

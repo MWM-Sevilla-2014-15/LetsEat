@@ -60,4 +60,9 @@
     return [UIColor colorWithRed:242.0/255.0 green:242.0/255.0 blue:242.0/255.0 alpha:1.0];
 }
 
++ (instancetype)customShadowColor
+{
+    return [UIColor colorWithRed:45.0/255.0 green:45.0/255.0 blue:45.0/255.0 alpha:1.0];
+}
+
 @end
