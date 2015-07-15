@@ -21,6 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    sleep(2);
+    
     //CONFIGURAR EL COLOR DE LA NAVBAR
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x49BEC5)];
     
