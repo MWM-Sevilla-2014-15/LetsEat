@@ -25,6 +25,7 @@
     
     //CONFIGURAR EL COLOR DE LA NAVBAR
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x49BEC5)];
+    //[[UINavigationBar appearance] setTranslucent:NO];
     
     //CONFIGURAR EL TEXTO DE LA NAVBAR
     NSDictionary *textTitleOptions = [NSDictionary dictionaryWithObjectsAndKeys:

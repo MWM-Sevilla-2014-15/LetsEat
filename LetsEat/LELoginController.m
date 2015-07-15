@@ -44,11 +44,11 @@
         [SVProgressHUD showWithStatus:@"Entrando..."];
 
         [self.labelErrorUsr setHidden:YES];
-        self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+        self.labelErrorUsr.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
         [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
         [self.labelErrorUsr setText:@""];
         [self.labelErrorPwd setHidden:YES];
-        self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+        self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
         [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
         [self.labelErrorPwd setText:@""];
         
@@ -87,23 +87,23 @@
         
         if(self.textUser.text.length == 0){
             [self.labelErrorUsr setHidden:NO];
-            self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorUsr.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
             [self.labelErrorUsr setText:@"Campo obligatorio."];
         } else if(self.textUser.text.length > 0){
             [self.labelErrorUsr setHidden:YES];
-            self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorUsr.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
             [self.labelErrorUsr setText:@""];
         }
         if(self.textPwd.text.length == 0){
             [self.labelErrorPwd setHidden:NO];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@"Campo obligatorio."];
         } else if(self.textPwd.text.length > 0){
             [self.labelErrorPwd setHidden:YES];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@""];
         }
@@ -124,18 +124,18 @@
 {
     //Customizar labels
     [self.labelErrorUsr setHidden:YES];
-    self.labelErrorUsr.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelErrorUsr.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
     [self.labelErrorUsr setText:@""];
     
     [self.labelErrorPwd setHidden:YES];
-    self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
     [self.labelErrorPwd setText:@""];
     
     //Button recuperar contraseña
     [self.buttonRecover setTitle:@"¿Olvidaste tu contraseña o nombre de usuario?" forState:UIControlStateNormal];
-    self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Avenir" size:14];
+    self.buttonRecover.titleLabel.font = [UIFont fontWithName:@"Dosis-Light" size:17];
     [self.buttonRecover setTitleColor:[UIColor customThirdColor] forState:UIControlStateNormal];
     
     //Linea entre user y pwd
@@ -145,19 +145,21 @@
     
     //Customizar los botones
     self.buttonLog.backgroundColor = [UIColor customSecondColor];
-    self.buttonLog.titleLabel.font = [UIFont fontWithName:@"Dosis-Light" size:18];
+    self.buttonLog.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     [self.buttonLog setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonLog setTitle:@"Iniciar sesión" forState:UIControlStateNormal];
     
     self.buttonRegister.backgroundColor = [UIColor customThirdColor];
-    self.buttonRegister.titleLabel.font = [UIFont fontWithName:@"Dosis-Light" size:18];
+    self.buttonRegister.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     [self.buttonRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonRegister setTitle:@"¿Eres nuevo? Regístrate" forState:UIControlStateNormal];
     
     //Customizar textfield
     self.textUser.textColor = [UIColor customThirdColor];
+    self.textUser.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.textUser.delegate = self;
     self.textPwd.textColor = [UIColor customThirdColor];
+    self.textPwd.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.textPwd.delegate = self;
 }
 

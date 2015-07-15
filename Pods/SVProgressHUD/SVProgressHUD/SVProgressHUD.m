@@ -255,9 +255,11 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
         SVProgressHUDBackgroundColor = [UIColor colorWithRed:254.0/255.0 green:154.0/255.0 blue:46.0/255.0 alpha:0.2];
         SVProgressHUDForegroundColor = [UIColor colorWithRed:73.0/255.0 green:190.0/255.0 blue:197.0/255.0 alpha:1.0];
         if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
-            SVProgressHUDFont = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+            //SVProgressHUDFont = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+            SVProgressHUDFont = [UIFont fontWithName:@"Dosis-Regular" size:18];
         } else {
-            SVProgressHUDFont = [UIFont systemFontOfSize:14.0f];
+            //SVProgressHUDFont = [UIFont systemFontOfSize:14.0f];
+            SVProgressHUDFont = [UIFont fontWithName:@"Dosis-Regular" size:18];
             SVProgressHUDBackgroundColor = [UIColor colorWithWhite:0.0f alpha:0.8f];
             SVProgressHUDForegroundColor = [UIColor whiteColor];
         }

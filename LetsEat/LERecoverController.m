@@ -33,16 +33,17 @@
 {
     //Label de info
     self.labelInfo.text = @"Introduce tu correo electrónico y te enviaremos información sobre tu usuario y contraseña.";
+    self.labelInfo.font = [UIFont fontWithName:@"Dosis-Light" size:22];
     self.labelInfo.textColor = [UIColor customThirdColor];
     
     [self.labelError setHidden:YES];
-    self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelError setTextColor: [UIColor customErrorColor]];
     [self.labelError setText:@""];
     
     //Init button
     [self.buttonSend setTitle:@"Enviar" forState:UIControlStateNormal];
-    self.buttonSend.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14];
+    self.buttonSend.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     [self.buttonSend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.buttonSend.backgroundColor = [UIColor customSecondColor];
     
@@ -59,7 +60,7 @@
             [SVProgressHUD showWithStatus:@"Enviando..."];            
             
             [self.labelError setHidden:YES];
-            self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelError setTextColor: [UIColor customErrorColor]];
             [self.labelError setText:@""];
             
@@ -111,7 +112,7 @@
             [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen fallos en el formulario, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
             
             [self.labelError setHidden:NO];
-            self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelError setTextColor: [UIColor customErrorColor]];
             [self.labelError setText:@"Formato email incorrecto. Inténtelo de nuevo."];
             
@@ -124,7 +125,7 @@
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
         
         [self.labelError setHidden:NO];
-        self.labelError.font = [UIFont fontWithName:@"Helvetica" size:12];
+        self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
         [self.labelError setTextColor: [UIColor customErrorColor]];
         [self.labelError setText:@"Campo obligatorio."];
         

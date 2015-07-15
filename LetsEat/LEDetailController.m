@@ -46,19 +46,19 @@
 - (void)createView
 {
     //Customizar label
-    self.labelNameRest.font = [UIFont fontWithName:@"Helvetica" size:28];
+    self.labelNameRest.font = [UIFont fontWithName:@"Dosis-SemiBold" size:32];
     self.labelNameRest.textColor = [UIColor whiteColor];
     self.labelNameRest.text = @"La Mafia se sienta a la mesa";
     
-    self.labelScore.font = [UIFont fontWithName:@"Helvetica" size:9];
+    self.labelScore.font = [UIFont fontWithName:@"Dosis-Light" size:12];
     self.labelScore.textColor = [UIColor customThirdColor];
     self.labelScore.text = @"Valoración";
     
-    self.labelPrice.font = [UIFont fontWithName:@"Helvetica" size:9];
+    self.labelPrice.font = [UIFont fontWithName:@"Dosis-Light" size:12];
     self.labelPrice.textColor = [UIColor customThirdColor];
     self.labelPrice.text = @"Precio medio";
     
-    self.labelTable.font = [UIFont fontWithName:@"Helvetica" size:9];
+    self.labelTable.font = [UIFont fontWithName:@"Dosis-Light" size:12];
     self.labelTable.textColor = [UIColor customThirdColor];
     self.labelTable.text = @"Mesas disponibles";
     
@@ -83,32 +83,41 @@
     self.labelCirclePrice.text = @"20€";
     
     self.labelInfoDesc.textColor = [UIColor customThirdColor];
+    self.labelInfoDesc.font = [UIFont fontWithName:@"Dosis-Regular" size:19];
     self.labelInfoDesc.text = @"Para nosotros cenar en La Mafia es permitirnos un homenaje, porque nos deja la sensación de haber tenido una cena algo más especial. El sitio es muy agradable, lleno de rincones y detalles.";
     
     self.labelHour.textColor = [UIColor customThirdColor];
+    self.labelHour.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     self.labelHour.text = @"Horario:";
     
     self.labelPhone.textColor = [UIColor customThirdColor];
+    self.labelPhone.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     self.labelPhone.text = @"Teléfono:";
     
     self.labelDiscount.textColor = [UIColor customThirdColor];
+    self.labelDiscount.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     self.labelDiscount.text = @"Descuentos:";
     
     self.labelInfoHour.textColor = [UIColor customThirdColor];
+    self.labelInfoHour.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.labelInfoHour.text = @"12:30 - 16:30 / 21:00 - 00:00";
     
     self.labelInfoPhone.textColor = [UIColor customThirdColor];
+    self.labelInfoPhone.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.labelInfoPhone.text = @"954532872";
     
     self.labelInfoDiscount.textColor = [UIColor customThirdColor];
+    self.labelInfoDiscount.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.labelInfoDiscount.text = @"10% en postres";
     
     //Customizar button
     [self.buttonBook setTitle:@"Reservar" forState:UIControlStateNormal];
+    self.buttonBook.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     self.buttonBook.backgroundColor = [UIColor customMainColor];
     [self.buttonBook setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     [self.buttonBook2 setTitle:@"Reservar" forState:UIControlStateNormal];
+    self.buttonBook2.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     self.buttonBook2.backgroundColor = [UIColor customMainColor];
     [self.buttonBook2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     

@@ -107,12 +107,12 @@ NSTimer *durationTimer;
         self.backgroundType = Shadow;
         
         // Font
-        _titleFontFamily = @"HelveticaNeue";
-        _bodyTextFontFamily = @"HelveticaNeue";
-        _buttonsFontFamily = @"HelveticaNeue-Bold";
-        _titleFontSize = 20.0f;
-        _bodyFontSize = 14.0f;
-        _buttonsFontSize = 14.0f;
+        _titleFontFamily = @"Dosis-Medium";
+        _bodyTextFontFamily = @"Dosis-Medium";
+        _buttonsFontFamily = @"Dosis-SemiBold";
+        _titleFontSize = 26.0f;
+        _bodyFontSize = 18.0f;
+        _buttonsFontSize = 18.0f;
         
         // Init
         _labelTitle = [[UILabel alloc] init];

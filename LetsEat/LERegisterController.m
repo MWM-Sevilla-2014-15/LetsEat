@@ -33,45 +33,45 @@
     if(self.textEmail.text.length > 0 && self.textNameUser.text.length > 0 && self.textPwd.text.length > 0 && self.textRepeatPwd.text.length > 0)
     {
         [self.labelErrorName setHidden:YES];
-        self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+        self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
         [self.labelErrorName setTextColor: [UIColor customErrorColor]];
         [self.labelErrorName setText:@""];
         
         if(self.textNameUser.text.length < 3){
             [self.labelErrorName setHidden:NO];
-            self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorName setTextColor: [UIColor customErrorColor]];
             [self.labelErrorName setText:@"El nombre de usuario debe tener una longitud minimo de 3."];
         } else {
             [self.labelErrorName setHidden:YES];
-            self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorName setTextColor: [UIColor customErrorColor]];
             [self.labelErrorName setText:@""];
         }
         if(self.textPwd.text.length < 6 || self.textRepeatPwd.text.length < 6){
             [self.labelErrorPwd setHidden:NO];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@"La contraseña debe tener 6 o más caracteres."];
         }else if([self.textPwd.text isEqualToString:self.textRepeatPwd.text]){
             [self.labelErrorPwd setHidden:YES];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@""];
         } else {
             [self.labelErrorPwd setHidden:NO];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@"Las contraseñas no coinciden. Inténtelo de nuevo."];
         }
         if([self validateEmail:self.textEmail.text]){
             [self.labelErrorEmail setHidden:YES];
-            self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
             [self.labelErrorEmail setText:@""];
         } else {
             [self.labelErrorEmail setHidden:NO];
-            self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
             [self.labelErrorEmail setText:@"Formato email incorrecto. Inténtelo de nuevo."];
         }
@@ -127,57 +127,57 @@
         
         if(self.textNameUser.text.length == 0){
             [self.labelErrorName setHidden:NO];
-            self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorName setTextColor: [UIColor customErrorColor]];
             [self.labelErrorName setText:@"Campo obligatorio."];
         } else if(self.textNameUser.text.length < 3){
             [self.labelErrorName setHidden:NO];
-            self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorName setTextColor: [UIColor customErrorColor]];
             [self.labelErrorName setText:@"El nombre de usuario debe tener 3 o más caracteres."];
         } else if(self.textNameUser.text.length > 0){
             [self.labelErrorName setHidden:YES];
-            self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorName setTextColor: [UIColor customErrorColor]];
             [self.labelErrorName setText:@""];
         }
         if(self.textEmail.text.length == 0){
             [self.labelErrorEmail setHidden:NO];
-            self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
             [self.labelErrorEmail setText:@"Campo obligatorio."];
         } else {
             if([self validateEmail:self.textEmail.text]){
                 [self.labelErrorEmail setHidden:YES];
-                self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+                self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
                 [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
                 [self.labelErrorEmail setText:@""];
             } else {
                 [self.labelErrorEmail setHidden:NO];
-                self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+                self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
                 [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
                 [self.labelErrorEmail setText:@"Formato email incorrecto. Inténtelo de nuevo."];
             }
         }
         if(self.textPwd.text.length == 0 || self.textRepeatPwd.text.length == 0){
             [self.labelErrorPwd setHidden:NO];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@"Campo/s obligatorio/s."];
         } else if(self.textPwd.text.length < 6 || self.textRepeatPwd.text.length < 6){
             [self.labelErrorPwd setHidden:NO];
-            self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+            self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
             [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
             [self.labelErrorPwd setText:@"La contraseña debe tener 6 o más caracteres."];
         } else {
             if([self.textPwd.text isEqualToString:self.textRepeatPwd.text]){
                 [self.labelErrorPwd setHidden:YES];
-                self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+                self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
                 [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
                 [self.labelErrorPwd setText:@""];
             } else {
                 [self.labelErrorPwd setHidden:NO];
-                self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+                self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
                 [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
                 [self.labelErrorPwd setText:@"Las contraseñas no coinciden. Inténtelo de nuevo."];
             }
@@ -195,47 +195,55 @@
     //Labels
     self.labelNameUser.text = @"Nombre de usuario";
     self.labelNameUser.textColor = [UIColor customSecondColor];
+    self.labelNameUser.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     self.labelEmail.text = @"Correo electrónico";
     self.labelEmail.textColor = [UIColor customSecondColor];
+    self.labelEmail.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     self.labelPwd.text = @"Contraseña";
     self.labelPwd.textColor = [UIColor customSecondColor];
+    self.labelPwd.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
     
     [self.labelErrorName setHidden:YES];
-    self.labelErrorName.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelErrorName.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelErrorName setTextColor: [UIColor customErrorColor]];
     [self.labelErrorName setText:@""];
     
     [self.labelErrorEmail setHidden:YES];
-    self.labelErrorEmail.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelErrorEmail.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelErrorEmail setTextColor: [UIColor customErrorColor]];
     [self.labelErrorEmail setText:@""];
     
     [self.labelErrorPwd setHidden:YES];
-    self.labelErrorPwd.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
     [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
     [self.labelErrorPwd setText:@""];
     
     //Cadena para labelInfo
     self.labelInfo.text = @"Tu nombre de usuario te servirá para iniciar sesión juto con tu contraseña.";
     self.labelInfo.textColor = [UIColor customThirdColor];
-    self.labelInfo.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
+    self.labelInfo.font = [UIFont fontWithName:@"Dosis-Bold" size:16];
     self.labelInfo2.text = @"Introduce un email válido, será útil para recuperar tu contraseña.";
     self.labelInfo2.textColor = [UIColor customThirdColor];
-    self.labelInfo2.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
+    self.labelInfo2.font = [UIFont fontWithName:@"Dosis-Bold" size:16];
     
     //Customizar textfield
     self.textNameUser.textColor = [UIColor customThirdColor];
     self.textNameUser.delegate = self;
+    self.textNameUser.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.textEmail.textColor = [UIColor customThirdColor];
     self.textEmail.delegate = self;
+    self.textEmail.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.textPwd.textColor = [UIColor customThirdColor];
     self.textPwd.delegate = self;
+    self.textPwd.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     self.textRepeatPwd.textColor = [UIColor customThirdColor];
     self.textRepeatPwd.delegate = self;
+    self.textRepeatPwd.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
     
     //Button
     [self.buttonRegister setTitle:@"Continuar" forState:UIControlStateNormal];
     self.buttonRegister.backgroundColor = [UIColor customSecondColor];
+    self.buttonRegister.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:22];
     [self.buttonRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     //Lineas justo debajo de los textfield

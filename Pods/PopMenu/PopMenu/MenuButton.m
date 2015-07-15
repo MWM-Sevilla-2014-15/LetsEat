@@ -42,7 +42,8 @@
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.iconImageView.frame), CGRectGetWidth(self.bounds), 35)];
         self.titleLabel.textColor = [UIColor whiteColor];
         self.titleLabel.backgroundColor = [UIColor clearColor];
-        self.titleLabel.font = [UIFont systemFontOfSize:14];
+        //self.titleLabel.font = [UIFont systemFontOfSize:14];
+        self.titleLabel.font = [UIFont fontWithName:@"Dosis-SemiBold" size:16];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.text = menuItem.title;
         CGPoint center = self.titleLabel.center;

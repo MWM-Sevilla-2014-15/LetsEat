@@ -41,13 +41,13 @@
 {
     NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
     
-    MenuItem *menuItem = [MenuItem itemWithTitle:@"Cambiar ciudad" iconName:@"post_type_bubble_flickr"];
+    MenuItem *menuItem = [MenuItem itemWithTitle:@"Cambiar ciudad" iconName:@"cambiar-ciudad"];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Compartir" iconName:@"post_type_bubble_youtube"];
+    menuItem = [MenuItem itemWithTitle:@"Mis reservas" iconName:@"reservas"];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Cerrar sesión" iconName:@"post_type_bubble_facebook"];
+    menuItem = [MenuItem itemWithTitle:@"Cerrar sesión" iconName:@"cerrar-sesion"];
     [items addObject:menuItem];
     
     if (!self.popMenu) {
