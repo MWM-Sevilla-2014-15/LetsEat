@@ -10,8 +10,15 @@
 #import "CustomCell.h"
 #import "SCLAlertView.h"
 #import "UIColor+MyColor.h"
+#import "SVProgressHUD.h"
+
+#import "GetRestaurantActionTask.h"
+#import "GetRestaurantRequestDTO.h"
+#import "RestaurantDTO.h"
 
 @interface LEMenuListController ()
+
+@property (nonatomic, strong) NSArray *arrayRestaurants;
 
 @end
 
@@ -35,6 +42,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor whiteColor];
+    
+    [self loadRestaurants];
 }
 
 - (void)showMenu
@@ -80,6 +89,19 @@
     [self.popMenu showMenuAtView:self.view];
 }
 
+- (void)loadRestaurants
+{
+    [SVProgressHUD showWithStatus:@"Cargando..."];
+    
+    [GetRestaurantActionTask getRestaurantActionTaskForRequest:nil showLoadingView:NO completed:^(NSInteger statusCode, GetRestaurantResponseDTO *response) {
+        self.arrayRestaurants = response.items;
+        [self.tableView reloadData];
+        [SVProgressHUD dismiss];
+    } error:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
 - (void)logOut
 {
     [self.userData setObject:@"" forKey:@"User"];
@@ -97,12 +119,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 5;
+    return self.arrayRestaurants.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger index = indexPath.item % 5 + 1;
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     if(!cell)
     {
@@ -110,8 +131,10 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     }
     
+    RestaurantDTO *rest = [self.arrayRestaurants objectAtIndex:indexPath.row];
+    
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    cell.labelName.text = @"La Mafia se sienta a la mesa";
+    cell.labelName.text = rest.name;
     cell.labelType.text = @"Italiano";
     cell.labelHour.text = @"Abierto: 12:30 - 16:30 / 21:00 - 00:00";
     cell.labelNumberTables.text = @"45";
@@ -133,7 +156,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //return [indexPath row];
-    return indexPath.row == 5 - 1 ? 200 : 200;
+    return indexPath.row == self.arrayRestaurants.count - 1 ? 200 : 200;
 }
 
 //#pragma mark - Navigation

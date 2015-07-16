@@ -1,6 +1,6 @@
 //
-//  LetsGoEatHelper.h
-//  LetsGoEat
+//  LetsEatHelper.h
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
@@ -10,10 +10,10 @@
 #import "LogicFilter.h"
 #import "AFSecurityPolicy.h"
 
-@interface LetsGoEatHelper : LogicFilter
+@interface LetsEatHelper : LogicFilter
 
 // Get the shared instance and create it if necessary.
-+ (LetsGoEatHelper *)sharedInstance;
++ (LetsEatHelper *)sharedInstance;
 - (NSString *) preInjectURLParameters:(NSString *)url withObject:(NSObject *)obj onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod;
 - (NSString *) postInjectURLParameters:(NSString *)url withObject:(NSObject *)obj onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod;
 - (NSString *) escapeUrl:(NSString *)url onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod;

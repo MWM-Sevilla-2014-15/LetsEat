@@ -1,22 +1,22 @@
 //
-//  LetsGoEatHelper.m
-//  LetsGoEat
+//  LetsEatHelper.m
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
 //
 
-#import "LetsGoEatHelper.h"
+#import "LetsEatHelper.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation LetsGoEatHelper
+@implementation LetsEatHelper
 
 
 // Get the shared instance and create it if necessary.
-+ (LetsGoEatHelper *)sharedInstance {
++ (LetsEatHelper *)sharedInstance {
     
     static dispatch_once_t onceQueue;
-    static LetsGoEatHelper *instance = nil;
+    static LetsEatHelper *instance = nil;
     
     dispatch_once(&onceQueue, ^{ instance = [[self alloc] init]; });
     return instance;
@@ -39,7 +39,16 @@
 }
 
 - (NSString *)preprocessResponse:(NSString *)responseString  onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod{
-	return responseString;
+    NSString *fixedString=responseString;
+    if(responseString.length==0)
+    {
+        fixedString=@"{}";
+    }
+    if(responseString.length!=0 && [responseString characterAtIndex:0]=='[')
+    {
+        fixedString=[NSString stringWithFormat:@"{\"items\":%@}",fixedString];
+    }
+    return fixedString;
 }
 
 - (NSDictionary *) preprocessResponseAsDictionary:(NSDictionary *)responseDict  onService:(NSString *)serviceName onMethod:(NSString *)serviceMethod{

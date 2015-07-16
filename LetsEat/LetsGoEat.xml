@@ -3,7 +3,7 @@
     <messages>
         <message name="signUpAction" service="SignUp" method="signUpAction" description="Realiza registro de usuario" type="PostJSON">
             <urlPattern>
-                <url address="http://12-dot-com-silicon-letseat.appspot.com/singup"/>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/rest/singup"/>
             </urlPattern>
             <request type="SignUpRequestDTO">
                 <field name="request" serviceName="request" type="SignUpDTO" description="DTO que engloba los valores a enviar en el signup"/>
@@ -12,7 +12,7 @@
         </message>
         <message name="signInAction" service="SignIn" method="signInAction" description="Realiza login de usuario" type="PostJSON">
             <urlPattern>
-                <url address="http://12-dot-com-silicon-letseat.appspot.com/singin"/>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/rest/singin"/>
             </urlPattern>
             <request type="SignInRequestDTO">
                 <field name="request" serviceName="request" type="SignInDTO" description="DTO que engloba los valores a enviar en el signin"/>
@@ -21,12 +21,21 @@
         </message>
         <message name="getPassAction" service="GetPass" method="getPassAction" description="Recupera creedenciales usuario mandandole un email" type="PostJSON">
             <urlPattern>
-                <url address="http://12-dot-com-silicon-letseat.appspot.com/getpass"/>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/rest/getpass"/>
             </urlPattern>
             <request type="GetPassRequestDTO">
                 <field name="request" serviceName="request" type="GetPassDTO" description="DTO que engloba los valores a enviar en el getpass"/>
             </request>
             <response type="GetPassResponseDTO" typeRef="true"/>
+        </message>
+        <message name="getRestaurantAction" service="GetRestaurant" method="getRestaurantAction" description="Recoge todos los restaurantes disponibles" type="PostJSON">
+            <urlPattern>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/rest/getrestaurants"/>
+            </urlPattern>
+            <request type="GetRestaurantRequestDTO"/>
+            <response type="GetRestaurantResponseDTO">
+                <field name="items" type="GetRestaurantsDTO*" description="contenido de las carpetas"/>
+            </response>
         </message>
     </messages>
     <types>
@@ -53,6 +62,24 @@
         <type name="GetPassResponseDTO">
             <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
             <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
+        </type>
+        <type name="GetRestaurantsDTO">
+            <field name="isActivated" serviceName="isActivated" type="string" description="Campo de respuesta"/>
+            <field name="name" serviceName="name" type="string" description="Campo de respuesta"/>
+            <field name="url" serviceName="url" type="string" description="Campo de respuesta"/>
+            <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
+            <field name="m_t_open" serviceName="m_t_open" type="string" description="Campo de respuesta"/>
+            <field name="m_t_close" serviceName="m_t_close" type="string" description="Campo de respuesta"/>
+            <field name="t_t_open" serviceName="t_t_open" type="string" description="Campo de respuesta"/>
+            <field name="t_t_close" serviceName="t_t_close" type="string" description="Campo de respuesta"/>
+            <field name="avg_price" serviceName="avg_price" type="string" description="Campo de respuesta"/>
+            <field name="score" serviceName="score" type="string" description="Campo de respuesta"/>
+            <field name="totalTables" serviceName="totalTables" type="long" description="Campo de respuesta"/>
+            <field name="bookTables" serviceName="bookTables" type="long" description="Campo de respuesta"/>
+            <field name="lat" serviceName="lat" type="long" description="Campo de respuesta"/>
+            <field name="lon" serviceName="lon" type="long" description="Campo de respuesta"/>
+            <field name="prov" serviceName="prov" type="string" description="Campo de respuesta"/>
+            <field name="telf" serviceName="telf" type="string" description="Campo de respuesta"/>
         </type>
     </types>
 </protocol>

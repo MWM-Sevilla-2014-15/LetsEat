@@ -1,6 +1,6 @@
 //
 //  GetPass.m
-//  LetsGoEat
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
@@ -10,7 +10,7 @@
 
 #import "AFHTTPRequestOperation.h"
 #import "GenDefines.h"
-#import "LetsGoEatHelper.h"
+#import "LetsEatHelper.h"
 #import "UnlimitedDiskCache.h"
 #import "UnlimitedMemoryCache.h"
 #import "GetPassRequestDTO.h"
@@ -34,7 +34,7 @@
     self = [super init];
 
     if(self) {
-        [self addFilter:[LetsGoEatHelper sharedInstance]];
+        [self addFilter:[LetsEatHelper sharedInstance]];
     }
 
     return self;
@@ -107,7 +107,7 @@
 
 - (void)getPassAction:(GetPassRequestDTO *)getPassRequestDTO cache:(id<Cache>)cache refreshCache:(BOOL)refreshCache onSuccess:(void(^)(NSInteger responseCode, GetPassResponseDTO *response, ServiceGeneratorCacheType cacheType))onSuccess onProgress:(void(^) (NSUInteger __unused bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite)) onProgress onError:(void(^)(NSError *error))onError {
     
-	NSString *url=@"http://12-dot-com-silicon-letseat.appspot.com/getpass";
+	NSString *url=@"http://12-dot-com-silicon-letseat.appspot.com/rest/getpass";
 
 	url = [self preInjectURLParameters:url  withObject:getPassRequestDTO onService:@"GetPass" onMethod:@"getPassAction"];
 
