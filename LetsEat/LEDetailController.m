@@ -48,7 +48,7 @@
     //Customizar label
     self.labelNameRest.font = [UIFont fontWithName:@"Dosis-SemiBold" size:32];
     self.labelNameRest.textColor = [UIColor whiteColor];
-    self.labelNameRest.text = @"La Mafia se sienta a la mesa";
+    self.labelNameRest.text = self.restaurant.name;
     
     self.labelScore.font = [UIFont fontWithName:@"Dosis-Light" size:12];
     self.labelScore.textColor = [UIColor customThirdColor];
@@ -64,11 +64,14 @@
     
     self.labelCircleTable.font = [UIFont fontWithName:@"Noteworthy" size:12];
     self.labelCircleTable.textColor = [UIColor customThirdColor];
-    self.labelCircleTable.text = @"/45";
+    NSString *slash = @"/";
+    NSString *tables = [slash stringByAppendingString:[self.restaurant.totalTables stringValue]];
+    self.labelCircleTable.text = tables;
     
     self.customLabelCircleTable.font = [UIFont fontWithName:@"Noteworthy" size:25];
     self.customLabelCircleTable.textColor = [UIColor customThirdColor];
-    self.customLabelCircleTable.text = @"15";
+    NSNumber *tablesAvailables = [NSNumber numberWithFloat:([self.restaurant.totalTables floatValue] - [self.restaurant.bookTables floatValue])];
+    self.customLabelCircleTable.text = [tablesAvailables stringValue];
     
     self.labelCircleScore.font = [UIFont fontWithName:@"Noteworthy" size:12];
     self.labelCircleScore.textColor = [UIColor customThirdColor];
@@ -76,15 +79,17 @@
     
     self.customLabelCircleScore.font = [UIFont fontWithName:@"Noteworthy" size:25];
     self.customLabelCircleScore.textColor = [UIColor customThirdColor];
-    self.customLabelCircleScore.text = @"4.3";
+    self.customLabelCircleScore.text = self.restaurant.score;
     
     self.labelCirclePrice.font = [UIFont fontWithName:@"Noteworthy" size:25];
     self.labelCirclePrice.textColor = [UIColor customThirdColor];
-    self.labelCirclePrice.text = @"20€";
+    NSString *value = self.restaurant.avg_price;
+    NSString *avg_price = [value stringByAppendingString:@"€"];
+    self.labelCirclePrice.text = avg_price;
     
     self.labelInfoDesc.textColor = [UIColor customThirdColor];
     self.labelInfoDesc.font = [UIFont fontWithName:@"Dosis-Regular" size:19];
-    self.labelInfoDesc.text = @"Para nosotros cenar en La Mafia es permitirnos un homenaje, porque nos deja la sensación de haber tenido una cena algo más especial. El sitio es muy agradable, lleno de rincones y detalles.";
+    self.labelInfoDesc.text = self.restaurant.desc;
     
     self.labelHour.textColor = [UIColor customThirdColor];
     self.labelHour.font = [UIFont fontWithName:@"Dosis-SemiBold" size:20];
@@ -100,11 +105,11 @@
     
     self.labelInfoHour.textColor = [UIColor customThirdColor];
     self.labelInfoHour.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
-    self.labelInfoHour.text = @"12:30 - 16:30 / 21:00 - 00:00";
+    self.labelInfoHour.text = [self concatString:self.restaurant.m_t_open second:self.restaurant.m_t_close third:self.restaurant.t_t_open fourth:self.restaurant.t_t_close];
     
     self.labelInfoPhone.textColor = [UIColor customThirdColor];
     self.labelInfoPhone.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
-    self.labelInfoPhone.text = @"954532872";
+    self.labelInfoPhone.text = self.restaurant.telf;
     
     self.labelInfoDiscount.textColor = [UIColor customThirdColor];
     self.labelInfoDiscount.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
@@ -176,15 +181,15 @@
     [self.mapView setScrollEnabled:YES];
     
     MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
-    region.center.latitude = 37.382942;
-    region.center.longitude = -5.983440400000063;
+    region.center.latitude = [self.restaurant.lat doubleValue];
+    region.center.longitude = [self.restaurant.lon doubleValue];
     region.span.longitudeDelta = 0.005f;
     region.span.longitudeDelta = 0.005f;
     [self.mapView setRegion:region animated:NO];
     
     CLLocationCoordinate2D coord;
-    coord.latitude = 37.382942;
-    coord.longitude = -5.983440400000063;
+    coord.latitude = [self.restaurant.lat doubleValue];
+    coord.longitude = [self.restaurant.lon doubleValue];
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
     annotation.coordinate = coord;
     
@@ -308,6 +313,17 @@
 
 - (UIViewContentMode)imageGallery:(MAKImageGalleryView *)galleryView contentModeForImageAtIndex:(NSInteger)index {
     return UIViewContentModeScaleAspectFill;
+}
+
+- (NSString *)concatString:(NSString *)openDay second:(NSString *)closeDay third:(NSString *)openNight fourth:(NSString *)closeNight
+{
+    NSString *twoPart = openDay;
+    NSString *threePart = [twoPart stringByAppendingString:@" - "];
+    NSString *fourPart = [threePart stringByAppendingString:closeDay];
+    NSString *fivePart = [fourPart stringByAppendingString:@" / "];
+    NSString *sixPart = [fivePart stringByAppendingString:openNight];
+    NSString *sevenPart = [sixPart stringByAppendingString:@" - "];
+    return [sevenPart stringByAppendingString:closeNight];
 }
 
 @end

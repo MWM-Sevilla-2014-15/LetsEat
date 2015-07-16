@@ -10,26 +10,13 @@
 
 @implementation CustomAnnotation
 
--(id)initWithTitle:(NSString *)newTitle Location:(CLLocationCoordinate2D)location
-{
-    self = [super init];
-    if(self)
-    {
-        _title = newTitle;
-        _coordinate = location;
-    }
-    return self;
-}
+@synthesize title, coordinate, subtitle;
 
-- (MKAnnotationView *)annotationView
-{
-    MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:self reuseIdentifier:@"CustomAnnotation"];
-    
-    annotationView.enabled = YES;
-    annotationView.canShowCallout = YES;
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    
-    return annotationView;
+- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d {
+    title = ttl;
+    coordinate = c2d;
+    subtitle = @"Test Subtitle";
+    return self;
 }
 
 @end

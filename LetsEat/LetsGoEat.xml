@@ -76,8 +76,8 @@
             <field name="score" serviceName="score" type="string" description="Campo de respuesta"/>
             <field name="totalTables" serviceName="totalTables" type="long" description="Campo de respuesta"/>
             <field name="bookTables" serviceName="bookTables" type="long" description="Campo de respuesta"/>
-            <field name="lat" serviceName="lat" type="long" description="Campo de respuesta"/>
-            <field name="lon" serviceName="lon" type="long" description="Campo de respuesta"/>
+            <field name="lat" serviceName="lat" type="double" description="Campo de respuesta"/>
+            <field name="lon" serviceName="lon" type="double" description="Campo de respuesta"/>
             <field name="prov" serviceName="prov" type="string" description="Campo de respuesta"/>
             <field name="telf" serviceName="telf" type="string" description="Campo de respuesta"/>
         </type>

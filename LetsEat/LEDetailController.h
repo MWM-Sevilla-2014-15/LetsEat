@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "MAKImageGalleryView.h"
+#import "RestaurantDTO.h"
 
 @interface LEDetailController : UIViewController <MAKImageGalleryViewDataSource, MKMapViewDelegate>
 
@@ -21,6 +22,8 @@
 @property (strong, nonatomic) IBOutlet UIView *circleTableView;
 @property (strong, nonatomic) IBOutlet UIView *circleScoreView;
 @property (strong, nonatomic) IBOutlet UIView *circlePriceView;
+
+@property (strong, nonatomic) RestaurantDTO *restaurant;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelNameRest;
 @property (weak, nonatomic) IBOutlet UIButton *buttonBook;

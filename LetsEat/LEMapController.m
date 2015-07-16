@@ -10,8 +10,16 @@
 #import "LEMainController.h"
 #import "SCLAlertView.h"
 #import "UIColor+MyColor.h"
+#import "SVProgressHUD.h"
+#import "CustomAnnotation.h"
+#import "LEDetailController.h"
+
+#import "GetRestaurantActionTask.h"
+#import "GetRestaurantRequestDTO.h"
 
 @interface LEMapController ()
+
+@property (nonatomic, strong) NSArray *arrayRestaurants;
 
 @end
 
@@ -30,9 +38,8 @@
     self.navigationItem.leftBarButtonItem = menuButton;
     
     self.title = @"Mapa de restaurantes";
-    [self setMapView];
-    
     self.userData = [NSUserDefaults standardUserDefaults];
+    [self loadRestaurants];
 }
 
 - (void)showMenu
@@ -78,6 +85,19 @@
     [self.popMenu showMenuAtView:self.view];
 }
 
+- (void)loadRestaurants
+{
+    [SVProgressHUD showWithStatus:@"Cargando..."];
+    
+    [GetRestaurantActionTask getRestaurantActionTaskForRequest:nil showLoadingView:NO completed:^(NSInteger statusCode, GetRestaurantResponseDTO *response) {
+        self.arrayRestaurants = response.items;
+        [self setMapView];
+        [SVProgressHUD dismiss];
+    } error:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
 - (void)logOut
 {
     [self.userData setObject:@"" forKey:@"User"];
@@ -94,19 +114,20 @@
     [self.mapView setZoomEnabled:YES];
     [self.mapView setScrollEnabled:YES];
     
-    CLLocationCoordinate2D coord;
-    coord.latitude = 37.382942;
-    coord.longitude = -5.983440400000063;
-    MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
-    annotation.coordinate = coord;
-    annotation.title = @"La Mafia se sienta a la mesa";
-    annotation.subtitle = @"Italiano";
-    
-    [self.mapView addAnnotation:annotation];
+    for(int i = 0; i < self.arrayRestaurants.count; i++)
+    {
+        RestaurantDTO *rest = [self.arrayRestaurants objectAtIndex:i];
+        CLLocationCoordinate2D coord;
+        coord.latitude = [rest.lat doubleValue];
+        coord.longitude = [rest.lon doubleValue];
+        CustomAnnotation *annotation = [[CustomAnnotation alloc] initWithTitle:rest.name andCoordinate:coord];
+        annotation.subtitle = @"Italiano";
+        [self.mapView addAnnotation:annotation];
+    }
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
-    self.locationManager.distanceFilter = 100;
+    self.locationManager.distanceFilter = 500;
     
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
@@ -119,7 +140,7 @@
         return nil;
     
     // Handle any custom annotations.
-    if ([annotation isKindOfClass:[MKPointAnnotation class]])
+    if ([annotation isKindOfClass:[CustomAnnotation class]])
     {
         // Try to dequeue an existing pin view first.
         MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomAnnotation"];
@@ -147,12 +168,16 @@
 }
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    id <MKAnnotation> annotation = [view annotation];
-    if ([annotation isKindOfClass:[MKPointAnnotation class]])
+    NSString *title = ((CustomAnnotation*)view.annotation).title;
+    
+    for(RestaurantDTO *item in self.arrayRestaurants)
     {
-        NSLog(@"He pulsado sobre: %@", annotation);
+        if([item.name isEqualToString:title]){
+            self.restaurant = item;
+        }
     }
-    [self performSegueWithIdentifier:@"openDetail" sender:nil];
+    
+    [self performSegueWithIdentifier:@"openDetail" sender:self];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -177,6 +202,16 @@
     region.span.longitudeDelta = 0.005f;
     region.span.longitudeDelta = 0.005f;
     [self.mapView setRegion:region animated:NO];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"openDetail"])
+    {
+        LEDetailController *destinationController = [segue destinationViewController];
+        destinationController.restaurant = self.restaurant;
+    }
+    
 }
 
 @end

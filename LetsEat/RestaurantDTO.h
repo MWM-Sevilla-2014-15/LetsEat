@@ -20,10 +20,10 @@
 @property (strong, nonatomic) NSString *t_t_close;
 @property (strong, nonatomic) NSString *avg_price;
 @property (strong, nonatomic) NSString *score;
-@property (strong, nonatomic) NSString *totalTables;
-@property (strong, nonatomic) NSString *bookTables;
-@property (strong, nonatomic) NSString *lat;
-@property (strong, nonatomic) NSString *lon;
+@property (strong, nonatomic) NSNumber *totalTables;
+@property (strong, nonatomic) NSNumber *bookTables;
+@property (strong, nonatomic) NSNumber *lat;
+@property (strong, nonatomic) NSNumber *lon;
 @property (strong, nonatomic) NSString *prov;
 @property (strong, nonatomic) NSString *telf;
 

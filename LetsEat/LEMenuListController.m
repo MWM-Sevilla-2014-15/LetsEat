@@ -11,6 +11,7 @@
 #import "SCLAlertView.h"
 #import "UIColor+MyColor.h"
 #import "SVProgressHUD.h"
+#import "LEDetailController.h"
 
 #import "GetRestaurantActionTask.h"
 #import "GetRestaurantRequestDTO.h"
@@ -19,6 +20,7 @@
 @interface LEMenuListController ()
 
 @property (nonatomic, strong) NSArray *arrayRestaurants;
+@property (strong, nonatomic) RestaurantDTO *restaurant;
 
 @end
 
@@ -136,21 +138,29 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     cell.labelName.text = rest.name;
     cell.labelType.text = @"Italiano";
-    cell.labelHour.text = @"Abierto: 12:30 - 16:30 / 21:00 - 00:00";
-    cell.labelNumberTables.text = @"45";
+    cell.labelHour.text = [self concatString:rest.m_t_open second:rest.m_t_close third:rest.t_t_open fourth:rest.t_t_close];
+    cell.labelNumberTables.text = [rest.totalTables stringValue];
     cell.labelInfoDesc.text = @"10% en postres";
-    cell.imageRest.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", index]];
+    cell.imageRest.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", indexPath.row + 1]];
     
     //Añadir badge
-    cell.badgeView.badgeText = @"15";
-    [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customSuccessColor]];
+    NSNumber *tablesAvailables = [NSNumber numberWithFloat:([rest.totalTables floatValue] - [rest.bookTables floatValue])];
+    cell.badgeView.badgeText = [tablesAvailables stringValue];
+    if([tablesAvailables intValue] >= 20){
+        [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customSuccessColor]];
+    } else if([tablesAvailables intValue] >= 10 ){
+        [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customWarningColor]];
+    } else if([tablesAvailables intValue] < 10 ){
+        [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customErrorColor]];
+    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"openDetail" sender:nil];
+    self.restaurant = [self.arrayRestaurants objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"openDetail" sender:self];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -159,12 +169,28 @@
     return indexPath.row == self.arrayRestaurants.count - 1 ? 200 : 200;
 }
 
-//#pragma mark - Navigation
-//
-////In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//     //Get the new view controller using [segue destinationViewController].
-//     //Pass the selected object to the new view controller.
-//}
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"openDetail"])
+    {
+        LEDetailController *destinationController = [segue destinationViewController];
+        destinationController.restaurant = self.restaurant;
+    }
+    
+}
+
+- (NSString *)concatString:(NSString *)openDay second:(NSString *)closeDay third:(NSString *)openNight fourth:(NSString *)closeNight
+{
+    NSString *onePart = @"Abierto: ";
+    NSString *twoPart = [onePart stringByAppendingString:openDay];
+    NSString *threePart = [twoPart stringByAppendingString:@" - "];
+    NSString *fourPart = [threePart stringByAppendingString:closeDay];
+    NSString *fivePart = [fourPart stringByAppendingString:@" / "];
+    NSString *sixPart = [fivePart stringByAppendingString:openNight];
+    NSString *sevenPart = [sixPart stringByAppendingString:@" - "];
+    return [sevenPart stringByAppendingString:closeNight];
+}
 
 @end

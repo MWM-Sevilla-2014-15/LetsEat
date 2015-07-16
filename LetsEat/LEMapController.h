@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "PopMenu.h"
+#import "RestaurantDTO.h"
 
 @interface LEMapController : UIViewController <MKMapViewDelegate,  CLLocationManagerDelegate>
 
@@ -17,6 +18,8 @@
 
 @property (strong, nonatomic) NSUserDefaults *userData;
 @property (nonatomic, strong) PopMenu *popMenu;
+
+@property (strong, nonatomic) RestaurantDTO *restaurant;
 
 
 @end

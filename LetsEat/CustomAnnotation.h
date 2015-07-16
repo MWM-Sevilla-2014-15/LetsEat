@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface CustomAnnotation : NSObject <MKAnnotation>
+@interface CustomAnnotation : NSObject <MKAnnotation> {
+    NSString *title;
+    CLLocationCoordinate2D coordinate;
+}
 
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
-@property (copy, nonatomic) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 
--(id)initWithTitle:(NSString *)newTitle Location:(CLLocationCoordinate2D)location;
-- (MKAnnotationView *)annotationView;
+- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d;
 
 @end

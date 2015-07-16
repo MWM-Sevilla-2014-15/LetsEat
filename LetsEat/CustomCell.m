@@ -42,7 +42,7 @@
     self.imageRest.contentMode   = UIViewContentModeScaleAspectFit;
     self.imageRest.clipsToBounds = YES;
     
-    self.badgeView = [[JSBadgeView alloc] initWithParentView:self.customView alignment:JSBadgeViewAlignmentTopRight];
+    self.badgeView = [[JSBadgeView alloc] initWithParentView:self.customView alignment:JSBadgeViewAlignmentTopRight];    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
