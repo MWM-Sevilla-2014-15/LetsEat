@@ -18,7 +18,7 @@ static NSString * const sampleDescription2 = @"Sed ut perspiciatis unde omnis is
 static NSString * const sampleDescription3 = @"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
 static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.";
 
-@interface LEMainController () <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource, EAIntroDelegate>
+@interface LEMainController () <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource>
 {
     UIView *rootView;
 }
@@ -71,19 +71,19 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     NSString *text = nil;
     switch (index - 1) {
         case 0:
-            text = @"¿Qué es LET'sGoEAT?";
-            break;
-        case 1:
             text = @"Ubicación actual";
             break;
-        case 2:
+        case 1:
             text = @"Sevilla";
             break;
-        case 3:
+        case 2:
             text = @"Cádiz";
             break;
-        case 4:
+        case 3:
             text = @"Granada";
+            break;
+        case 4:
+            text = @"¿Qué es LET'sGoEAT?";
             break;
         case 5:
             text = @"Cerrar sesión";
@@ -114,16 +114,16 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     self.userData = [[NSUserDefaults alloc] init];
     
-    if(indexPath.item == 0){
+    if(indexPath.item == 4){
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
         [self createIntroView];
-    } else if(indexPath.item == 1){
+    } else if(indexPath.item == 0){
         [self performSegueWithIdentifier:@"openMap" sender:nil];
+    } else if(indexPath.item == 1){
+        [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 2){
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 3){
-        [self performSegueWithIdentifier:@"openMenuList" sender:nil];
-    } else if(indexPath.item == 4){
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 5){
         SCLAlertView *alert = [[SCLAlertView alloc] init];

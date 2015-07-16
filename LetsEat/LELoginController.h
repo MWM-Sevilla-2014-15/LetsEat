@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EAIntroView/EAIntroView.h>
+#import "QuartzCore/QuartzCore.h"
 
-@interface LELoginController : UIViewController <UITextFieldDelegate>
+@interface LELoginController : UIViewController <UITextFieldDelegate, EAIntroDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) NSUserDefaults *userData;
 

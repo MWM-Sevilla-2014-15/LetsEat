@@ -12,6 +12,7 @@
 		1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D78429D1B4FCE710056A40D /* LEMenuListController.xib */; };
 		1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7842A21B4FE8E80056A40D /* LEDetailController.m */; };
 		1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7842A31B4FE8E80056A40D /* LEDetailController.xib */; };
+		3309FDD91B58658B0014F53C /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3313258A1B556DB800CE5801 /* Dosis-ExtraLight.ttf */; };
 		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
 		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
 		330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B431B4B22EF006920C4 /* LERecoverController.m */; };
@@ -864,6 +865,7 @@
 				33A25A931B580D4D00EDB160 /* Dosis-ExtraBold.ttf in Resources */,
 				33A25A941B580D5400EDB160 /* Dosis-Medium.ttf in Resources */,
 				33A25A951B580D5400EDB160 /* Dosis-Regular.ttf in Resources */,
+				3309FDD91B58658B0014F53C /* Dosis-ExtraLight.ttf in Resources */,
 				33A25A961B580D5400EDB160 /* Dosis-SemiBold.ttf in Resources */,
 				33DEFA6B1B46E69400053B72 /* Main.storyboard in Resources */,
 				33DEFA701B46E69400053B72 /* LaunchScreen.xib in Resources */,

@@ -5,12 +5,12 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Dosis-Bold.ttf</string>
-        <string>Dosis-ExtraBold.ttf</string>
-        <string>Dosis-ExtraLight.ttf</string>
-        <string>Dosis-Light.ttf</string>
-        <string>Dosis-Medium.ttf</string>
-        <string>Dosis-Regular.ttf</string>
-        <string>Dosis-SemiBold.ttf</string>
+		<string>Dosis-ExtraBold.ttf</string>
+		<string>Dosis-ExtraBold.ttf</string>
+		<string>Dosis-Light.ttf</string>
+		<string>Dosis-Medium.ttf</string>
+		<string>Dosis-Regular.ttf</string>
+		<string>Dosis-SemiBold.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

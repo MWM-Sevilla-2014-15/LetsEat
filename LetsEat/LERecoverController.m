@@ -37,7 +37,7 @@
     self.labelInfo.textColor = [UIColor customThirdColor];
     
     [self.labelError setHidden:YES];
-    self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
+    self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
     [self.labelError setTextColor: [UIColor customErrorColor]];
     [self.labelError setText:@""];
     
@@ -60,7 +60,7 @@
             [SVProgressHUD showWithStatus:@"Enviando..."];            
             
             [self.labelError setHidden:YES];
-            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
+            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
             [self.labelError setTextColor: [UIColor customErrorColor]];
             [self.labelError setText:@""];
             
@@ -112,7 +112,7 @@
             [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen fallos en el formulario, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
             
             [self.labelError setHidden:NO];
-            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
+            self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
             [self.labelError setTextColor: [UIColor customErrorColor]];
             [self.labelError setText:@"Formato email incorrecto. Inténtelo de nuevo."];
             
@@ -125,7 +125,7 @@
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
         
         [self.labelError setHidden:NO];
-        self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraLight" size:12];
+        self.labelError.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
         [self.labelError setTextColor: [UIColor customErrorColor]];
         [self.labelError setText:@"Campo obligatorio."];
         

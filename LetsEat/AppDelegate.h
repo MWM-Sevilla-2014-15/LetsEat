@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EAIntroView/EAIntroView.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, EAIntroDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
