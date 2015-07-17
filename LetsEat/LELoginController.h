@@ -12,7 +12,6 @@
 
 @interface LELoginController : UIViewController <UITextFieldDelegate, EAIntroDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) NSUserDefaults *userData;

@@ -83,12 +83,12 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
                 [self.userData synchronize];
                 [self performSegueWithIdentifier:@"openMain" sender:nil];
             } else if(response.desc == nil){
-                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                 [alert showError:self title:@"ERROR"
                         subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
                 closeButtonTitle:@"Continuar" duration:0.0f];
             } else {
-                SCLAlertView *alert = [[SCLAlertView alloc] init];
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                 [alert showError:self title:@"ERROR"
                         subTitle:response.desc
                 closeButtonTitle:@"Continuar" duration:0.0f];
@@ -98,7 +98,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
             NSLog(@"Error: %@", error);
         }];
     } else {
-        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Existen campos sin rellenar, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
         
         if(self.textUser.text.length == 0){

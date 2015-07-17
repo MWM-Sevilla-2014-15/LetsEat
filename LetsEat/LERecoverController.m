@@ -77,7 +77,7 @@
             [GetPassActionTask getPassActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, GetPassResponseDTO *response) {
                 [SVProgressHUD dismiss];
                 if(response.desc == nil){
-                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     [alert showError:self title:@"ERROR"
                             subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
                     closeButtonTitle:@"Continuar" duration:0.0f];
@@ -93,12 +93,12 @@
                     };
                     [alert showSuccess:@"Email Enviado" subTitle:response.desc closeButtonTitle:nil duration:0.0f];
                 } else if([response.code isEqualToString:@"GP_E_ENE"]){
-                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     [alert showError:self title:@"ERROR"
                             subTitle:response.desc
                     closeButtonTitle:@"Continuar" duration:0.0f];
                 } else if([response.code isEqualToString:@"GP_E_IE"]){
-                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     [alert showError:self title:@"ERROR"
                             subTitle:response.desc
                     closeButtonTitle:@"Continuar" duration:0.0f];
@@ -121,7 +121,7 @@
             self.textEmail.layer.borderColor = [UIColor customErrorColor].CGColor;
         }
     } else {
-        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
         [alert showWarning:self title:@"ATENCIÓN" subTitle:@"Debe rellenar el campo de email, revíselo antes de volver a intentarlo." closeButtonTitle:@"Continuar" duration:0.0f];
         
         [self.labelError setHidden:NO];

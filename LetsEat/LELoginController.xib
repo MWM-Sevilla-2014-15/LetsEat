@@ -6,32 +6,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LELoginController">
             <connections>
-                <outlet property="buttonLog" destination="JDb-os-29V" id="JvG-ca-PmA"/>
-                <outlet property="buttonRecover" destination="Gpn-XJ-vC5" id="d0N-kK-Fr7"/>
-                <outlet property="buttonRegister" destination="TPQ-LM-0M3" id="waP-Vk-Ktr"/>
-                <outlet property="contentView" destination="i5M-Pr-FkT" id="4gE-Ba-b3p"/>
-                <outlet property="labelErrorPwd" destination="3lV-P7-qLD" id="lzE-Lc-bpM"/>
-                <outlet property="labelErrorUsr" destination="iaZ-PZ-uuB" id="BSO-yS-ZjY"/>
-                <outlet property="textPwd" destination="KMS-Hk-G9b" id="Hlj-ua-kYf"/>
-                <outlet property="textUser" destination="PFk-qE-ido" id="lf8-Kj-JXH"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="viewForm" destination="3BR-6h-2Xb" id="NWj-CK-fwn"/>
+                <outlet property="buttonLog" destination="pi4-rn-Qkb" id="GzA-MO-xb4"/>
+                <outlet property="buttonRecover" destination="2BD-ai-Qnb" id="w6a-V7-pDl"/>
+                <outlet property="buttonRegister" destination="j0G-IW-q4X" id="c8q-Nf-bQC"/>
+                <outlet property="labelErrorPwd" destination="Oxq-It-LiS" id="d3B-zb-2s1"/>
+                <outlet property="labelErrorUsr" destination="75a-uB-NIp" id="TJE-5R-FrG"/>
+                <outlet property="textPwd" destination="YEa-Sk-5rA" id="U43-vP-FBb"/>
+                <outlet property="textUser" destination="JCW-nb-FZU" id="lxd-Vb-HLY"/>
+                <outlet property="view" destination="40m-2W-8hj" id="Lfk-yG-iYk"/>
+                <outlet property="viewForm" destination="7j2-MP-fOX" id="L3L-eJ-0jz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+        <view contentMode="scaleToFill" id="40m-2W-8hj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-6h-2Xb">
-                    <rect key="frame" x="37" y="263" width="300" height="122"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7j2-MP-fOX">
+                    <rect key="frame" x="37" y="199" width="300" height="122"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-Hk-G9b">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEa-Sk-5rA">
                             <rect key="frame" x="17" y="81" width="275" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre de usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-qE-ido">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre de usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JCW-nb-FZU">
                             <rect key="frame" x="17" y="15" width="275" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -39,64 +38,64 @@
                     </subviews>
                     <color key="backgroundColor" red="0.28627450980000002" green="0.74509803919999995" blue="0.7725490196" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lV-P7-qLD">
-                    <rect key="frame" x="54" y="384" width="275" height="16"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxq-It-LiS">
+                    <rect key="frame" x="54" y="320" width="275" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-os-29V">
-                    <rect key="frame" x="37" y="403" width="300" height="43"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi4-rn-Qkb">
+                    <rect key="frame" x="37" y="339" width="300" height="43"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="Nkj-KD-G88"/>
-                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="hSe-mp-S06"/>
-                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="3Ck-Ye-hyJ"/>
-                        <action selector="doLogin" destination="-1" eventType="touchUpInside" id="AXl-HJ-uZq"/>
+                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="GRu-mm-kvO"/>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="zYL-UA-2Ng"/>
+                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="0ZB-1L-jqA"/>
+                        <action selector="doLogin" destination="-1" eventType="touchUpInside" id="ps3-kV-i8k"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpn-XJ-vC5">
-                    <rect key="frame" x="37" y="454" width="300" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BD-ai-Qnb">
+                    <rect key="frame" x="37" y="390" width="300" height="30"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="openRecover" destination="-1" eventType="touchUpInside" id="qnZ-Oa-ono"/>
+                        <action selector="openRecover" destination="-1" eventType="touchUpInside" id="SXu-wB-ZoI"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPQ-LM-0M3">
-                    <rect key="frame" x="37" y="598" width="300" height="43"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0G-IW-q4X">
+                    <rect key="frame" x="37" y="534" width="300" height="43"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="M2s-wh-CBU"/>
-                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="u35-gg-HUe"/>
-                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="JHg-iD-UGX"/>
-                        <action selector="openRegister" destination="-1" eventType="touchUpInside" id="evn-aW-HB4"/>
+                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="4Jj-gd-e8V"/>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="ulH-F2-kxg"/>
+                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="Dk0-Sk-tMB"/>
+                        <action selector="openRegister" destination="-1" eventType="touchUpInside" id="Pcs-9Z-vFe"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaZ-PZ-uuB">
-                    <rect key="frame" x="54" y="316" width="275" height="16"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75a-uB-NIp">
+                    <rect key="frame" x="54" y="252" width="275" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letsgoeat_logo-270x75-gris" translatesAutoresizingMaskIntoConstraints="NO" id="8J6-aN-AMi">
-                    <rect key="frame" x="50" y="116" width="275" height="75"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letsgoeat_logo-270x75-gris" translatesAutoresizingMaskIntoConstraints="NO" id="1pV-3K-gCk">
+                    <rect key="frame" x="50" y="52" width="275" height="75"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="272.5" y="546.5"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="362.5" y="496.5"/>
         </view>
     </objects>
     <resources>
-        <image name="letsgoeat_logo-270x75-gris" width="135" height="36"/>
+        <image name="letsgoeat_logo-270x75-gris" width="1831" height="492"/>
     </resources>
 </document>

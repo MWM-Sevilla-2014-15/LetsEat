@@ -6,51 +6,52 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LERecoverController">
             <connections>
-                <outlet property="buttonSend" destination="MDm-QN-W7l" id="H0U-K0-KYc"/>
-                <outlet property="labelError" destination="8Kg-Dw-g5O" id="QAb-CX-Maq"/>
-                <outlet property="labelInfo" destination="qso-Yc-Ndn" id="iiZ-Kx-k0p"/>
-                <outlet property="textEmail" destination="8lj-7f-lK8" id="sN5-67-mcK"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="buttonSend" destination="mMi-MH-Q1W" id="SFK-XU-g7L"/>
+                <outlet property="labelError" destination="Obr-qM-2Qn" id="g8J-kR-3lM"/>
+                <outlet property="labelInfo" destination="EX3-Wd-Dw8" id="blV-iv-yG9"/>
+                <outlet property="textEmail" destination="V0W-g1-aKJ" id="9gq-hx-p5Z"/>
+                <outlet property="view" destination="Zfa-Sa-hdD" id="NwS-zO-BUv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+        <view contentMode="scaleToFill" id="Zfa-Sa-hdD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lj-7f-lK8">
-                    <rect key="frame" x="20" y="277" width="255" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V0W-g1-aKJ">
+                    <rect key="frame" x="20" y="213" width="255" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qso-Yc-Ndn">
-                    <rect key="frame" x="20" y="331" width="326" height="91"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EX3-Wd-Dw8">
+                    <rect key="frame" x="20" y="267" width="326" height="91"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDm-QN-W7l">
-                    <rect key="frame" x="290" y="277" width="66" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMi-MH-Q1W">
+                    <rect key="frame" x="290" y="213" width="66" height="30"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="gUD-6u-4j1"/>
-                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="5cc-ah-Wyq"/>
-                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="oNg-bA-sNY"/>
-                        <action selector="recoverData" destination="-1" eventType="touchUpInside" id="TWD-Lc-7p0"/>
+                        <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="PoI-v1-7PR"/>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="GiT-SG-sSW"/>
+                        <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="6LW-je-LKR"/>
+                        <action selector="recoverData" destination="-1" eventType="touchUpInside" id="Igx-DT-gbi"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kg-Dw-g5O">
-                    <rect key="frame" x="25" y="307" width="255" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obr-qM-2Qn">
+                    <rect key="frame" x="25" y="243" width="255" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="217.5" y="383.5"/>
         </view>
     </objects>
 </document>

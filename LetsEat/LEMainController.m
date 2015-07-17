@@ -126,7 +126,7 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     } else if(indexPath.item == 3){
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 5){
-        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
         SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(logOut)];
         button.buttonFormatBlock = ^NSDictionary* (void)
         {

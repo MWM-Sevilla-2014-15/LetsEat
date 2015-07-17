@@ -73,7 +73,7 @@
         NSLog(@"%@",selectedItem.title);
         if([selectedItem.title isEqualToString:@"Cerrar sesión"])
         {
-            SCLAlertView *alert = [[SCLAlertView alloc] init];
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
             SCLButton *button = [alert addButton:@"Continuar" target:weakSelf selector:@selector(logOut)];
             button.buttonFormatBlock = ^NSDictionary* (void)
             {

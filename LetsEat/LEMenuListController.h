@@ -12,7 +12,6 @@
 @interface LEMenuListController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UIView *customView;
 
 @property (strong, nonatomic) NSUserDefaults *userData;
 @property (nonatomic, strong) PopMenu *popMenu;

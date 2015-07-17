@@ -257,7 +257,7 @@
 {
     //Mover la UIVIEW
     NSTimeInterval animationDurationView = 1.0f;
-    CGRect newFrameSizeView = CGRectMake(0, 600, 375, 667);;
+    CGRect newFrameSizeView = CGRectMake(0, 536, 375, 603);;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:animationDurationView];
     self.customView.frame = newFrameSizeView;
@@ -265,7 +265,7 @@
     
     //Expandir el MAPVIEW
     NSTimeInterval animationDurationMap = 1.0f;
-    CGRect newFrameSizeMap = CGRectMake(0, 0, 375, 667);;
+    CGRect newFrameSizeMap = CGRectMake(0, 0, 375, 603);;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:animationDurationMap];
     self.mapView.frame = newFrameSizeMap;
@@ -276,7 +276,7 @@
 {
     //Mover la UIVIEW
     NSTimeInterval animationDurationView = 1.0f;
-    CGRect newFrameSizeView = CGRectMake(0, 235, 375, 667);;
+    CGRect newFrameSizeView = CGRectMake(0, 171, 375, 603);;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:animationDurationView];
     self.customView.frame = newFrameSizeView;

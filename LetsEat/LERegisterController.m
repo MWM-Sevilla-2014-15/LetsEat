@@ -92,7 +92,7 @@
             [SignUpActionTask signUpActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, SignUpResponseDTO *response) {
                 [SVProgressHUD dismiss];
                 if(response.desc == nil){
-                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     [alert showError:self title:@"ERROR"
                             subTitle:@"Fallo en la conexión. Compruebe que está conectado a una red e inténtelo de nuevo."
                     closeButtonTitle:@"Continuar" duration:0.0f];
@@ -108,7 +108,7 @@
                     };
                     [alert showSuccess:@"Registro Completado" subTitle:@"Registro realizado correctamente" closeButtonTitle:nil duration:0.0f];
                 } else {
-                    SCLAlertView *alert = [[SCLAlertView alloc] init];
+                    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
                     [alert showError:self title:@"ERROR"
                             subTitle:response.desc
                     closeButtonTitle:@"Continuar" duration:0.0f];
@@ -247,19 +247,19 @@
     [self.buttonRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     //Lineas justo debajo de los textfield
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(20, 147, 335, 1)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(20, 83, 335, 1)];
     lineView.backgroundColor = [UIColor customSecondColor];
     [self.view addSubview:lineView];
     
-    UIView *lineView2 = [[UIView alloc] initWithFrame:CGRectMake(20, 257, 335, 1)];
+    UIView *lineView2 = [[UIView alloc] initWithFrame:CGRectMake(20, 193, 335, 1)];
     lineView2.backgroundColor = [UIColor customSecondColor];
     [self.view addSubview:lineView2];
     
-    UIView *lineView3 = [[UIView alloc] initWithFrame:CGRectMake(20, 358, 335, 1)];
+    UIView *lineView3 = [[UIView alloc] initWithFrame:CGRectMake(20, 294, 335, 1)];
     lineView3.backgroundColor = [UIColor customSecondColor];
     [self.view addSubview:lineView3];
     
-    UIView *lineView4 = [[UIView alloc] initWithFrame:CGRectMake(20, 398, 335, 1)];
+    UIView *lineView4 = [[UIView alloc] initWithFrame:CGRectMake(20, 334, 335, 1)];
     lineView4.backgroundColor = [UIColor customSecondColor];
     [self.view addSubview:lineView4];
 }
