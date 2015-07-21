@@ -51,6 +51,21 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
     [self createView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.labelErrorUsr setHidden:YES];
+    self.labelErrorUsr.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
+    [self.labelErrorUsr setTextColor: [UIColor customErrorColor]];
+    [self.labelErrorUsr setText:@""];
+    
+    [self.labelErrorPwd setHidden:YES];
+    self.labelErrorPwd.font = [UIFont fontWithName:@"Dosis-ExtraBold" size:12];
+    [self.labelErrorPwd setTextColor: [UIColor customErrorColor]];
+    [self.labelErrorPwd setText:@""];
+}
+
 -(IBAction)doLogin
 {
     [self.textUser resignFirstResponder];

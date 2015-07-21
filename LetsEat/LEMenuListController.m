@@ -44,6 +44,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.separatorStyle = NO;
     
     [self loadRestaurants];
 }
