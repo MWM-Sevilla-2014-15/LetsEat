@@ -1,13 +1,13 @@
 //
 //  GetPassActionTask.m
-//  LetsGoEat
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
 //
 
 #import "GetPassActionTask.h"
-#import "LetsGoEatHelper.h"
+#import "LetsEatHelper.h"
 #import "GetPassLogic.h"
 
 @implementation GetPassActionTask
@@ -47,8 +47,8 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 		
 	UIView *loadingView;
-	if ([[LetsGoEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
-		loadingView = [[LetsGoEatHelper sharedInstance] loadingViewForTasks];
+	if ([[LetsEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
+		loadingView = [[LetsEatHelper sharedInstance] loadingViewForTasks];
 	}
 				
 	if (loadingView) {
@@ -90,8 +90,8 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 		
 	UIView *loadingView;
-	if ([[LetsGoEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
-		loadingView = [[LetsGoEatHelper sharedInstance] loadingViewForTasks];
+	if ([[LetsEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
+		loadingView = [[LetsEatHelper sharedInstance] loadingViewForTasks];
 	}
 				
 	if (loadingView) {

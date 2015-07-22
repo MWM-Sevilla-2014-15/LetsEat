@@ -32,6 +32,9 @@
         if (instance.name) {
 			dict[@"name"] = instance.name;
         }
+        if (instance.type) {
+			dict[@"type"] = instance.type;
+        }
         if (instance.url) {
 			dict[@"url"] = instance.url;
         }
@@ -108,6 +111,16 @@
 	else
 	{
 		instance.name=[NSString stringWithFormat:@"%@",dict[@"name"]];
+	}
+        }
+    if (dict[@"type"] && ![dict[@"type"] isKindOfClass:[NSNull class]]) {
+	if([dict[@"type"] isKindOfClass:[NSString class]])
+	{
+		instance.type=dict[@"type"];
+	}
+	else
+	{
+		instance.type=[NSString stringWithFormat:@"%@",dict[@"type"]];
 	}
         }
     if (dict[@"url"] && ![dict[@"url"] isKindOfClass:[NSNull class]]) {

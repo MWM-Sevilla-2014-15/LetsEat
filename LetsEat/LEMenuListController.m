@@ -138,7 +138,7 @@
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     cell.labelName.text = rest.name;
-    cell.labelType.text = @"Italiano";
+    cell.labelType.text = rest.type;
     cell.labelHour.text = [self concatString:rest.m_t_open second:rest.m_t_close third:rest.t_t_open fourth:rest.t_t_close];
     cell.labelNumberTables.text = [rest.totalTables stringValue];
     cell.labelInfoDesc.text = @"10% en postres";
@@ -147,11 +147,9 @@
     //Añadir badge
     NSNumber *tablesAvailables = [NSNumber numberWithFloat:([rest.totalTables floatValue] - [rest.bookTables floatValue])];
     cell.badgeView.badgeText = [tablesAvailables stringValue];
-    if([tablesAvailables intValue] >= 20){
+    if([tablesAvailables intValue] > 0){
         [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customSuccessColor]];
-    } else if([tablesAvailables intValue] >= 10 ){
-        [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customWarningColor]];
-    } else if([tablesAvailables intValue] < 10 ){
+    } else {
         [[JSBadgeView appearance] setBadgeBackgroundColor:[UIColor customErrorColor]];
     }
     

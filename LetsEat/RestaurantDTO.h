@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *isActivated;
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *type;
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) NSString *desc;
 @property (strong, nonatomic) NSString *m_t_open;

@@ -18,6 +18,7 @@
     if(copy) {
 		copy.isActivated=[self.isActivated copyWithZone:zone];
 		copy.name=[self.name copyWithZone:zone];
+		copy.type=[self.type copyWithZone:zone];
 		copy.url=[self.url copyWithZone:zone];
 		copy.desc=[self.desc copyWithZone:zone];
 		copy.m_t_open=[self.m_t_open copyWithZone:zone];
@@ -44,6 +45,7 @@
 	if(copy) {
 		copy.isActivated=self.isActivated;
 		copy.name=self.name;
+		copy.type=self.type;
 		copy.url=self.url;
 		copy.desc=self.desc;
 		copy.m_t_open=self.m_t_open;
@@ -72,6 +74,7 @@
 	
 	self.isActivated = [decoder decodeObjectForKey:@"isActivated"];
 	self.name = [decoder decodeObjectForKey:@"name"];
+	self.type = [decoder decodeObjectForKey:@"type"];
 	self.url = [decoder decodeObjectForKey:@"url"];
 	self.desc = [decoder decodeObjectForKey:@"desc"];
 	self.m_t_open = [decoder decodeObjectForKey:@"m_t_open"];
@@ -94,6 +97,7 @@
 	
 	[encoder encodeObject:self.isActivated forKey:@"isActivated"];
 	[encoder encodeObject:self.name forKey:@"name"];
+	[encoder encodeObject:self.type forKey:@"type"];
 	[encoder encodeObject:self.url forKey:@"url"];
 	[encoder encodeObject:self.desc forKey:@"desc"];
 	[encoder encodeObject:self.m_t_open forKey:@"m_t_open"];
@@ -119,6 +123,7 @@
 	BOOL equals = YES;
     equals = equals && (self.isActivated == other.isActivated || [self.isActivated isEqual:other.isActivated]);
     equals = equals && (self.name == other.name || [self.name isEqual:other.name]);
+    equals = equals && (self.type == other.type || [self.type isEqual:other.type]);
     equals = equals && (self.url == other.url || [self.url isEqual:other.url]);
     equals = equals && (self.desc == other.desc || [self.desc isEqual:other.desc]);
     equals = equals && (self.m_t_open == other.m_t_open || [self.m_t_open isEqual:other.m_t_open]);
@@ -150,6 +155,7 @@
 	NSUInteger theHash = 0;
     theHash = theHash ^ [self.isActivated hash];
     theHash = theHash ^ [self.name hash];
+    theHash = theHash ^ [self.type hash];
     theHash = theHash ^ [self.url hash];
     theHash = theHash ^ [self.desc hash];
     theHash = theHash ^ [self.m_t_open hash];

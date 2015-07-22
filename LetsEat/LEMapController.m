@@ -121,7 +121,7 @@
         coord.latitude = [rest.lat doubleValue];
         coord.longitude = [rest.lon doubleValue];
         CustomAnnotation *annotation = [[CustomAnnotation alloc] initWithTitle:rest.name andCoordinate:coord];
-        annotation.subtitle = @"Italiano";
+        annotation.subtitle = rest.type;
         [self.mapView addAnnotation:annotation];
     }
     

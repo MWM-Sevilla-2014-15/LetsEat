@@ -66,6 +66,7 @@
         <type name="GetRestaurantsDTO">
             <field name="isActivated" serviceName="isActivated" type="string" description="Campo de respuesta"/>
             <field name="name" serviceName="name" type="string" description="Campo de respuesta"/>
+            <field name="type" serviceName="type" type="string" description="Campo de respuesta"/>
             <field name="url" serviceName="url" type="string" description="Campo de respuesta"/>
             <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
             <field name="m_t_open" serviceName="m_t_open" type="string" description="Campo de respuesta"/>

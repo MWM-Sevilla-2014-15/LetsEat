@@ -1,6 +1,6 @@
 //
 //  BaseGetRestaurantsDTO.h
-//  LetsGoEat
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) NSString *isActivated;	///<  - Field name on service:isActivated.
 @property (nonatomic, strong) NSString *name;	///<  - Field name on service:name.
+@property (nonatomic, strong) NSString *type;	///<  - Field name on service:type.
 @property (nonatomic, strong) NSString *url;	///<  - Field name on service:url.
 @property (nonatomic, strong) NSString *desc;	///<  - Field name on service:desc.
 @property (nonatomic, strong) NSString *m_t_open;	///<  - Field name on service:m_t_open.

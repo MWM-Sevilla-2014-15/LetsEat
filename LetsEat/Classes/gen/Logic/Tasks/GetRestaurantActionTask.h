@@ -1,6 +1,6 @@
 //
 //  GetRestaurantActionTask.h
-//  LetsGoEat
+//  LetsEat
 //  Version: 10.0
 //
 //  Created by Service Generator
