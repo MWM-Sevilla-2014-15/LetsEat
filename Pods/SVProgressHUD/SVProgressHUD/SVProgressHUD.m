@@ -252,7 +252,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
 		self.alpha = 0.0f;
         self.activityCount = 0;
         
-        SVProgressHUDBackgroundColor = [UIColor colorWithRed:254.0/255.0 green:154.0/255.0 blue:46.0/255.0 alpha:0.2];
+        SVProgressHUDBackgroundColor = [UIColor colorWithRed:254.0/255.0 green:154.0/255.0 blue:46.0/255.0 alpha:0.5];
         SVProgressHUDForegroundColor = [UIColor colorWithRed:73.0/255.0 green:190.0/255.0 blue:197.0/255.0 alpha:1.0];
         if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
             //SVProgressHUDFont = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];

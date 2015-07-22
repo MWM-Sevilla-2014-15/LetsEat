@@ -16,6 +16,7 @@
 
 	BaseGetRestaurantsDTO *copy=[[[self class] alloc] init];
     if(copy) {
+		copy.idRest=[self.idRest copyWithZone:zone];
 		copy.isActivated=[self.isActivated copyWithZone:zone];
 		copy.name=[self.name copyWithZone:zone];
 		copy.type=[self.type copyWithZone:zone];
@@ -43,6 +44,7 @@
 
 	BaseGetRestaurantsDTO *copy=[[[self class] alloc] init];
 	if(copy) {
+		copy.idRest=self.idRest;
 		copy.isActivated=self.isActivated;
 		copy.name=self.name;
 		copy.type=self.type;
@@ -72,6 +74,7 @@
         return nil;
     }
 	
+	self.idRest = [decoder decodeObjectForKey:@"idRest"];
 	self.isActivated = [decoder decodeObjectForKey:@"isActivated"];
 	self.name = [decoder decodeObjectForKey:@"name"];
 	self.type = [decoder decodeObjectForKey:@"type"];
@@ -95,6 +98,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
 	
+	[encoder encodeObject:self.idRest forKey:@"idRest"];
 	[encoder encodeObject:self.isActivated forKey:@"isActivated"];
 	[encoder encodeObject:self.name forKey:@"name"];
 	[encoder encodeObject:self.type forKey:@"type"];
@@ -121,6 +125,7 @@
 		return NO;
 	}
 	BOOL equals = YES;
+    equals = equals && (self.idRest == other.idRest || [self.idRest isEqual:other.idRest]);
     equals = equals && (self.isActivated == other.isActivated || [self.isActivated isEqual:other.isActivated]);
     equals = equals && (self.name == other.name || [self.name isEqual:other.name]);
     equals = equals && (self.type == other.type || [self.type isEqual:other.type]);
@@ -153,6 +158,7 @@
 
 - (NSUInteger)hash {
 	NSUInteger theHash = 0;
+    theHash = theHash ^ [self.idRest hash];
     theHash = theHash ^ [self.isActivated hash];
     theHash = theHash ^ [self.name hash];
     theHash = theHash ^ [self.type hash];

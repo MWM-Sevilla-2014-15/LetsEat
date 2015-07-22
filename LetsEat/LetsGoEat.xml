@@ -37,6 +37,15 @@
                 <field name="items" type="GetRestaurantsDTO*" description="contenido de las carpetas"/>
             </response>
         </message>
+        <message name="bookRestaurantAction" service="BookRestaurant" method="bookRestaurantAction" description="Reserva una mesa disponible de restaurante" type="PostJSON">
+            <urlPattern>
+                <url address="http://12-dot-com-silicon-letseat.appspot.com/rest/bookrestaurant"/>
+            </urlPattern>
+            <request type="BookRestaurantRequestDTO">
+               <field name="request" serviceName="request" type="BookRestDTO" description="DTO que engloba los valores a enviar en el bookrest"/>
+            </request>
+            <response type="BookRestaurantResponseDTO" typeRef="true"/>
+        </message>
     </messages>
     <types>
         <type name="SignUpDTO">
@@ -64,7 +73,8 @@
             <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
         </type>
         <type name="GetRestaurantsDTO">
-            <field name="isActivated" serviceName="isActivated" type="string" description="Campo de respuesta"/>
+            <field name="idRest" serviceName="id" type="long" description="Campo de respuesta"/>
+            <field name="isActivated" serviceName="isActivated" type="long" description="Campo de respuesta"/>
             <field name="name" serviceName="name" type="string" description="Campo de respuesta"/>
             <field name="type" serviceName="type" type="string" description="Campo de respuesta"/>
             <field name="url" serviceName="url" type="string" description="Campo de respuesta"/>
@@ -81,6 +91,14 @@
             <field name="lon" serviceName="lon" type="double" description="Campo de respuesta"/>
             <field name="prov" serviceName="prov" type="string" description="Campo de respuesta"/>
             <field name="telf" serviceName="telf" type="string" description="Campo de respuesta"/>
+        </type>
+        <type name="BookRestDTO">
+            <field name="idRest" serviceName="id" type="long" description="Campo de usuario"/>
+            <field name="Ntables2Book" serviceName="Ntables2Book" type="long" description="Campo de usuario"/>
+        </type>
+        <type name="BookRestaurantResponseDTO">
+            <field name="code" serviceName="code" type="string" description="Campo de respuesta"/>
+            <field name="desc" serviceName="desc" type="string" description="Campo de respuesta"/>
         </type>
     </types>
 </protocol>

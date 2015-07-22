@@ -26,6 +26,9 @@
 {
 	NSMutableDictionary *dict=[[NSMutableDictionary alloc]init];	
 		
+        if (instance.idRest) {
+			dict[@"id"] = instance.idRest;
+        }
         if (instance.isActivated) {
 			dict[@"isActivated"] = instance.isActivated;
         }
@@ -93,15 +96,11 @@
 	if(![dict isKindOfClass:[NSNull class]])
 	    {
 
+    if (dict[@"id"] && ![dict[@"id"] isKindOfClass:[NSNull class]]) {
+		instance.idRest = dict[@"id"];
+        }
     if (dict[@"isActivated"] && ![dict[@"isActivated"] isKindOfClass:[NSNull class]]) {
-	if([dict[@"isActivated"] isKindOfClass:[NSString class]])
-	{
-		instance.isActivated=dict[@"isActivated"];
-	}
-	else
-	{
-		instance.isActivated=[NSString stringWithFormat:@"%@",dict[@"isActivated"]];
-	}
+		instance.isActivated = dict[@"isActivated"];
         }
     if (dict[@"name"] && ![dict[@"name"] isKindOfClass:[NSNull class]]) {
 	if([dict[@"name"] isKindOfClass:[NSString class]])

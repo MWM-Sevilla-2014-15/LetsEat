@@ -12,62 +12,74 @@
 		1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D78429D1B4FCE710056A40D /* LEMenuListController.xib */; };
 		1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7842A21B4FE8E80056A40D /* LEDetailController.m */; };
 		1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7842A31B4FE8E80056A40D /* LEDetailController.xib */; };
-		1DEDCE861B5F886100A19010 /* BaseLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE0E1B5F886100A19010 /* BaseLogic.m */; };
-		1DEDCE871B5F886100A19010 /* LogicFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE101B5F886100A19010 /* LogicFilter.m */; };
-		1DEDCE881B5F886100A19010 /* DummyCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE141B5F886100A19010 /* DummyCache.m */; };
-		1DEDCE891B5F886100A19010 /* LimitedAgeMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE161B5F886100A19010 /* LimitedAgeMemoryCache.m */; };
-		1DEDCE8A1B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE181B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.m */; };
-		1DEDCE8B1B5F886100A19010 /* UnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE1A1B5F886100A19010 /* UnlimitedDiskCache.m */; };
-		1DEDCE8C1B5F886100A19010 /* UnlimitedMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE1C1B5F886100A19010 /* UnlimitedMemoryCache.m */; };
-		1DEDCE8D1B5F886100A19010 /* BaseGetPassLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE201B5F886100A19010 /* BaseGetPassLogic.m */; };
-		1DEDCE8E1B5F886100A19010 /* BaseGetRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE221B5F886100A19010 /* BaseGetRestaurantLogic.m */; };
-		1DEDCE8F1B5F886100A19010 /* BaseSignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE241B5F886100A19010 /* BaseSignInLogic.m */; };
-		1DEDCE901B5F886100A19010 /* BaseSignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE261B5F886100A19010 /* BaseSignUpLogic.m */; };
-		1DEDCE911B5F886100A19010 /* GetPassLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE281B5F886100A19010 /* GetPassLogic.m */; };
-		1DEDCE921B5F886100A19010 /* GetRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE2A1B5F886100A19010 /* GetRestaurantLogic.m */; };
-		1DEDCE931B5F886100A19010 /* LetsEatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE2C1B5F886100A19010 /* LetsEatHelper.m */; };
-		1DEDCE941B5F886100A19010 /* SignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE2E1B5F886100A19010 /* SignInLogic.m */; };
-		1DEDCE951B5F886100A19010 /* SignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE301B5F886100A19010 /* SignUpLogic.m */; };
-		1DEDCE961B5F886100A19010 /* GetPassActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE331B5F886100A19010 /* GetPassActionTask.m */; };
-		1DEDCE971B5F886100A19010 /* GetRestaurantActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE351B5F886100A19010 /* GetRestaurantActionTask.m */; };
-		1DEDCE981B5F886100A19010 /* SignInActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE371B5F886100A19010 /* SignInActionTask.m */; };
-		1DEDCE991B5F886100A19010 /* SignUpActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE391B5F886100A19010 /* SignUpActionTask.m */; };
-		1DEDCE9A1B5F886100A19010 /* GetPassDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE3D1B5F886100A19010 /* GetPassDAO.m */; };
-		1DEDCE9B1B5F886100A19010 /* GetPassRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE3F1B5F886100A19010 /* GetPassRequestDAO.m */; };
-		1DEDCE9C1B5F886100A19010 /* GetPassResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE411B5F886100A19010 /* GetPassResponseDAO.m */; };
-		1DEDCE9D1B5F886100A19010 /* GetRestaurantRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE431B5F886100A19010 /* GetRestaurantRequestDAO.m */; };
-		1DEDCE9E1B5F886100A19010 /* GetRestaurantResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE451B5F886100A19010 /* GetRestaurantResponseDAO.m */; };
-		1DEDCE9F1B5F886100A19010 /* GetRestaurantsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE471B5F886100A19010 /* GetRestaurantsDAO.m */; };
-		1DEDCEA01B5F886100A19010 /* SignInDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE491B5F886100A19010 /* SignInDAO.m */; };
-		1DEDCEA11B5F886100A19010 /* SignInRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE4B1B5F886100A19010 /* SignInRequestDAO.m */; };
-		1DEDCEA21B5F886100A19010 /* SignInResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE4D1B5F886100A19010 /* SignInResponseDAO.m */; };
-		1DEDCEA31B5F886100A19010 /* SignUpDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE4F1B5F886100A19010 /* SignUpDAO.m */; };
-		1DEDCEA41B5F886100A19010 /* SignUpRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE511B5F886100A19010 /* SignUpRequestDAO.m */; };
-		1DEDCEA51B5F886100A19010 /* SignUpResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE531B5F886100A19010 /* SignUpResponseDAO.m */; };
-		1DEDCEA61B5F886100A19010 /* BaseGetPassDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE571B5F886100A19010 /* BaseGetPassDTO.m */; };
-		1DEDCEA71B5F886100A19010 /* BaseGetPassRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE591B5F886100A19010 /* BaseGetPassRequestDTO.m */; };
-		1DEDCEA81B5F886100A19010 /* BaseGetPassResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE5B1B5F886100A19010 /* BaseGetPassResponseDTO.m */; };
-		1DEDCEA91B5F886100A19010 /* BaseGetRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE5D1B5F886100A19010 /* BaseGetRestaurantRequestDTO.m */; };
-		1DEDCEAA1B5F886100A19010 /* BaseGetRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE5F1B5F886100A19010 /* BaseGetRestaurantResponseDTO.m */; };
-		1DEDCEAB1B5F886100A19010 /* BaseGetRestaurantsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE611B5F886100A19010 /* BaseGetRestaurantsDTO.m */; };
-		1DEDCEAC1B5F886100A19010 /* BaseSignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE631B5F886100A19010 /* BaseSignInDTO.m */; };
-		1DEDCEAD1B5F886100A19010 /* BaseSignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE651B5F886100A19010 /* BaseSignInRequestDTO.m */; };
-		1DEDCEAE1B5F886100A19010 /* BaseSignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE671B5F886100A19010 /* BaseSignInResponseDTO.m */; };
-		1DEDCEAF1B5F886100A19010 /* BaseSignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE691B5F886100A19010 /* BaseSignUpDTO.m */; };
-		1DEDCEB01B5F886100A19010 /* BaseSignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE6B1B5F886100A19010 /* BaseSignUpRequestDTO.m */; };
-		1DEDCEB11B5F886100A19010 /* BaseSignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE6D1B5F886100A19010 /* BaseSignUpResponseDTO.m */; };
-		1DEDCEB21B5F886100A19010 /* GetPassDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE6F1B5F886100A19010 /* GetPassDTO.m */; };
-		1DEDCEB31B5F886100A19010 /* GetPassRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE711B5F886100A19010 /* GetPassRequestDTO.m */; };
-		1DEDCEB41B5F886100A19010 /* GetPassResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE731B5F886100A19010 /* GetPassResponseDTO.m */; };
-		1DEDCEB51B5F886100A19010 /* GetRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE751B5F886100A19010 /* GetRestaurantRequestDTO.m */; };
-		1DEDCEB61B5F886100A19010 /* GetRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE771B5F886100A19010 /* GetRestaurantResponseDTO.m */; };
-		1DEDCEB71B5F886100A19010 /* GetRestaurantsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE791B5F886100A19010 /* GetRestaurantsDTO.m */; };
-		1DEDCEB81B5F886100A19010 /* SignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE7B1B5F886100A19010 /* SignInDTO.m */; };
-		1DEDCEB91B5F886100A19010 /* SignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE7D1B5F886100A19010 /* SignInRequestDTO.m */; };
-		1DEDCEBA1B5F886100A19010 /* SignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE7F1B5F886100A19010 /* SignInResponseDTO.m */; };
-		1DEDCEBB1B5F886100A19010 /* SignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE811B5F886100A19010 /* SignUpDTO.m */; };
-		1DEDCEBC1B5F886100A19010 /* SignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE831B5F886100A19010 /* SignUpRequestDTO.m */; };
-		1DEDCEBD1B5F886100A19010 /* SignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCE851B5F886100A19010 /* SignUpResponseDTO.m */; };
+		1DEDD0061B5F92A600A19010 /* BaseLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF761B5F92A600A19010 /* BaseLogic.m */; };
+		1DEDD0071B5F92A600A19010 /* LogicFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF781B5F92A600A19010 /* LogicFilter.m */; };
+		1DEDD0081B5F92A600A19010 /* DummyCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF7C1B5F92A600A19010 /* DummyCache.m */; };
+		1DEDD0091B5F92A600A19010 /* LimitedAgeMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF7E1B5F92A600A19010 /* LimitedAgeMemoryCache.m */; };
+		1DEDD00A1B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF801B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.m */; };
+		1DEDD00B1B5F92A600A19010 /* UnlimitedDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF821B5F92A600A19010 /* UnlimitedDiskCache.m */; };
+		1DEDD00C1B5F92A600A19010 /* UnlimitedMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF841B5F92A600A19010 /* UnlimitedMemoryCache.m */; };
+		1DEDD00D1B5F92A600A19010 /* BaseBookRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF881B5F92A600A19010 /* BaseBookRestaurantLogic.m */; };
+		1DEDD00E1B5F92A600A19010 /* BaseGetPassLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF8A1B5F92A600A19010 /* BaseGetPassLogic.m */; };
+		1DEDD00F1B5F92A600A19010 /* BaseGetRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF8C1B5F92A600A19010 /* BaseGetRestaurantLogic.m */; };
+		1DEDD0101B5F92A600A19010 /* BaseSignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF8E1B5F92A600A19010 /* BaseSignInLogic.m */; };
+		1DEDD0111B5F92A600A19010 /* BaseSignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF901B5F92A600A19010 /* BaseSignUpLogic.m */; };
+		1DEDD0121B5F92A600A19010 /* BookRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF921B5F92A600A19010 /* BookRestaurantLogic.m */; };
+		1DEDD0131B5F92A600A19010 /* GetPassLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF941B5F92A600A19010 /* GetPassLogic.m */; };
+		1DEDD0141B5F92A600A19010 /* GetRestaurantLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF961B5F92A600A19010 /* GetRestaurantLogic.m */; };
+		1DEDD0151B5F92A600A19010 /* LetsEatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF981B5F92A600A19010 /* LetsEatHelper.m */; };
+		1DEDD0161B5F92A600A19010 /* SignInLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF9A1B5F92A600A19010 /* SignInLogic.m */; };
+		1DEDD0171B5F92A600A19010 /* SignUpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF9C1B5F92A600A19010 /* SignUpLogic.m */; };
+		1DEDD0181B5F92A600A19010 /* BookRestaurantActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCF9F1B5F92A600A19010 /* BookRestaurantActionTask.m */; };
+		1DEDD0191B5F92A600A19010 /* GetPassActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFA11B5F92A600A19010 /* GetPassActionTask.m */; };
+		1DEDD01A1B5F92A600A19010 /* GetRestaurantActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFA31B5F92A600A19010 /* GetRestaurantActionTask.m */; };
+		1DEDD01B1B5F92A600A19010 /* SignInActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFA51B5F92A600A19010 /* SignInActionTask.m */; };
+		1DEDD01C1B5F92A600A19010 /* SignUpActionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFA71B5F92A600A19010 /* SignUpActionTask.m */; };
+		1DEDD01D1B5F92A600A19010 /* BookRestaurantRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFAB1B5F92A600A19010 /* BookRestaurantRequestDAO.m */; };
+		1DEDD01E1B5F92A600A19010 /* BookRestaurantResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFAD1B5F92A600A19010 /* BookRestaurantResponseDAO.m */; };
+		1DEDD01F1B5F92A600A19010 /* BookRestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFAF1B5F92A600A19010 /* BookRestDAO.m */; };
+		1DEDD0201B5F92A600A19010 /* GetPassDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFB11B5F92A600A19010 /* GetPassDAO.m */; };
+		1DEDD0211B5F92A600A19010 /* GetPassRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFB31B5F92A600A19010 /* GetPassRequestDAO.m */; };
+		1DEDD0221B5F92A600A19010 /* GetPassResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFB51B5F92A600A19010 /* GetPassResponseDAO.m */; };
+		1DEDD0231B5F92A600A19010 /* GetRestaurantRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFB71B5F92A600A19010 /* GetRestaurantRequestDAO.m */; };
+		1DEDD0241B5F92A600A19010 /* GetRestaurantResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFB91B5F92A600A19010 /* GetRestaurantResponseDAO.m */; };
+		1DEDD0251B5F92A600A19010 /* GetRestaurantsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFBB1B5F92A600A19010 /* GetRestaurantsDAO.m */; };
+		1DEDD0261B5F92A600A19010 /* SignInDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFBD1B5F92A600A19010 /* SignInDAO.m */; };
+		1DEDD0271B5F92A600A19010 /* SignInRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFBF1B5F92A600A19010 /* SignInRequestDAO.m */; };
+		1DEDD0281B5F92A600A19010 /* SignInResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFC11B5F92A600A19010 /* SignInResponseDAO.m */; };
+		1DEDD0291B5F92A600A19010 /* SignUpDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFC31B5F92A600A19010 /* SignUpDAO.m */; };
+		1DEDD02A1B5F92A600A19010 /* SignUpRequestDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFC51B5F92A600A19010 /* SignUpRequestDAO.m */; };
+		1DEDD02B1B5F92A600A19010 /* SignUpResponseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFC71B5F92A600A19010 /* SignUpResponseDAO.m */; };
+		1DEDD02C1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFCB1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.m */; };
+		1DEDD02D1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFCD1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.m */; };
+		1DEDD02E1B5F92A600A19010 /* BaseBookRestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFCF1B5F92A600A19010 /* BaseBookRestDTO.m */; };
+		1DEDD02F1B5F92A600A19010 /* BaseGetPassDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFD11B5F92A600A19010 /* BaseGetPassDTO.m */; };
+		1DEDD0301B5F92A600A19010 /* BaseGetPassRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFD31B5F92A600A19010 /* BaseGetPassRequestDTO.m */; };
+		1DEDD0311B5F92A600A19010 /* BaseGetPassResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFD51B5F92A600A19010 /* BaseGetPassResponseDTO.m */; };
+		1DEDD0321B5F92A600A19010 /* BaseGetRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFD71B5F92A600A19010 /* BaseGetRestaurantRequestDTO.m */; };
+		1DEDD0331B5F92A600A19010 /* BaseGetRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFD91B5F92A600A19010 /* BaseGetRestaurantResponseDTO.m */; };
+		1DEDD0341B5F92A600A19010 /* BaseGetRestaurantsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFDB1B5F92A600A19010 /* BaseGetRestaurantsDTO.m */; };
+		1DEDD0351B5F92A600A19010 /* BaseSignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFDD1B5F92A600A19010 /* BaseSignInDTO.m */; };
+		1DEDD0361B5F92A600A19010 /* BaseSignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFDF1B5F92A600A19010 /* BaseSignInRequestDTO.m */; };
+		1DEDD0371B5F92A600A19010 /* BaseSignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFE11B5F92A600A19010 /* BaseSignInResponseDTO.m */; };
+		1DEDD0381B5F92A600A19010 /* BaseSignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFE31B5F92A600A19010 /* BaseSignUpDTO.m */; };
+		1DEDD0391B5F92A600A19010 /* BaseSignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFE51B5F92A600A19010 /* BaseSignUpRequestDTO.m */; };
+		1DEDD03A1B5F92A600A19010 /* BaseSignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFE71B5F92A600A19010 /* BaseSignUpResponseDTO.m */; };
+		1DEDD03B1B5F92A600A19010 /* BookRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFE91B5F92A600A19010 /* BookRestaurantRequestDTO.m */; };
+		1DEDD03C1B5F92A600A19010 /* BookRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFEB1B5F92A600A19010 /* BookRestaurantResponseDTO.m */; };
+		1DEDD03D1B5F92A600A19010 /* BookRestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFED1B5F92A600A19010 /* BookRestDTO.m */; };
+		1DEDD03E1B5F92A600A19010 /* GetPassDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFEF1B5F92A600A19010 /* GetPassDTO.m */; };
+		1DEDD03F1B5F92A600A19010 /* GetPassRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFF11B5F92A600A19010 /* GetPassRequestDTO.m */; };
+		1DEDD0401B5F92A600A19010 /* GetPassResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFF31B5F92A600A19010 /* GetPassResponseDTO.m */; };
+		1DEDD0411B5F92A600A19010 /* GetRestaurantRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFF51B5F92A600A19010 /* GetRestaurantRequestDTO.m */; };
+		1DEDD0421B5F92A600A19010 /* GetRestaurantResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFF71B5F92A600A19010 /* GetRestaurantResponseDTO.m */; };
+		1DEDD0431B5F92A600A19010 /* GetRestaurantsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFF91B5F92A600A19010 /* GetRestaurantsDTO.m */; };
+		1DEDD0441B5F92A600A19010 /* SignInDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFFB1B5F92A600A19010 /* SignInDTO.m */; };
+		1DEDD0451B5F92A600A19010 /* SignInRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFFD1B5F92A600A19010 /* SignInRequestDTO.m */; };
+		1DEDD0461B5F92A600A19010 /* SignInResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCFFF1B5F92A600A19010 /* SignInResponseDTO.m */; };
+		1DEDD0471B5F92A600A19010 /* SignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0011B5F92A600A19010 /* SignUpDTO.m */; };
+		1DEDD0481B5F92A600A19010 /* SignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0031B5F92A600A19010 /* SignUpRequestDTO.m */; };
+		1DEDD0491B5F92A600A19010 /* SignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0051B5F92A600A19010 /* SignUpResponseDTO.m */; };
 		3309FDD91B58658B0014F53C /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3313258A1B556DB800CE5801 /* Dosis-ExtraLight.ttf */; };
 		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
 		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
@@ -125,119 +137,143 @@
 		1D7842A11B4FE8E80056A40D /* LEDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDetailController.h; sourceTree = "<group>"; };
 		1D7842A21B4FE8E80056A40D /* LEDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDetailController.m; sourceTree = "<group>"; };
 		1D7842A31B4FE8E80056A40D /* LEDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEDetailController.xib; sourceTree = "<group>"; };
-		1DEDCE0D1B5F886100A19010 /* BaseLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogic.h; sourceTree = "<group>"; };
-		1DEDCE0E1B5F886100A19010 /* BaseLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogic.m; sourceTree = "<group>"; };
-		1DEDCE0F1B5F886100A19010 /* LogicFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicFilter.h; sourceTree = "<group>"; };
-		1DEDCE101B5F886100A19010 /* LogicFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicFilter.m; sourceTree = "<group>"; };
-		1DEDCE121B5F886100A19010 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
-		1DEDCE131B5F886100A19010 /* DummyCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyCache.h; sourceTree = "<group>"; };
-		1DEDCE141B5F886100A19010 /* DummyCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyCache.m; sourceTree = "<group>"; };
-		1DEDCE151B5F886100A19010 /* LimitedAgeMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeMemoryCache.h; sourceTree = "<group>"; };
-		1DEDCE161B5F886100A19010 /* LimitedAgeMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeMemoryCache.m; sourceTree = "<group>"; };
-		1DEDCE171B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeUnlimitedDiskCache.h; sourceTree = "<group>"; };
-		1DEDCE181B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeUnlimitedDiskCache.m; sourceTree = "<group>"; };
-		1DEDCE191B5F886100A19010 /* UnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedDiskCache.h; sourceTree = "<group>"; };
-		1DEDCE1A1B5F886100A19010 /* UnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedDiskCache.m; sourceTree = "<group>"; };
-		1DEDCE1B1B5F886100A19010 /* UnlimitedMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedMemoryCache.h; sourceTree = "<group>"; };
-		1DEDCE1C1B5F886100A19010 /* UnlimitedMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedMemoryCache.m; sourceTree = "<group>"; };
-		1DEDCE1F1B5F886100A19010 /* BaseGetPassLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassLogic.h; sourceTree = "<group>"; };
-		1DEDCE201B5F886100A19010 /* BaseGetPassLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassLogic.m; sourceTree = "<group>"; };
-		1DEDCE211B5F886100A19010 /* BaseGetRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantLogic.h; sourceTree = "<group>"; };
-		1DEDCE221B5F886100A19010 /* BaseGetRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantLogic.m; sourceTree = "<group>"; };
-		1DEDCE231B5F886100A19010 /* BaseSignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInLogic.h; sourceTree = "<group>"; };
-		1DEDCE241B5F886100A19010 /* BaseSignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInLogic.m; sourceTree = "<group>"; };
-		1DEDCE251B5F886100A19010 /* BaseSignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpLogic.h; sourceTree = "<group>"; };
-		1DEDCE261B5F886100A19010 /* BaseSignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpLogic.m; sourceTree = "<group>"; };
-		1DEDCE271B5F886100A19010 /* GetPassLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassLogic.h; sourceTree = "<group>"; };
-		1DEDCE281B5F886100A19010 /* GetPassLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassLogic.m; sourceTree = "<group>"; };
-		1DEDCE291B5F886100A19010 /* GetRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantLogic.h; sourceTree = "<group>"; };
-		1DEDCE2A1B5F886100A19010 /* GetRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantLogic.m; sourceTree = "<group>"; };
-		1DEDCE2B1B5F886100A19010 /* LetsEatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetsEatHelper.h; sourceTree = "<group>"; };
-		1DEDCE2C1B5F886100A19010 /* LetsEatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetsEatHelper.m; sourceTree = "<group>"; };
-		1DEDCE2D1B5F886100A19010 /* SignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInLogic.h; sourceTree = "<group>"; };
-		1DEDCE2E1B5F886100A19010 /* SignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInLogic.m; sourceTree = "<group>"; };
-		1DEDCE2F1B5F886100A19010 /* SignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLogic.h; sourceTree = "<group>"; };
-		1DEDCE301B5F886100A19010 /* SignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLogic.m; sourceTree = "<group>"; };
-		1DEDCE321B5F886100A19010 /* GetPassActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassActionTask.h; sourceTree = "<group>"; };
-		1DEDCE331B5F886100A19010 /* GetPassActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassActionTask.m; sourceTree = "<group>"; };
-		1DEDCE341B5F886100A19010 /* GetRestaurantActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantActionTask.h; sourceTree = "<group>"; };
-		1DEDCE351B5F886100A19010 /* GetRestaurantActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantActionTask.m; sourceTree = "<group>"; };
-		1DEDCE361B5F886100A19010 /* SignInActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInActionTask.h; sourceTree = "<group>"; };
-		1DEDCE371B5F886100A19010 /* SignInActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInActionTask.m; sourceTree = "<group>"; };
-		1DEDCE381B5F886100A19010 /* SignUpActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpActionTask.h; sourceTree = "<group>"; };
-		1DEDCE391B5F886100A19010 /* SignUpActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpActionTask.m; sourceTree = "<group>"; };
-		1DEDCE3C1B5F886100A19010 /* GetPassDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassDAO.h; sourceTree = "<group>"; };
-		1DEDCE3D1B5F886100A19010 /* GetPassDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassDAO.m; sourceTree = "<group>"; };
-		1DEDCE3E1B5F886100A19010 /* GetPassRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassRequestDAO.h; sourceTree = "<group>"; };
-		1DEDCE3F1B5F886100A19010 /* GetPassRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassRequestDAO.m; sourceTree = "<group>"; };
-		1DEDCE401B5F886100A19010 /* GetPassResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassResponseDAO.h; sourceTree = "<group>"; };
-		1DEDCE411B5F886100A19010 /* GetPassResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassResponseDAO.m; sourceTree = "<group>"; };
-		1DEDCE421B5F886100A19010 /* GetRestaurantRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantRequestDAO.h; sourceTree = "<group>"; };
-		1DEDCE431B5F886100A19010 /* GetRestaurantRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantRequestDAO.m; sourceTree = "<group>"; };
-		1DEDCE441B5F886100A19010 /* GetRestaurantResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantResponseDAO.h; sourceTree = "<group>"; };
-		1DEDCE451B5F886100A19010 /* GetRestaurantResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantResponseDAO.m; sourceTree = "<group>"; };
-		1DEDCE461B5F886100A19010 /* GetRestaurantsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantsDAO.h; sourceTree = "<group>"; };
-		1DEDCE471B5F886100A19010 /* GetRestaurantsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantsDAO.m; sourceTree = "<group>"; };
-		1DEDCE481B5F886100A19010 /* SignInDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDAO.h; sourceTree = "<group>"; };
-		1DEDCE491B5F886100A19010 /* SignInDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDAO.m; sourceTree = "<group>"; };
-		1DEDCE4A1B5F886100A19010 /* SignInRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDAO.h; sourceTree = "<group>"; };
-		1DEDCE4B1B5F886100A19010 /* SignInRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDAO.m; sourceTree = "<group>"; };
-		1DEDCE4C1B5F886100A19010 /* SignInResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDAO.h; sourceTree = "<group>"; };
-		1DEDCE4D1B5F886100A19010 /* SignInResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDAO.m; sourceTree = "<group>"; };
-		1DEDCE4E1B5F886100A19010 /* SignUpDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDAO.h; sourceTree = "<group>"; };
-		1DEDCE4F1B5F886100A19010 /* SignUpDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDAO.m; sourceTree = "<group>"; };
-		1DEDCE501B5F886100A19010 /* SignUpRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDAO.h; sourceTree = "<group>"; };
-		1DEDCE511B5F886100A19010 /* SignUpRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDAO.m; sourceTree = "<group>"; };
-		1DEDCE521B5F886100A19010 /* SignUpResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDAO.h; sourceTree = "<group>"; };
-		1DEDCE531B5F886100A19010 /* SignUpResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDAO.m; sourceTree = "<group>"; };
-		1DEDCE561B5F886100A19010 /* BaseGetPassDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassDTO.h; sourceTree = "<group>"; };
-		1DEDCE571B5F886100A19010 /* BaseGetPassDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassDTO.m; sourceTree = "<group>"; };
-		1DEDCE581B5F886100A19010 /* BaseGetPassRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE591B5F886100A19010 /* BaseGetPassRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE5A1B5F886100A19010 /* BaseGetPassResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE5B1B5F886100A19010 /* BaseGetPassResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE5C1B5F886100A19010 /* BaseGetRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE5D1B5F886100A19010 /* BaseGetRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE5E1B5F886100A19010 /* BaseGetRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE5F1B5F886100A19010 /* BaseGetRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE601B5F886100A19010 /* BaseGetRestaurantsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantsDTO.h; sourceTree = "<group>"; };
-		1DEDCE611B5F886100A19010 /* BaseGetRestaurantsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantsDTO.m; sourceTree = "<group>"; };
-		1DEDCE621B5F886100A19010 /* BaseSignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInDTO.h; sourceTree = "<group>"; };
-		1DEDCE631B5F886100A19010 /* BaseSignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInDTO.m; sourceTree = "<group>"; };
-		1DEDCE641B5F886100A19010 /* BaseSignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE651B5F886100A19010 /* BaseSignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE661B5F886100A19010 /* BaseSignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE671B5F886100A19010 /* BaseSignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE681B5F886100A19010 /* BaseSignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpDTO.h; sourceTree = "<group>"; };
-		1DEDCE691B5F886100A19010 /* BaseSignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpDTO.m; sourceTree = "<group>"; };
-		1DEDCE6A1B5F886100A19010 /* BaseSignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE6B1B5F886100A19010 /* BaseSignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE6C1B5F886100A19010 /* BaseSignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE6D1B5F886100A19010 /* BaseSignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE6E1B5F886100A19010 /* GetPassDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassDTO.h; sourceTree = "<group>"; };
-		1DEDCE6F1B5F886100A19010 /* GetPassDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassDTO.m; sourceTree = "<group>"; };
-		1DEDCE701B5F886100A19010 /* GetPassRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE711B5F886100A19010 /* GetPassRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE721B5F886100A19010 /* GetPassResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE731B5F886100A19010 /* GetPassResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE741B5F886100A19010 /* GetRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE751B5F886100A19010 /* GetRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE761B5F886100A19010 /* GetRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE771B5F886100A19010 /* GetRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE781B5F886100A19010 /* GetRestaurantsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantsDTO.h; sourceTree = "<group>"; };
-		1DEDCE791B5F886100A19010 /* GetRestaurantsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantsDTO.m; sourceTree = "<group>"; };
-		1DEDCE7A1B5F886100A19010 /* SignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDTO.h; sourceTree = "<group>"; };
-		1DEDCE7B1B5F886100A19010 /* SignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDTO.m; sourceTree = "<group>"; };
-		1DEDCE7C1B5F886100A19010 /* SignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE7D1B5F886100A19010 /* SignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE7E1B5F886100A19010 /* SignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE7F1B5F886100A19010 /* SignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDTO.m; sourceTree = "<group>"; };
-		1DEDCE801B5F886100A19010 /* SignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDTO.h; sourceTree = "<group>"; };
-		1DEDCE811B5F886100A19010 /* SignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDTO.m; sourceTree = "<group>"; };
-		1DEDCE821B5F886100A19010 /* SignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDTO.h; sourceTree = "<group>"; };
-		1DEDCE831B5F886100A19010 /* SignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDTO.m; sourceTree = "<group>"; };
-		1DEDCE841B5F886100A19010 /* SignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDTO.h; sourceTree = "<group>"; };
-		1DEDCE851B5F886100A19010 /* SignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCF751B5F92A600A19010 /* BaseLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogic.h; sourceTree = "<group>"; };
+		1DEDCF761B5F92A600A19010 /* BaseLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogic.m; sourceTree = "<group>"; };
+		1DEDCF771B5F92A600A19010 /* LogicFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicFilter.h; sourceTree = "<group>"; };
+		1DEDCF781B5F92A600A19010 /* LogicFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicFilter.m; sourceTree = "<group>"; };
+		1DEDCF7A1B5F92A600A19010 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		1DEDCF7B1B5F92A600A19010 /* DummyCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyCache.h; sourceTree = "<group>"; };
+		1DEDCF7C1B5F92A600A19010 /* DummyCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyCache.m; sourceTree = "<group>"; };
+		1DEDCF7D1B5F92A600A19010 /* LimitedAgeMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeMemoryCache.h; sourceTree = "<group>"; };
+		1DEDCF7E1B5F92A600A19010 /* LimitedAgeMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeMemoryCache.m; sourceTree = "<group>"; };
+		1DEDCF7F1B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedAgeUnlimitedDiskCache.h; sourceTree = "<group>"; };
+		1DEDCF801B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitedAgeUnlimitedDiskCache.m; sourceTree = "<group>"; };
+		1DEDCF811B5F92A600A19010 /* UnlimitedDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedDiskCache.h; sourceTree = "<group>"; };
+		1DEDCF821B5F92A600A19010 /* UnlimitedDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedDiskCache.m; sourceTree = "<group>"; };
+		1DEDCF831B5F92A600A19010 /* UnlimitedMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlimitedMemoryCache.h; sourceTree = "<group>"; };
+		1DEDCF841B5F92A600A19010 /* UnlimitedMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlimitedMemoryCache.m; sourceTree = "<group>"; };
+		1DEDCF871B5F92A600A19010 /* BaseBookRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBookRestaurantLogic.h; sourceTree = "<group>"; };
+		1DEDCF881B5F92A600A19010 /* BaseBookRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBookRestaurantLogic.m; sourceTree = "<group>"; };
+		1DEDCF891B5F92A600A19010 /* BaseGetPassLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassLogic.h; sourceTree = "<group>"; };
+		1DEDCF8A1B5F92A600A19010 /* BaseGetPassLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassLogic.m; sourceTree = "<group>"; };
+		1DEDCF8B1B5F92A600A19010 /* BaseGetRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantLogic.h; sourceTree = "<group>"; };
+		1DEDCF8C1B5F92A600A19010 /* BaseGetRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantLogic.m; sourceTree = "<group>"; };
+		1DEDCF8D1B5F92A600A19010 /* BaseSignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInLogic.h; sourceTree = "<group>"; };
+		1DEDCF8E1B5F92A600A19010 /* BaseSignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInLogic.m; sourceTree = "<group>"; };
+		1DEDCF8F1B5F92A600A19010 /* BaseSignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpLogic.h; sourceTree = "<group>"; };
+		1DEDCF901B5F92A600A19010 /* BaseSignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpLogic.m; sourceTree = "<group>"; };
+		1DEDCF911B5F92A600A19010 /* BookRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantLogic.h; sourceTree = "<group>"; };
+		1DEDCF921B5F92A600A19010 /* BookRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantLogic.m; sourceTree = "<group>"; };
+		1DEDCF931B5F92A600A19010 /* GetPassLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassLogic.h; sourceTree = "<group>"; };
+		1DEDCF941B5F92A600A19010 /* GetPassLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassLogic.m; sourceTree = "<group>"; };
+		1DEDCF951B5F92A600A19010 /* GetRestaurantLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantLogic.h; sourceTree = "<group>"; };
+		1DEDCF961B5F92A600A19010 /* GetRestaurantLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantLogic.m; sourceTree = "<group>"; };
+		1DEDCF971B5F92A600A19010 /* LetsEatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetsEatHelper.h; sourceTree = "<group>"; };
+		1DEDCF981B5F92A600A19010 /* LetsEatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetsEatHelper.m; sourceTree = "<group>"; };
+		1DEDCF991B5F92A600A19010 /* SignInLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInLogic.h; sourceTree = "<group>"; };
+		1DEDCF9A1B5F92A600A19010 /* SignInLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInLogic.m; sourceTree = "<group>"; };
+		1DEDCF9B1B5F92A600A19010 /* SignUpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLogic.h; sourceTree = "<group>"; };
+		1DEDCF9C1B5F92A600A19010 /* SignUpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLogic.m; sourceTree = "<group>"; };
+		1DEDCF9E1B5F92A600A19010 /* BookRestaurantActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantActionTask.h; sourceTree = "<group>"; };
+		1DEDCF9F1B5F92A600A19010 /* BookRestaurantActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantActionTask.m; sourceTree = "<group>"; };
+		1DEDCFA01B5F92A600A19010 /* GetPassActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassActionTask.h; sourceTree = "<group>"; };
+		1DEDCFA11B5F92A600A19010 /* GetPassActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassActionTask.m; sourceTree = "<group>"; };
+		1DEDCFA21B5F92A600A19010 /* GetRestaurantActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantActionTask.h; sourceTree = "<group>"; };
+		1DEDCFA31B5F92A600A19010 /* GetRestaurantActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantActionTask.m; sourceTree = "<group>"; };
+		1DEDCFA41B5F92A600A19010 /* SignInActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInActionTask.h; sourceTree = "<group>"; };
+		1DEDCFA51B5F92A600A19010 /* SignInActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInActionTask.m; sourceTree = "<group>"; };
+		1DEDCFA61B5F92A600A19010 /* SignUpActionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpActionTask.h; sourceTree = "<group>"; };
+		1DEDCFA71B5F92A600A19010 /* SignUpActionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpActionTask.m; sourceTree = "<group>"; };
+		1DEDCFAA1B5F92A600A19010 /* BookRestaurantRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantRequestDAO.h; sourceTree = "<group>"; };
+		1DEDCFAB1B5F92A600A19010 /* BookRestaurantRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantRequestDAO.m; sourceTree = "<group>"; };
+		1DEDCFAC1B5F92A600A19010 /* BookRestaurantResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantResponseDAO.h; sourceTree = "<group>"; };
+		1DEDCFAD1B5F92A600A19010 /* BookRestaurantResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantResponseDAO.m; sourceTree = "<group>"; };
+		1DEDCFAE1B5F92A600A19010 /* BookRestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestDAO.h; sourceTree = "<group>"; };
+		1DEDCFAF1B5F92A600A19010 /* BookRestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestDAO.m; sourceTree = "<group>"; };
+		1DEDCFB01B5F92A600A19010 /* GetPassDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassDAO.h; sourceTree = "<group>"; };
+		1DEDCFB11B5F92A600A19010 /* GetPassDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassDAO.m; sourceTree = "<group>"; };
+		1DEDCFB21B5F92A600A19010 /* GetPassRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassRequestDAO.h; sourceTree = "<group>"; };
+		1DEDCFB31B5F92A600A19010 /* GetPassRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassRequestDAO.m; sourceTree = "<group>"; };
+		1DEDCFB41B5F92A600A19010 /* GetPassResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassResponseDAO.h; sourceTree = "<group>"; };
+		1DEDCFB51B5F92A600A19010 /* GetPassResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassResponseDAO.m; sourceTree = "<group>"; };
+		1DEDCFB61B5F92A600A19010 /* GetRestaurantRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantRequestDAO.h; sourceTree = "<group>"; };
+		1DEDCFB71B5F92A600A19010 /* GetRestaurantRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantRequestDAO.m; sourceTree = "<group>"; };
+		1DEDCFB81B5F92A600A19010 /* GetRestaurantResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantResponseDAO.h; sourceTree = "<group>"; };
+		1DEDCFB91B5F92A600A19010 /* GetRestaurantResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantResponseDAO.m; sourceTree = "<group>"; };
+		1DEDCFBA1B5F92A600A19010 /* GetRestaurantsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantsDAO.h; sourceTree = "<group>"; };
+		1DEDCFBB1B5F92A600A19010 /* GetRestaurantsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantsDAO.m; sourceTree = "<group>"; };
+		1DEDCFBC1B5F92A600A19010 /* SignInDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDAO.h; sourceTree = "<group>"; };
+		1DEDCFBD1B5F92A600A19010 /* SignInDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDAO.m; sourceTree = "<group>"; };
+		1DEDCFBE1B5F92A600A19010 /* SignInRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDAO.h; sourceTree = "<group>"; };
+		1DEDCFBF1B5F92A600A19010 /* SignInRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDAO.m; sourceTree = "<group>"; };
+		1DEDCFC01B5F92A600A19010 /* SignInResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDAO.h; sourceTree = "<group>"; };
+		1DEDCFC11B5F92A600A19010 /* SignInResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDAO.m; sourceTree = "<group>"; };
+		1DEDCFC21B5F92A600A19010 /* SignUpDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDAO.h; sourceTree = "<group>"; };
+		1DEDCFC31B5F92A600A19010 /* SignUpDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDAO.m; sourceTree = "<group>"; };
+		1DEDCFC41B5F92A600A19010 /* SignUpRequestDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDAO.h; sourceTree = "<group>"; };
+		1DEDCFC51B5F92A600A19010 /* SignUpRequestDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDAO.m; sourceTree = "<group>"; };
+		1DEDCFC61B5F92A600A19010 /* SignUpResponseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDAO.h; sourceTree = "<group>"; };
+		1DEDCFC71B5F92A600A19010 /* SignUpResponseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDAO.m; sourceTree = "<group>"; };
+		1DEDCFCA1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBookRestaurantRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFCB1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBookRestaurantRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFCC1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBookRestaurantResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFCD1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBookRestaurantResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFCE1B5F92A600A19010 /* BaseBookRestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBookRestDTO.h; sourceTree = "<group>"; };
+		1DEDCFCF1B5F92A600A19010 /* BaseBookRestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBookRestDTO.m; sourceTree = "<group>"; };
+		1DEDCFD01B5F92A600A19010 /* BaseGetPassDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassDTO.h; sourceTree = "<group>"; };
+		1DEDCFD11B5F92A600A19010 /* BaseGetPassDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassDTO.m; sourceTree = "<group>"; };
+		1DEDCFD21B5F92A600A19010 /* BaseGetPassRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFD31B5F92A600A19010 /* BaseGetPassRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFD41B5F92A600A19010 /* BaseGetPassResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetPassResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFD51B5F92A600A19010 /* BaseGetPassResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetPassResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFD61B5F92A600A19010 /* BaseGetRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFD71B5F92A600A19010 /* BaseGetRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFD81B5F92A600A19010 /* BaseGetRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFD91B5F92A600A19010 /* BaseGetRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFDA1B5F92A600A19010 /* BaseGetRestaurantsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGetRestaurantsDTO.h; sourceTree = "<group>"; };
+		1DEDCFDB1B5F92A600A19010 /* BaseGetRestaurantsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGetRestaurantsDTO.m; sourceTree = "<group>"; };
+		1DEDCFDC1B5F92A600A19010 /* BaseSignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInDTO.h; sourceTree = "<group>"; };
+		1DEDCFDD1B5F92A600A19010 /* BaseSignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInDTO.m; sourceTree = "<group>"; };
+		1DEDCFDE1B5F92A600A19010 /* BaseSignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFDF1B5F92A600A19010 /* BaseSignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFE01B5F92A600A19010 /* BaseSignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignInResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFE11B5F92A600A19010 /* BaseSignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignInResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFE21B5F92A600A19010 /* BaseSignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpDTO.h; sourceTree = "<group>"; };
+		1DEDCFE31B5F92A600A19010 /* BaseSignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpDTO.m; sourceTree = "<group>"; };
+		1DEDCFE41B5F92A600A19010 /* BaseSignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFE51B5F92A600A19010 /* BaseSignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFE61B5F92A600A19010 /* BaseSignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSignUpResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFE71B5F92A600A19010 /* BaseSignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSignUpResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFE81B5F92A600A19010 /* BookRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFE91B5F92A600A19010 /* BookRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFEA1B5F92A600A19010 /* BookRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestaurantResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFEB1B5F92A600A19010 /* BookRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestaurantResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFEC1B5F92A600A19010 /* BookRestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRestDTO.h; sourceTree = "<group>"; };
+		1DEDCFED1B5F92A600A19010 /* BookRestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRestDTO.m; sourceTree = "<group>"; };
+		1DEDCFEE1B5F92A600A19010 /* GetPassDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassDTO.h; sourceTree = "<group>"; };
+		1DEDCFEF1B5F92A600A19010 /* GetPassDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassDTO.m; sourceTree = "<group>"; };
+		1DEDCFF01B5F92A600A19010 /* GetPassRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFF11B5F92A600A19010 /* GetPassRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFF21B5F92A600A19010 /* GetPassResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFF31B5F92A600A19010 /* GetPassResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFF41B5F92A600A19010 /* GetRestaurantRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFF51B5F92A600A19010 /* GetRestaurantRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFF61B5F92A600A19010 /* GetRestaurantResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFF71B5F92A600A19010 /* GetRestaurantResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantResponseDTO.m; sourceTree = "<group>"; };
+		1DEDCFF81B5F92A600A19010 /* GetRestaurantsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRestaurantsDTO.h; sourceTree = "<group>"; };
+		1DEDCFF91B5F92A600A19010 /* GetRestaurantsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRestaurantsDTO.m; sourceTree = "<group>"; };
+		1DEDCFFA1B5F92A600A19010 /* SignInDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInDTO.h; sourceTree = "<group>"; };
+		1DEDCFFB1B5F92A600A19010 /* SignInDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInDTO.m; sourceTree = "<group>"; };
+		1DEDCFFC1B5F92A600A19010 /* SignInRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRequestDTO.h; sourceTree = "<group>"; };
+		1DEDCFFD1B5F92A600A19010 /* SignInRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRequestDTO.m; sourceTree = "<group>"; };
+		1DEDCFFE1B5F92A600A19010 /* SignInResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInResponseDTO.h; sourceTree = "<group>"; };
+		1DEDCFFF1B5F92A600A19010 /* SignInResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInResponseDTO.m; sourceTree = "<group>"; };
+		1DEDD0001B5F92A600A19010 /* SignUpDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDTO.h; sourceTree = "<group>"; };
+		1DEDD0011B5F92A600A19010 /* SignUpDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDTO.m; sourceTree = "<group>"; };
+		1DEDD0021B5F92A600A19010 /* SignUpRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpRequestDTO.h; sourceTree = "<group>"; };
+		1DEDD0031B5F92A600A19010 /* SignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDTO.m; sourceTree = "<group>"; };
+		1DEDD0041B5F92A600A19010 /* SignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDTO.h; sourceTree = "<group>"; };
+		1DEDD0051B5F92A600A19010 /* SignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDTO.m; sourceTree = "<group>"; };
 		330D5B3D1B4B22DE006920C4 /* LERegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERegisterController.h; sourceTree = "<group>"; };
 		330D5B3E1B4B22DE006920C4 /* LERegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERegisterController.m; sourceTree = "<group>"; };
 		330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERegisterController.xib; sourceTree = "<group>"; };
@@ -327,202 +363,226 @@
 			name = Detail;
 			sourceTree = "<group>";
 		};
-		1DEDCE0A1B5F886100A19010 /* Classes */ = {
+		1DEDCF721B5F92A600A19010 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE0B1B5F886100A19010 /* gen */,
+				1DEDCF731B5F92A600A19010 /* gen */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		1DEDCE0B1B5F886100A19010 /* gen */ = {
+		1DEDCF731B5F92A600A19010 /* gen */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE0C1B5F886100A19010 /* Base */,
-				1DEDCE111B5F886100A19010 /* Cache */,
-				1DEDCE1D1B5F886100A19010 /* Logic */,
-				1DEDCE3A1B5F886100A19010 /* Model */,
+				1DEDCF741B5F92A600A19010 /* Base */,
+				1DEDCF791B5F92A600A19010 /* Cache */,
+				1DEDCF851B5F92A600A19010 /* Logic */,
+				1DEDCFA81B5F92A600A19010 /* Model */,
 			);
 			path = gen;
 			sourceTree = "<group>";
 		};
-		1DEDCE0C1B5F886100A19010 /* Base */ = {
+		1DEDCF741B5F92A600A19010 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE0D1B5F886100A19010 /* BaseLogic.h */,
-				1DEDCE0E1B5F886100A19010 /* BaseLogic.m */,
-				1DEDCE0F1B5F886100A19010 /* LogicFilter.h */,
-				1DEDCE101B5F886100A19010 /* LogicFilter.m */,
+				1DEDCF751B5F92A600A19010 /* BaseLogic.h */,
+				1DEDCF761B5F92A600A19010 /* BaseLogic.m */,
+				1DEDCF771B5F92A600A19010 /* LogicFilter.h */,
+				1DEDCF781B5F92A600A19010 /* LogicFilter.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		1DEDCE111B5F886100A19010 /* Cache */ = {
+		1DEDCF791B5F92A600A19010 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE121B5F886100A19010 /* Cache.h */,
-				1DEDCE131B5F886100A19010 /* DummyCache.h */,
-				1DEDCE141B5F886100A19010 /* DummyCache.m */,
-				1DEDCE151B5F886100A19010 /* LimitedAgeMemoryCache.h */,
-				1DEDCE161B5F886100A19010 /* LimitedAgeMemoryCache.m */,
-				1DEDCE171B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.h */,
-				1DEDCE181B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.m */,
-				1DEDCE191B5F886100A19010 /* UnlimitedDiskCache.h */,
-				1DEDCE1A1B5F886100A19010 /* UnlimitedDiskCache.m */,
-				1DEDCE1B1B5F886100A19010 /* UnlimitedMemoryCache.h */,
-				1DEDCE1C1B5F886100A19010 /* UnlimitedMemoryCache.m */,
+				1DEDCF7A1B5F92A600A19010 /* Cache.h */,
+				1DEDCF7B1B5F92A600A19010 /* DummyCache.h */,
+				1DEDCF7C1B5F92A600A19010 /* DummyCache.m */,
+				1DEDCF7D1B5F92A600A19010 /* LimitedAgeMemoryCache.h */,
+				1DEDCF7E1B5F92A600A19010 /* LimitedAgeMemoryCache.m */,
+				1DEDCF7F1B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.h */,
+				1DEDCF801B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.m */,
+				1DEDCF811B5F92A600A19010 /* UnlimitedDiskCache.h */,
+				1DEDCF821B5F92A600A19010 /* UnlimitedDiskCache.m */,
+				1DEDCF831B5F92A600A19010 /* UnlimitedMemoryCache.h */,
+				1DEDCF841B5F92A600A19010 /* UnlimitedMemoryCache.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		1DEDCE1D1B5F886100A19010 /* Logic */ = {
+		1DEDCF851B5F92A600A19010 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE1E1B5F886100A19010 /* Base */,
-				1DEDCE271B5F886100A19010 /* GetPassLogic.h */,
-				1DEDCE281B5F886100A19010 /* GetPassLogic.m */,
-				1DEDCE291B5F886100A19010 /* GetRestaurantLogic.h */,
-				1DEDCE2A1B5F886100A19010 /* GetRestaurantLogic.m */,
-				1DEDCE2B1B5F886100A19010 /* LetsEatHelper.h */,
-				1DEDCE2C1B5F886100A19010 /* LetsEatHelper.m */,
-				1DEDCE2D1B5F886100A19010 /* SignInLogic.h */,
-				1DEDCE2E1B5F886100A19010 /* SignInLogic.m */,
-				1DEDCE2F1B5F886100A19010 /* SignUpLogic.h */,
-				1DEDCE301B5F886100A19010 /* SignUpLogic.m */,
-				1DEDCE311B5F886100A19010 /* Tasks */,
+				1DEDCF861B5F92A600A19010 /* Base */,
+				1DEDCF911B5F92A600A19010 /* BookRestaurantLogic.h */,
+				1DEDCF921B5F92A600A19010 /* BookRestaurantLogic.m */,
+				1DEDCF931B5F92A600A19010 /* GetPassLogic.h */,
+				1DEDCF941B5F92A600A19010 /* GetPassLogic.m */,
+				1DEDCF951B5F92A600A19010 /* GetRestaurantLogic.h */,
+				1DEDCF961B5F92A600A19010 /* GetRestaurantLogic.m */,
+				1DEDCF971B5F92A600A19010 /* LetsEatHelper.h */,
+				1DEDCF981B5F92A600A19010 /* LetsEatHelper.m */,
+				1DEDCF991B5F92A600A19010 /* SignInLogic.h */,
+				1DEDCF9A1B5F92A600A19010 /* SignInLogic.m */,
+				1DEDCF9B1B5F92A600A19010 /* SignUpLogic.h */,
+				1DEDCF9C1B5F92A600A19010 /* SignUpLogic.m */,
+				1DEDCF9D1B5F92A600A19010 /* Tasks */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
 		};
-		1DEDCE1E1B5F886100A19010 /* Base */ = {
+		1DEDCF861B5F92A600A19010 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE1F1B5F886100A19010 /* BaseGetPassLogic.h */,
-				1DEDCE201B5F886100A19010 /* BaseGetPassLogic.m */,
-				1DEDCE211B5F886100A19010 /* BaseGetRestaurantLogic.h */,
-				1DEDCE221B5F886100A19010 /* BaseGetRestaurantLogic.m */,
-				1DEDCE231B5F886100A19010 /* BaseSignInLogic.h */,
-				1DEDCE241B5F886100A19010 /* BaseSignInLogic.m */,
-				1DEDCE251B5F886100A19010 /* BaseSignUpLogic.h */,
-				1DEDCE261B5F886100A19010 /* BaseSignUpLogic.m */,
+				1DEDCF871B5F92A600A19010 /* BaseBookRestaurantLogic.h */,
+				1DEDCF881B5F92A600A19010 /* BaseBookRestaurantLogic.m */,
+				1DEDCF891B5F92A600A19010 /* BaseGetPassLogic.h */,
+				1DEDCF8A1B5F92A600A19010 /* BaseGetPassLogic.m */,
+				1DEDCF8B1B5F92A600A19010 /* BaseGetRestaurantLogic.h */,
+				1DEDCF8C1B5F92A600A19010 /* BaseGetRestaurantLogic.m */,
+				1DEDCF8D1B5F92A600A19010 /* BaseSignInLogic.h */,
+				1DEDCF8E1B5F92A600A19010 /* BaseSignInLogic.m */,
+				1DEDCF8F1B5F92A600A19010 /* BaseSignUpLogic.h */,
+				1DEDCF901B5F92A600A19010 /* BaseSignUpLogic.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		1DEDCE311B5F886100A19010 /* Tasks */ = {
+		1DEDCF9D1B5F92A600A19010 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE321B5F886100A19010 /* GetPassActionTask.h */,
-				1DEDCE331B5F886100A19010 /* GetPassActionTask.m */,
-				1DEDCE341B5F886100A19010 /* GetRestaurantActionTask.h */,
-				1DEDCE351B5F886100A19010 /* GetRestaurantActionTask.m */,
-				1DEDCE361B5F886100A19010 /* SignInActionTask.h */,
-				1DEDCE371B5F886100A19010 /* SignInActionTask.m */,
-				1DEDCE381B5F886100A19010 /* SignUpActionTask.h */,
-				1DEDCE391B5F886100A19010 /* SignUpActionTask.m */,
+				1DEDCF9E1B5F92A600A19010 /* BookRestaurantActionTask.h */,
+				1DEDCF9F1B5F92A600A19010 /* BookRestaurantActionTask.m */,
+				1DEDCFA01B5F92A600A19010 /* GetPassActionTask.h */,
+				1DEDCFA11B5F92A600A19010 /* GetPassActionTask.m */,
+				1DEDCFA21B5F92A600A19010 /* GetRestaurantActionTask.h */,
+				1DEDCFA31B5F92A600A19010 /* GetRestaurantActionTask.m */,
+				1DEDCFA41B5F92A600A19010 /* SignInActionTask.h */,
+				1DEDCFA51B5F92A600A19010 /* SignInActionTask.m */,
+				1DEDCFA61B5F92A600A19010 /* SignUpActionTask.h */,
+				1DEDCFA71B5F92A600A19010 /* SignUpActionTask.m */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
 		};
-		1DEDCE3A1B5F886100A19010 /* Model */ = {
+		1DEDCFA81B5F92A600A19010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE3B1B5F886100A19010 /* DAO */,
-				1DEDCE541B5F886100A19010 /* DTO */,
+				1DEDCFA91B5F92A600A19010 /* DAO */,
+				1DEDCFC81B5F92A600A19010 /* DTO */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1DEDCE3B1B5F886100A19010 /* DAO */ = {
+		1DEDCFA91B5F92A600A19010 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE3C1B5F886100A19010 /* GetPassDAO.h */,
-				1DEDCE3D1B5F886100A19010 /* GetPassDAO.m */,
-				1DEDCE3E1B5F886100A19010 /* GetPassRequestDAO.h */,
-				1DEDCE3F1B5F886100A19010 /* GetPassRequestDAO.m */,
-				1DEDCE401B5F886100A19010 /* GetPassResponseDAO.h */,
-				1DEDCE411B5F886100A19010 /* GetPassResponseDAO.m */,
-				1DEDCE421B5F886100A19010 /* GetRestaurantRequestDAO.h */,
-				1DEDCE431B5F886100A19010 /* GetRestaurantRequestDAO.m */,
-				1DEDCE441B5F886100A19010 /* GetRestaurantResponseDAO.h */,
-				1DEDCE451B5F886100A19010 /* GetRestaurantResponseDAO.m */,
-				1DEDCE461B5F886100A19010 /* GetRestaurantsDAO.h */,
-				1DEDCE471B5F886100A19010 /* GetRestaurantsDAO.m */,
-				1DEDCE481B5F886100A19010 /* SignInDAO.h */,
-				1DEDCE491B5F886100A19010 /* SignInDAO.m */,
-				1DEDCE4A1B5F886100A19010 /* SignInRequestDAO.h */,
-				1DEDCE4B1B5F886100A19010 /* SignInRequestDAO.m */,
-				1DEDCE4C1B5F886100A19010 /* SignInResponseDAO.h */,
-				1DEDCE4D1B5F886100A19010 /* SignInResponseDAO.m */,
-				1DEDCE4E1B5F886100A19010 /* SignUpDAO.h */,
-				1DEDCE4F1B5F886100A19010 /* SignUpDAO.m */,
-				1DEDCE501B5F886100A19010 /* SignUpRequestDAO.h */,
-				1DEDCE511B5F886100A19010 /* SignUpRequestDAO.m */,
-				1DEDCE521B5F886100A19010 /* SignUpResponseDAO.h */,
-				1DEDCE531B5F886100A19010 /* SignUpResponseDAO.m */,
+				1DEDCFAA1B5F92A600A19010 /* BookRestaurantRequestDAO.h */,
+				1DEDCFAB1B5F92A600A19010 /* BookRestaurantRequestDAO.m */,
+				1DEDCFAC1B5F92A600A19010 /* BookRestaurantResponseDAO.h */,
+				1DEDCFAD1B5F92A600A19010 /* BookRestaurantResponseDAO.m */,
+				1DEDCFAE1B5F92A600A19010 /* BookRestDAO.h */,
+				1DEDCFAF1B5F92A600A19010 /* BookRestDAO.m */,
+				1DEDCFB01B5F92A600A19010 /* GetPassDAO.h */,
+				1DEDCFB11B5F92A600A19010 /* GetPassDAO.m */,
+				1DEDCFB21B5F92A600A19010 /* GetPassRequestDAO.h */,
+				1DEDCFB31B5F92A600A19010 /* GetPassRequestDAO.m */,
+				1DEDCFB41B5F92A600A19010 /* GetPassResponseDAO.h */,
+				1DEDCFB51B5F92A600A19010 /* GetPassResponseDAO.m */,
+				1DEDCFB61B5F92A600A19010 /* GetRestaurantRequestDAO.h */,
+				1DEDCFB71B5F92A600A19010 /* GetRestaurantRequestDAO.m */,
+				1DEDCFB81B5F92A600A19010 /* GetRestaurantResponseDAO.h */,
+				1DEDCFB91B5F92A600A19010 /* GetRestaurantResponseDAO.m */,
+				1DEDCFBA1B5F92A600A19010 /* GetRestaurantsDAO.h */,
+				1DEDCFBB1B5F92A600A19010 /* GetRestaurantsDAO.m */,
+				1DEDCFBC1B5F92A600A19010 /* SignInDAO.h */,
+				1DEDCFBD1B5F92A600A19010 /* SignInDAO.m */,
+				1DEDCFBE1B5F92A600A19010 /* SignInRequestDAO.h */,
+				1DEDCFBF1B5F92A600A19010 /* SignInRequestDAO.m */,
+				1DEDCFC01B5F92A600A19010 /* SignInResponseDAO.h */,
+				1DEDCFC11B5F92A600A19010 /* SignInResponseDAO.m */,
+				1DEDCFC21B5F92A600A19010 /* SignUpDAO.h */,
+				1DEDCFC31B5F92A600A19010 /* SignUpDAO.m */,
+				1DEDCFC41B5F92A600A19010 /* SignUpRequestDAO.h */,
+				1DEDCFC51B5F92A600A19010 /* SignUpRequestDAO.m */,
+				1DEDCFC61B5F92A600A19010 /* SignUpResponseDAO.h */,
+				1DEDCFC71B5F92A600A19010 /* SignUpResponseDAO.m */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
 		};
-		1DEDCE541B5F886100A19010 /* DTO */ = {
+		1DEDCFC81B5F92A600A19010 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE551B5F886100A19010 /* Base */,
-				1DEDCE6E1B5F886100A19010 /* GetPassDTO.h */,
-				1DEDCE6F1B5F886100A19010 /* GetPassDTO.m */,
-				1DEDCE701B5F886100A19010 /* GetPassRequestDTO.h */,
-				1DEDCE711B5F886100A19010 /* GetPassRequestDTO.m */,
-				1DEDCE721B5F886100A19010 /* GetPassResponseDTO.h */,
-				1DEDCE731B5F886100A19010 /* GetPassResponseDTO.m */,
-				1DEDCE741B5F886100A19010 /* GetRestaurantRequestDTO.h */,
-				1DEDCE751B5F886100A19010 /* GetRestaurantRequestDTO.m */,
-				1DEDCE761B5F886100A19010 /* GetRestaurantResponseDTO.h */,
-				1DEDCE771B5F886100A19010 /* GetRestaurantResponseDTO.m */,
-				1DEDCE781B5F886100A19010 /* GetRestaurantsDTO.h */,
-				1DEDCE791B5F886100A19010 /* GetRestaurantsDTO.m */,
-				1DEDCE7A1B5F886100A19010 /* SignInDTO.h */,
-				1DEDCE7B1B5F886100A19010 /* SignInDTO.m */,
-				1DEDCE7C1B5F886100A19010 /* SignInRequestDTO.h */,
-				1DEDCE7D1B5F886100A19010 /* SignInRequestDTO.m */,
-				1DEDCE7E1B5F886100A19010 /* SignInResponseDTO.h */,
-				1DEDCE7F1B5F886100A19010 /* SignInResponseDTO.m */,
-				1DEDCE801B5F886100A19010 /* SignUpDTO.h */,
-				1DEDCE811B5F886100A19010 /* SignUpDTO.m */,
-				1DEDCE821B5F886100A19010 /* SignUpRequestDTO.h */,
-				1DEDCE831B5F886100A19010 /* SignUpRequestDTO.m */,
-				1DEDCE841B5F886100A19010 /* SignUpResponseDTO.h */,
-				1DEDCE851B5F886100A19010 /* SignUpResponseDTO.m */,
+				1DEDCFC91B5F92A600A19010 /* Base */,
+				1DEDCFE81B5F92A600A19010 /* BookRestaurantRequestDTO.h */,
+				1DEDCFE91B5F92A600A19010 /* BookRestaurantRequestDTO.m */,
+				1DEDCFEA1B5F92A600A19010 /* BookRestaurantResponseDTO.h */,
+				1DEDCFEB1B5F92A600A19010 /* BookRestaurantResponseDTO.m */,
+				1DEDCFEC1B5F92A600A19010 /* BookRestDTO.h */,
+				1DEDCFED1B5F92A600A19010 /* BookRestDTO.m */,
+				1DEDCFEE1B5F92A600A19010 /* GetPassDTO.h */,
+				1DEDCFEF1B5F92A600A19010 /* GetPassDTO.m */,
+				1DEDCFF01B5F92A600A19010 /* GetPassRequestDTO.h */,
+				1DEDCFF11B5F92A600A19010 /* GetPassRequestDTO.m */,
+				1DEDCFF21B5F92A600A19010 /* GetPassResponseDTO.h */,
+				1DEDCFF31B5F92A600A19010 /* GetPassResponseDTO.m */,
+				1DEDCFF41B5F92A600A19010 /* GetRestaurantRequestDTO.h */,
+				1DEDCFF51B5F92A600A19010 /* GetRestaurantRequestDTO.m */,
+				1DEDCFF61B5F92A600A19010 /* GetRestaurantResponseDTO.h */,
+				1DEDCFF71B5F92A600A19010 /* GetRestaurantResponseDTO.m */,
+				1DEDCFF81B5F92A600A19010 /* GetRestaurantsDTO.h */,
+				1DEDCFF91B5F92A600A19010 /* GetRestaurantsDTO.m */,
+				1DEDCFFA1B5F92A600A19010 /* SignInDTO.h */,
+				1DEDCFFB1B5F92A600A19010 /* SignInDTO.m */,
+				1DEDCFFC1B5F92A600A19010 /* SignInRequestDTO.h */,
+				1DEDCFFD1B5F92A600A19010 /* SignInRequestDTO.m */,
+				1DEDCFFE1B5F92A600A19010 /* SignInResponseDTO.h */,
+				1DEDCFFF1B5F92A600A19010 /* SignInResponseDTO.m */,
+				1DEDD0001B5F92A600A19010 /* SignUpDTO.h */,
+				1DEDD0011B5F92A600A19010 /* SignUpDTO.m */,
+				1DEDD0021B5F92A600A19010 /* SignUpRequestDTO.h */,
+				1DEDD0031B5F92A600A19010 /* SignUpRequestDTO.m */,
+				1DEDD0041B5F92A600A19010 /* SignUpResponseDTO.h */,
+				1DEDD0051B5F92A600A19010 /* SignUpResponseDTO.m */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
 		};
-		1DEDCE551B5F886100A19010 /* Base */ = {
+		1DEDCFC91B5F92A600A19010 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE561B5F886100A19010 /* BaseGetPassDTO.h */,
-				1DEDCE571B5F886100A19010 /* BaseGetPassDTO.m */,
-				1DEDCE581B5F886100A19010 /* BaseGetPassRequestDTO.h */,
-				1DEDCE591B5F886100A19010 /* BaseGetPassRequestDTO.m */,
-				1DEDCE5A1B5F886100A19010 /* BaseGetPassResponseDTO.h */,
-				1DEDCE5B1B5F886100A19010 /* BaseGetPassResponseDTO.m */,
-				1DEDCE5C1B5F886100A19010 /* BaseGetRestaurantRequestDTO.h */,
-				1DEDCE5D1B5F886100A19010 /* BaseGetRestaurantRequestDTO.m */,
-				1DEDCE5E1B5F886100A19010 /* BaseGetRestaurantResponseDTO.h */,
-				1DEDCE5F1B5F886100A19010 /* BaseGetRestaurantResponseDTO.m */,
-				1DEDCE601B5F886100A19010 /* BaseGetRestaurantsDTO.h */,
-				1DEDCE611B5F886100A19010 /* BaseGetRestaurantsDTO.m */,
-				1DEDCE621B5F886100A19010 /* BaseSignInDTO.h */,
-				1DEDCE631B5F886100A19010 /* BaseSignInDTO.m */,
-				1DEDCE641B5F886100A19010 /* BaseSignInRequestDTO.h */,
-				1DEDCE651B5F886100A19010 /* BaseSignInRequestDTO.m */,
-				1DEDCE661B5F886100A19010 /* BaseSignInResponseDTO.h */,
-				1DEDCE671B5F886100A19010 /* BaseSignInResponseDTO.m */,
-				1DEDCE681B5F886100A19010 /* BaseSignUpDTO.h */,
-				1DEDCE691B5F886100A19010 /* BaseSignUpDTO.m */,
-				1DEDCE6A1B5F886100A19010 /* BaseSignUpRequestDTO.h */,
-				1DEDCE6B1B5F886100A19010 /* BaseSignUpRequestDTO.m */,
-				1DEDCE6C1B5F886100A19010 /* BaseSignUpResponseDTO.h */,
-				1DEDCE6D1B5F886100A19010 /* BaseSignUpResponseDTO.m */,
+				1DEDCFCA1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.h */,
+				1DEDCFCB1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.m */,
+				1DEDCFCC1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.h */,
+				1DEDCFCD1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.m */,
+				1DEDCFCE1B5F92A600A19010 /* BaseBookRestDTO.h */,
+				1DEDCFCF1B5F92A600A19010 /* BaseBookRestDTO.m */,
+				1DEDCFD01B5F92A600A19010 /* BaseGetPassDTO.h */,
+				1DEDCFD11B5F92A600A19010 /* BaseGetPassDTO.m */,
+				1DEDCFD21B5F92A600A19010 /* BaseGetPassRequestDTO.h */,
+				1DEDCFD31B5F92A600A19010 /* BaseGetPassRequestDTO.m */,
+				1DEDCFD41B5F92A600A19010 /* BaseGetPassResponseDTO.h */,
+				1DEDCFD51B5F92A600A19010 /* BaseGetPassResponseDTO.m */,
+				1DEDCFD61B5F92A600A19010 /* BaseGetRestaurantRequestDTO.h */,
+				1DEDCFD71B5F92A600A19010 /* BaseGetRestaurantRequestDTO.m */,
+				1DEDCFD81B5F92A600A19010 /* BaseGetRestaurantResponseDTO.h */,
+				1DEDCFD91B5F92A600A19010 /* BaseGetRestaurantResponseDTO.m */,
+				1DEDCFDA1B5F92A600A19010 /* BaseGetRestaurantsDTO.h */,
+				1DEDCFDB1B5F92A600A19010 /* BaseGetRestaurantsDTO.m */,
+				1DEDCFDC1B5F92A600A19010 /* BaseSignInDTO.h */,
+				1DEDCFDD1B5F92A600A19010 /* BaseSignInDTO.m */,
+				1DEDCFDE1B5F92A600A19010 /* BaseSignInRequestDTO.h */,
+				1DEDCFDF1B5F92A600A19010 /* BaseSignInRequestDTO.m */,
+				1DEDCFE01B5F92A600A19010 /* BaseSignInResponseDTO.h */,
+				1DEDCFE11B5F92A600A19010 /* BaseSignInResponseDTO.m */,
+				1DEDCFE21B5F92A600A19010 /* BaseSignUpDTO.h */,
+				1DEDCFE31B5F92A600A19010 /* BaseSignUpDTO.m */,
+				1DEDCFE41B5F92A600A19010 /* BaseSignUpRequestDTO.h */,
+				1DEDCFE51B5F92A600A19010 /* BaseSignUpRequestDTO.m */,
+				1DEDCFE61B5F92A600A19010 /* BaseSignUpResponseDTO.h */,
+				1DEDCFE71B5F92A600A19010 /* BaseSignUpResponseDTO.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -592,7 +652,7 @@
 		3347E8DB1B4844CA00F9F754 /* api */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDCE0A1B5F886100A19010 /* Classes */,
+				1DEDCF721B5F92A600A19010 /* Classes */,
 				33595E441B517C8B00254DE7 /* LetsGoEat.xml */,
 				33595E431B517B5B00254DE7 /* GenDefines.h */,
 			);
@@ -942,79 +1002,91 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DEDCEAA1B5F886100A19010 /* BaseGetRestaurantResponseDTO.m in Sources */,
-				1DEDCEAE1B5F886100A19010 /* BaseSignInResponseDTO.m in Sources */,
-				1DEDCEA31B5F886100A19010 /* SignUpDAO.m in Sources */,
-				1DEDCEBA1B5F886100A19010 /* SignInResponseDTO.m in Sources */,
+				1DEDD01A1B5F92A600A19010 /* GetRestaurantActionTask.m in Sources */,
+				1DEDD03F1B5F92A600A19010 /* GetPassRequestDTO.m in Sources */,
+				1DEDD0241B5F92A600A19010 /* GetRestaurantResponseDAO.m in Sources */,
 				33942DE21B52DE590001274D /* RecoverDTO.m in Sources */,
-				1DEDCE8B1B5F886100A19010 /* UnlimitedDiskCache.m in Sources */,
+				1DEDD01C1B5F92A600A19010 /* SignUpActionTask.m in Sources */,
+				1DEDD00B1B5F92A600A19010 /* UnlimitedDiskCache.m in Sources */,
+				1DEDD01E1B5F92A600A19010 /* BookRestaurantResponseDAO.m in Sources */,
+				1DEDD0101B5F92A600A19010 /* BaseSignInLogic.m in Sources */,
+				1DEDD0371B5F92A600A19010 /* BaseSignInResponseDTO.m in Sources */,
+				1DEDD0381B5F92A600A19010 /* BaseSignUpDTO.m in Sources */,
+				1DEDD0341B5F92A600A19010 /* BaseGetRestaurantsDTO.m in Sources */,
+				1DEDD03E1B5F92A600A19010 /* GetPassDTO.m in Sources */,
+				1DEDD0201B5F92A600A19010 /* GetPassDAO.m in Sources */,
 				33595F781B518FF900254DE7 /* SecondCustomSegue.m in Sources */,
+				1DEDD01D1B5F92A600A19010 /* BookRestaurantRequestDAO.m in Sources */,
 				33595F7B1B51B6B400254DE7 /* LoginDTO.m in Sources */,
+				1DEDD0231B5F92A600A19010 /* GetRestaurantRequestDAO.m in Sources */,
 				330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */,
-				1DEDCE921B5F886100A19010 /* GetRestaurantLogic.m in Sources */,
-				1DEDCE901B5F886100A19010 /* BaseSignUpLogic.m in Sources */,
-				1DEDCE961B5F886100A19010 /* GetPassActionTask.m in Sources */,
-				1DEDCEA21B5F886100A19010 /* SignInResponseDAO.m in Sources */,
-				1DEDCEA41B5F886100A19010 /* SignUpRequestDAO.m in Sources */,
-				1DEDCEA11B5F886100A19010 /* SignInRequestDAO.m in Sources */,
-				1DEDCE8C1B5F886100A19010 /* UnlimitedMemoryCache.m in Sources */,
-				1DEDCEAC1B5F886100A19010 /* BaseSignInDTO.m in Sources */,
+				1DEDD00C1B5F92A600A19010 /* UnlimitedMemoryCache.m in Sources */,
 				33C303531B4D8B820058C9E3 /* CustomCell.m in Sources */,
+				1DEDD02B1B5F92A600A19010 /* SignUpResponseDAO.m in Sources */,
+				1DEDD0151B5F92A600A19010 /* LetsEatHelper.m in Sources */,
 				33DEFA8E1B46EFB100053B72 /* LELoginController.m in Sources */,
-				1DEDCE881B5F886100A19010 /* DummyCache.m in Sources */,
-				1DEDCEAD1B5F886100A19010 /* BaseSignInRequestDTO.m in Sources */,
-				1DEDCE991B5F886100A19010 /* SignUpActionTask.m in Sources */,
-				1DEDCE8E1B5F886100A19010 /* BaseGetRestaurantLogic.m in Sources */,
-				1DEDCE861B5F886100A19010 /* BaseLogic.m in Sources */,
+				1DEDD02E1B5F92A600A19010 /* BaseBookRestDTO.m in Sources */,
+				1DEDD0081B5F92A600A19010 /* DummyCache.m in Sources */,
+				1DEDD00E1B5F92A600A19010 /* BaseGetPassLogic.m in Sources */,
+				1DEDD0061B5F92A600A19010 /* BaseLogic.m in Sources */,
+				1DEDD03B1B5F92A600A19010 /* BookRestaurantRequestDTO.m in Sources */,
+				1DEDD0421B5F92A600A19010 /* GetRestaurantResponseDTO.m in Sources */,
+				1DEDD0221B5F92A600A19010 /* GetPassResponseDAO.m in Sources */,
+				1DEDD01B1B5F92A600A19010 /* SignInActionTask.m in Sources */,
+				1DEDD0261B5F92A600A19010 /* SignInDAO.m in Sources */,
+				1DEDD0321B5F92A600A19010 /* BaseGetRestaurantRequestDTO.m in Sources */,
 				1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */,
-				1DEDCEA71B5F886100A19010 /* BaseGetPassRequestDTO.m in Sources */,
-				1DEDCEB51B5F886100A19010 /* GetRestaurantRequestDTO.m in Sources */,
-				1DEDCE871B5F886100A19010 /* LogicFilter.m in Sources */,
+				1DEDD0191B5F92A600A19010 /* GetPassActionTask.m in Sources */,
+				1DEDD0071B5F92A600A19010 /* LogicFilter.m in Sources */,
+				1DEDD0131B5F92A600A19010 /* GetPassLogic.m in Sources */,
+				1DEDD0171B5F92A600A19010 /* SignUpLogic.m in Sources */,
 				330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */,
-				1DEDCEAB1B5F886100A19010 /* BaseGetRestaurantsDTO.m in Sources */,
-				1DEDCEB91B5F886100A19010 /* SignInRequestDTO.m in Sources */,
-				1DEDCEA81B5F886100A19010 /* BaseGetPassResponseDTO.m in Sources */,
-				1DEDCE951B5F886100A19010 /* SignUpLogic.m in Sources */,
 				33DEFA651B46E69400053B72 /* AppDelegate.m in Sources */,
-				1DEDCE9C1B5F886100A19010 /* GetPassResponseDAO.m in Sources */,
-				1DEDCE941B5F886100A19010 /* SignInLogic.m in Sources */,
+				1DEDD0291B5F92A600A19010 /* SignUpDAO.m in Sources */,
 				1D25B64E1B579A5000A87A85 /* RestaurantDTO.m in Sources */,
+				1DEDD00D1B5F92A600A19010 /* BaseBookRestaurantLogic.m in Sources */,
+				1DEDD03D1B5F92A600A19010 /* BookRestDTO.m in Sources */,
 				33F275F11B4F208C00E45EB6 /* CustomSegue.m in Sources */,
-				1DEDCE981B5F886100A19010 /* SignInActionTask.m in Sources */,
+				1DEDD0351B5F92A600A19010 /* BaseSignInDTO.m in Sources */,
+				1DEDD0251B5F92A600A19010 /* GetRestaurantsDAO.m in Sources */,
+				1DEDD0311B5F92A600A19010 /* BaseGetPassResponseDTO.m in Sources */,
+				1DEDD0481B5F92A600A19010 /* SignUpRequestDTO.m in Sources */,
+				1DEDD03C1B5F92A600A19010 /* BookRestaurantResponseDTO.m in Sources */,
+				1DEDD0271B5F92A600A19010 /* SignInRequestDAO.m in Sources */,
+				1DEDD0401B5F92A600A19010 /* GetPassResponseDTO.m in Sources */,
 				33595F2D1B51812E00254DE7 /* RegisterDTO.m in Sources */,
-				1DEDCE8A1B5F886100A19010 /* LimitedAgeUnlimitedDiskCache.m in Sources */,
-				1DEDCE9B1B5F886100A19010 /* GetPassRequestDAO.m in Sources */,
-				1DEDCEB81B5F886100A19010 /* SignInDTO.m in Sources */,
-				1DEDCE9D1B5F886100A19010 /* GetRestaurantRequestDAO.m in Sources */,
-				1DEDCEB21B5F886100A19010 /* GetPassDTO.m in Sources */,
+				1DEDD00A1B5F92A600A19010 /* LimitedAgeUnlimitedDiskCache.m in Sources */,
+				1DEDD0161B5F92A600A19010 /* SignInLogic.m in Sources */,
 				1D78429E1B4FCE710056A40D /* LEMenuListController.m in Sources */,
-				1DEDCE8D1B5F886100A19010 /* BaseGetPassLogic.m in Sources */,
-				1DEDCE8F1B5F886100A19010 /* BaseSignInLogic.m in Sources */,
+				1DEDD0121B5F92A600A19010 /* BookRestaurantLogic.m in Sources */,
+				1DEDD0411B5F92A600A19010 /* GetRestaurantRequestDTO.m in Sources */,
 				33DEFA621B46E69400053B72 /* main.m in Sources */,
-				1DEDCE9A1B5F886100A19010 /* GetPassDAO.m in Sources */,
-				1DEDCE9F1B5F886100A19010 /* GetRestaurantsDAO.m in Sources */,
-				1DEDCEBB1B5F886100A19010 /* SignUpDTO.m in Sources */,
-				1DEDCE911B5F886100A19010 /* GetPassLogic.m in Sources */,
+				1DEDD03A1B5F92A600A19010 /* BaseSignUpResponseDTO.m in Sources */,
+				1DEDD0361B5F92A600A19010 /* BaseSignInRequestDTO.m in Sources */,
+				1DEDD02D1B5F92A600A19010 /* BaseBookRestaurantResponseDTO.m in Sources */,
+				1DEDD0141B5F92A600A19010 /* GetRestaurantLogic.m in Sources */,
+				1DEDD0111B5F92A600A19010 /* BaseSignUpLogic.m in Sources */,
+				1DEDD0471B5F92A600A19010 /* SignUpDTO.m in Sources */,
 				33942DE91B52EEA80001274D /* CustomAnnotation.m in Sources */,
-				1DEDCE971B5F886100A19010 /* GetRestaurantActionTask.m in Sources */,
-				1DEDCE891B5F886100A19010 /* LimitedAgeMemoryCache.m in Sources */,
-				1DEDCEB61B5F886100A19010 /* GetRestaurantResponseDTO.m in Sources */,
-				1DEDCEAF1B5F886100A19010 /* BaseSignUpDTO.m in Sources */,
-				1DEDCEB11B5F886100A19010 /* BaseSignUpResponseDTO.m in Sources */,
-				1DEDCEB41B5F886100A19010 /* GetPassResponseDTO.m in Sources */,
-				1DEDCEB31B5F886100A19010 /* GetPassRequestDTO.m in Sources */,
-				1DEDCE931B5F886100A19010 /* LetsEatHelper.m in Sources */,
-				1DEDCEA01B5F886100A19010 /* SignInDAO.m in Sources */,
-				1DEDCEB01B5F886100A19010 /* BaseSignUpRequestDTO.m in Sources */,
-				1DEDCEA61B5F886100A19010 /* BaseGetPassDTO.m in Sources */,
-				1DEDCEB71B5F886100A19010 /* GetRestaurantsDTO.m in Sources */,
-				1DEDCEBD1B5F886100A19010 /* SignUpResponseDTO.m in Sources */,
+				1DEDD02F1B5F92A600A19010 /* BaseGetPassDTO.m in Sources */,
+				1DEDD0431B5F92A600A19010 /* GetRestaurantsDTO.m in Sources */,
+				1DEDD0331B5F92A600A19010 /* BaseGetRestaurantResponseDTO.m in Sources */,
+				1DEDD01F1B5F92A600A19010 /* BookRestDAO.m in Sources */,
+				1DEDD0181B5F92A600A19010 /* BookRestaurantActionTask.m in Sources */,
+				1DEDD0451B5F92A600A19010 /* SignInRequestDTO.m in Sources */,
+				1DEDD0091B5F92A600A19010 /* LimitedAgeMemoryCache.m in Sources */,
+				1DEDD02A1B5F92A600A19010 /* SignUpRequestDAO.m in Sources */,
 				33DEFA891B46E90400053B72 /* LEMainController.m in Sources */,
+				1DEDD0301B5F92A600A19010 /* BaseGetPassRequestDTO.m in Sources */,
+				1DEDD00F1B5F92A600A19010 /* BaseGetRestaurantLogic.m in Sources */,
+				1DEDD0391B5F92A600A19010 /* BaseSignUpRequestDTO.m in Sources */,
 				3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */,
-				1DEDCEA51B5F886100A19010 /* SignUpResponseDAO.m in Sources */,
-				1DEDCE9E1B5F886100A19010 /* GetRestaurantResponseDAO.m in Sources */,
-				1DEDCEA91B5F886100A19010 /* BaseGetRestaurantRequestDTO.m in Sources */,
-				1DEDCEBC1B5F886100A19010 /* SignUpRequestDTO.m in Sources */,
+				1DEDD0461B5F92A600A19010 /* SignInResponseDTO.m in Sources */,
+				1DEDD0491B5F92A600A19010 /* SignUpResponseDTO.m in Sources */,
+				1DEDD0211B5F92A600A19010 /* GetPassRequestDAO.m in Sources */,
+				1DEDD0281B5F92A600A19010 /* SignInResponseDAO.m in Sources */,
+				1DEDD02C1B5F92A600A19010 /* BaseBookRestaurantRequestDTO.m in Sources */,
+				1DEDD0441B5F92A600A19010 /* SignInDTO.m in Sources */,
 				33C3033E1B4D78560058C9E3 /* LEMapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

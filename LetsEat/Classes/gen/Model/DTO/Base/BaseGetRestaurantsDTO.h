@@ -12,7 +12,8 @@
 @interface BaseGetRestaurantsDTO : NSObject <NSCopying, NSMutableCopying, NSCoding>
 
 
-@property (nonatomic, strong) NSString *isActivated;	///<  - Field name on service:isActivated.
+@property (nonatomic, strong) NSNumber *idRest;	///<  - Field name on service:id.
+@property (nonatomic, strong) NSNumber *isActivated;	///<  - Field name on service:isActivated.
 @property (nonatomic, strong) NSString *name;	///<  - Field name on service:name.
 @property (nonatomic, strong) NSString *type;	///<  - Field name on service:type.
 @property (nonatomic, strong) NSString *url;	///<  - Field name on service:url.

@@ -10,7 +10,8 @@
 
 @interface RestaurantDTO : NSObject
 
-@property (strong, nonatomic) NSString *isActivated;
+@property (strong, nonatomic) NSNumber *idRest;
+@property (strong, nonatomic) NSNumber *isActivated;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *type;
 @property (strong, nonatomic) NSString *url;
@@ -27,5 +28,6 @@
 @property (strong, nonatomic) NSNumber *lon;
 @property (strong, nonatomic) NSString *prov;
 @property (strong, nonatomic) NSString *telf;
+@property (strong, nonatomic) NSNumber *Ntables2Book;
 
 @end

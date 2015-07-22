@@ -9,6 +9,12 @@
 #import "LEDetailController.h"
 #import "UIColor+MyColor.h"
 #import <QuartzCore/QuartzCore.h>
+#import "SCLAlertView.h"
+#import "SVProgressHUD.h"
+
+#import "BookRestaurantActionTask.h"
+#import "BookRestaurantRequestDTO.h"
+#import "RestaurantDTO.h"
 
 @interface LEDetailController ()
 
@@ -41,6 +47,47 @@
     
     [self initMapView];
     [self createView];
+}
+
+- (IBAction)bookRestaurant
+{
+    [SVProgressHUD showWithStatus:@"Reservando..."];
+    
+    RestaurantDTO *rest = [RestaurantDTO alloc];
+    rest.idRest = self.restaurant.idRest;
+    rest.Ntables2Book = [NSNumber numberWithInteger:1];
+    
+    BookRestaurantRequestDTO *request = [BookRestaurantRequestDTO new];
+    request.request = (BookRestDTO *)rest;
+    
+    [BookRestaurantActionTask bookRestaurantActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, BookRestaurantResponseDTO *response) {
+        [SVProgressHUD dismiss];
+        if([response.code isEqualToString:@"BR_OK"]){
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
+            button.buttonFormatBlock = ^NSDictionary* (void)
+            {
+                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                buttonConfig[@"textColor"] = [UIColor whiteColor];
+                return buttonConfig;
+            };
+            [alert showSuccess:@"Reserva Completada" subTitle:response.desc closeButtonTitle:nil duration:0.0f];
+        } else {
+            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+            [alert showError:self title:@"ERROR"
+                    subTitle:response.desc
+            closeButtonTitle:@"Continuar" duration:0.0f];
+        }
+    } error:^(NSError *error) {
+        [SVProgressHUD dismiss];
+        NSLog(@"Error: %@", error);
+    }];
+}
+
+- (void)successButton
+{
+    
 }
 
 - (void)createView

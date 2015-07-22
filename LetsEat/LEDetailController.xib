@@ -72,6 +72,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
+                                                <action selector="bookRestaurant" destination="-1" eventType="touchUpInside" id="HHt-Jz-EXZ"/>
                                                 <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="tAw-t0-B7f"/>
                                                 <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="pr5-pK-lGR"/>
                                                 <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="STp-tY-drK"/>
@@ -84,6 +85,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
+                                                <action selector="bookRestaurant" destination="-1" eventType="touchUpInside" id="bGa-K3-ZEY"/>
                                                 <action selector="buttonTouchDown:" destination="-1" eventType="touchDown" id="X5b-m7-CnB"/>
                                                 <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="JNh-gV-WZU"/>
                                                 <action selector="buttonTouchUpOutside:" destination="-1" eventType="touchUpOutside" id="lBa-aN-c9P"/>
