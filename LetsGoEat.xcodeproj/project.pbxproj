@@ -80,6 +80,8 @@
 		1DEDD0471B5F92A600A19010 /* SignUpDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0011B5F92A600A19010 /* SignUpDTO.m */; };
 		1DEDD0481B5F92A600A19010 /* SignUpRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0031B5F92A600A19010 /* SignUpRequestDTO.m */; };
 		1DEDD0491B5F92A600A19010 /* SignUpResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD0051B5F92A600A19010 /* SignUpResponseDTO.m */; };
+		1DEDD04E1B5FA71B00A19010 /* LEBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD04C1B5FA71B00A19010 /* LEBookController.m */; };
+		1DEDD04F1B5FA71B00A19010 /* LEBookController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */; };
 		3309FDD91B58658B0014F53C /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3313258A1B556DB800CE5801 /* Dosis-ExtraLight.ttf */; };
 		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
 		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
@@ -274,6 +276,9 @@
 		1DEDD0031B5F92A600A19010 /* SignUpRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpRequestDTO.m; sourceTree = "<group>"; };
 		1DEDD0041B5F92A600A19010 /* SignUpResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpResponseDTO.h; sourceTree = "<group>"; };
 		1DEDD0051B5F92A600A19010 /* SignUpResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpResponseDTO.m; sourceTree = "<group>"; };
+		1DEDD04B1B5FA71B00A19010 /* LEBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEBookController.h; sourceTree = "<group>"; };
+		1DEDD04C1B5FA71B00A19010 /* LEBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEBookController.m; sourceTree = "<group>"; };
+		1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEBookController.xib; sourceTree = "<group>"; };
 		330D5B3D1B4B22DE006920C4 /* LERegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERegisterController.h; sourceTree = "<group>"; };
 		330D5B3E1B4B22DE006920C4 /* LERegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERegisterController.m; sourceTree = "<group>"; };
 		330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERegisterController.xib; sourceTree = "<group>"; };
@@ -587,6 +592,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		1DEDD04A1B5FA6F700A19010 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDD04B1B5FA71B00A19010 /* LEBookController.h */,
+				1DEDD04C1B5FA71B00A19010 /* LEBookController.m */,
+				1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
 		31215B0515DA5CFAE98CEF4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +782,7 @@
 				33C303401B4D785E0058C9E3 /* MenuList */,
 				33C3033A1B4D78410058C9E3 /* Map */,
 				1D7842A01B4FE8790056A40D /* Detail */,
+				1DEDD04A1B5FA6F700A19010 /* Book */,
 				33DEFA631B46E69400053B72 /* AppDelegate.h */,
 				33DEFA641B46E69400053B72 /* AppDelegate.m */,
 				33DEFA691B46E69400053B72 /* Main.storyboard */,
@@ -937,6 +953,7 @@
 				330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */,
 				33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */,
 				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
+				1DEDD04F1B5FA71B00A19010 /* LEBookController.xib in Resources */,
 				33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */,
 				1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */,
 			);
@@ -1051,6 +1068,7 @@
 				1DEDD0251B5F92A600A19010 /* GetRestaurantsDAO.m in Sources */,
 				1DEDD0311B5F92A600A19010 /* BaseGetPassResponseDTO.m in Sources */,
 				1DEDD0481B5F92A600A19010 /* SignUpRequestDTO.m in Sources */,
+				1DEDD04E1B5FA71B00A19010 /* LEBookController.m in Sources */,
 				1DEDD03C1B5F92A600A19010 /* BookRestaurantResponseDTO.m in Sources */,
 				1DEDD0271B5F92A600A19010 /* SignInRequestDAO.m in Sources */,
 				1DEDD0401B5F92A600A19010 /* GetPassResponseDTO.m in Sources */,

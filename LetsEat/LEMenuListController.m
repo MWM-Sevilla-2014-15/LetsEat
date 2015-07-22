@@ -86,6 +86,8 @@
             [alert showNotice:weakSelf title:@"AVISO" subTitle:@"¿Desea cerrar sesión?" closeButtonTitle:@"Cancelar" duration:0.0f];
         } else if ([selectedItem.title isEqualToString:@"Cambiar ciudad"]) {
             [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        } else if ([selectedItem.title isEqualToString:@"Mis reservas"]) {
+            [weakSelf performSegueWithIdentifier:@"openBook" sender:nil];
         }
     };
     
