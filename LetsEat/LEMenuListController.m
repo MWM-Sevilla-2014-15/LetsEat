@@ -49,6 +49,12 @@
     [self loadRestaurants];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self loadRestaurants];
+}
+
 - (void)showMenu
 {
     NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];

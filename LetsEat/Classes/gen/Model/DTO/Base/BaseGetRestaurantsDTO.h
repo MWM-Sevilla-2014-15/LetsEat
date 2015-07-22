@@ -1,6 +1,6 @@
 //
 //  BaseGetRestaurantsDTO.h
-//  LetsEat
+//  LetsGoEat
 //  Version: 10.0
 //
 //  Created by Service Generator
@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSString *t_t_open;	///<  - Field name on service:t_t_open.
 @property (nonatomic, strong) NSString *t_t_close;	///<  - Field name on service:t_t_close.
 @property (nonatomic, strong) NSString *avg_price;	///<  - Field name on service:avg_price.
+@property (nonatomic, strong) NSString *discount;	///<  - Field name on service:discount.
 @property (nonatomic, strong) NSString *score;	///<  - Field name on service:score.
 @property (nonatomic, strong) NSNumber *totalTables;	///<  - Field name on service:totalTables.
 @property (nonatomic, strong) NSNumber *bookTables;	///<  - Field name on service:bookTables.

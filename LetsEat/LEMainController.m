@@ -13,10 +13,6 @@
 #import "SCLAlertView.h"
 
 static NSString *kCellId = @"cellId";
-static NSString * const sampleDescription1 = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-static NSString * const sampleDescription2 = @"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.";
-static NSString * const sampleDescription3 = @"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
-static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.";
 
 @interface LEMainController () <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource>
 {
@@ -150,35 +146,19 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
 - (void)createIntroView
 {
     EAIntroPage *page1 = [EAIntroPage page];
-    page1.title = @"Hello world";
     page1.pageView.backgroundColor = [UIColor customMainColor];
-    page1.titleColor = [UIColor customMainColor];
-    page1.desc = sampleDescription1;
-    page1.descColor = [UIColor customMainColor];
     page1.bgColor = [UIColor whiteColor];
     page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
     EAIntroPage *page2 = [EAIntroPage page];
-    page2.title = @"This is page 2";
-    page2.titleColor = [UIColor customMainColor];
-    page2.desc = sampleDescription2;
-    page2.descColor = [UIColor customMainColor];
     page2.bgColor = [UIColor whiteColor];
     page2.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title2"]];
     
     EAIntroPage *page3 = [EAIntroPage page];
-    page3.title = @"This is page 3";
-    page3.titleColor = [UIColor customMainColor];
-    page3.desc = sampleDescription3;
-    page3.descColor = [UIColor customMainColor];
     page3.bgColor = [UIColor whiteColor];
     page3.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title3"]];
     
     EAIntroPage *page4 = [EAIntroPage page];
-    page4.title = @"This is page 4";
-    page4.titleColor = [UIColor customMainColor];
-    page4.desc = sampleDescription4;
-    page4.descColor = [UIColor customMainColor];
     page4.bgColor = [UIColor whiteColor];
     page4.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title4"]];
     

@@ -1,13 +1,13 @@
 //
 //  GetRestaurantActionTask.m
-//  LetsEat
+//  LetsGoEat
 //  Version: 10.0
 //
 //  Created by Service Generator
 //
 
 #import "GetRestaurantActionTask.h"
-#import "LetsEatHelper.h"
+#import "LetsGoEatHelper.h"
 #import "GetRestaurantLogic.h"
 
 @implementation GetRestaurantActionTask
@@ -47,8 +47,8 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 		
 	UIView *loadingView;
-	if ([[LetsEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
-		loadingView = [[LetsEatHelper sharedInstance] loadingViewForTasks];
+	if ([[LetsGoEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
+		loadingView = [[LetsGoEatHelper sharedInstance] loadingViewForTasks];
 	}
 				
 	if (loadingView) {
@@ -90,8 +90,8 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 		
 	UIView *loadingView;
-	if ([[LetsEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
-		loadingView = [[LetsEatHelper sharedInstance] loadingViewForTasks];
+	if ([[LetsGoEatHelper sharedInstance] respondsToSelector:@selector(loadingViewForTasks)]  && showLoadingView) {
+		loadingView = [[LetsGoEatHelper sharedInstance] loadingViewForTasks];
 	}
 				
 	if (loadingView) {

@@ -1,6 +1,6 @@
 //
 //  SignUpRequestDAO.h
-//  LetsEat
+//  LetsGoEat
 //  Version: 10.0
 //
 //  Created by Service Generator

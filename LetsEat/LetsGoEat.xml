@@ -84,6 +84,7 @@
             <field name="t_t_open" serviceName="t_t_open" type="string" description="Campo de respuesta"/>
             <field name="t_t_close" serviceName="t_t_close" type="string" description="Campo de respuesta"/>
             <field name="avg_price" serviceName="avg_price" type="string" description="Campo de respuesta"/>
+            <field name="discount" serviceName="discount" type="string" description="Campo de respuesta"/>
             <field name="score" serviceName="score" type="string" description="Campo de respuesta"/>
             <field name="totalTables" serviceName="totalTables" type="long" description="Campo de respuesta"/>
             <field name="bookTables" serviceName="bookTables" type="long" description="Campo de respuesta"/>

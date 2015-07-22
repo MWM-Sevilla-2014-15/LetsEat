@@ -18,6 +18,9 @@
 
 @interface LEDetailController ()
 
+@property (strong, nonatomic) NSNumber *numberBook;
+@property (strong, nonatomic) NSNumber *tablesFree;
+
 @end
 
 @implementation LEDetailController
@@ -47,47 +50,59 @@
     
     [self initMapView];
     [self createView];
+    
+    self.numberBook = self.restaurant.bookTables;
+    self.tablesFree = [NSNumber numberWithFloat:([self.restaurant.totalTables floatValue] - [self.restaurant.bookTables floatValue])] ;
 }
 
 - (IBAction)bookRestaurant
 {
-    [SVProgressHUD showWithStatus:@"Reservando..."];
+    int value = [self.numberBook intValue];
+    self.numberBook = [NSNumber numberWithInt:value + 1];
     
-    RestaurantDTO *rest = [RestaurantDTO alloc];
-    rest.idRest = self.restaurant.idRest;
-    rest.Ntables2Book = [NSNumber numberWithInteger:1];
-    
-    BookRestaurantRequestDTO *request = [BookRestaurantRequestDTO new];
-    request.request = (BookRestDTO *)rest;
-    
-    [BookRestaurantActionTask bookRestaurantActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, BookRestaurantResponseDTO *response) {
-        [SVProgressHUD dismiss];
-        if([response.code isEqualToString:@"BR_OK"]){
-            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-            SCLButton *button = [alert addButton:@"Continuar" target:self selector:@selector(successButton)];
-            button.buttonFormatBlock = ^NSDictionary* (void)
-            {
-                NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-                buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
-                buttonConfig[@"textColor"] = [UIColor whiteColor];
-                return buttonConfig;
-            };
-            [alert showSuccess:@"Reserva Completada" subTitle:response.desc closeButtonTitle:nil duration:0.0f];
-        } else {
-            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-            [alert showError:self title:@"ERROR"
-                    subTitle:response.desc
-            closeButtonTitle:@"Continuar" duration:0.0f];
-        }
-    } error:^(NSError *error) {
-        [SVProgressHUD dismiss];
-        NSLog(@"Error: %@", error);
-    }];
-}
-
-- (void)successButton
-{
-    
+    if([self.tablesFree intValue] == 0){
+        SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+        [alert showWarning:self title:@"ATENCIÓN" subTitle:@"No hay mesas libres disponibles actualmente. Debe esperar a que se libere alguna para poder realizar la reserva. Sentimos las molestias." closeButtonTitle:@"Continuar" duration:0.0f];
+    } else {
+        [SVProgressHUD showWithStatus:@"Reservando..."];
+        
+        RestaurantDTO *rest = [RestaurantDTO alloc];
+        rest.idRest = self.restaurant.idRest;
+        rest.Ntables2Book = [NSNumber numberWithInteger:1];
+        
+        BookRestaurantRequestDTO *request = [BookRestaurantRequestDTO new];
+        request.request = (BookRestDTO *)rest;
+        
+        [BookRestaurantActionTask bookRestaurantActionTaskForRequest:request showLoadingView:NO completed:^(NSInteger statusCode, BookRestaurantResponseDTO *response) {
+            [SVProgressHUD dismiss];
+            if([response.code isEqualToString:@"BR_OK"]){
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                SCLButton *button = [alert addButton:@"Continuar" actionBlock:nil];
+                button.buttonFormatBlock = ^NSDictionary* (void)
+                {
+                    NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
+                    buttonConfig[@"backgroundColor"] = [UIColor customSuccessColor];
+                    buttonConfig[@"textColor"] = [UIColor whiteColor];
+                    return buttonConfig;
+                };
+                [alert showSuccess:@"Reserva Completada" subTitle:response.desc closeButtonTitle:nil duration:0.0f];
+                
+                self.customLabelCircleTable.font = [UIFont fontWithName:@"Noteworthy" size:25];
+                self.customLabelCircleTable.textColor = [UIColor customThirdColor];
+                self.tablesFree = [NSNumber numberWithFloat:([self.restaurant.totalTables floatValue] - [self.numberBook floatValue])];
+                self.customLabelCircleTable.text = [self.tablesFree stringValue];
+                
+            } else {
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                [alert showError:self title:@"ERROR"
+                        subTitle:response.desc
+                closeButtonTitle:@"Continuar" duration:0.0f];
+            }
+        } error:^(NSError *error) {
+            [SVProgressHUD dismiss];
+            NSLog(@"Error: %@", error);
+        }];
+    }
 }
 
 - (void)createView

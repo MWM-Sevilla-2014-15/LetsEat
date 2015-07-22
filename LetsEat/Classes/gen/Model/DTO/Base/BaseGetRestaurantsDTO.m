@@ -27,6 +27,7 @@
 		copy.t_t_open=[self.t_t_open copyWithZone:zone];
 		copy.t_t_close=[self.t_t_close copyWithZone:zone];
 		copy.avg_price=[self.avg_price copyWithZone:zone];
+		copy.discount=[self.discount copyWithZone:zone];
 		copy.score=[self.score copyWithZone:zone];
 		copy.totalTables=[self.totalTables copyWithZone:zone];
 		copy.bookTables=[self.bookTables copyWithZone:zone];
@@ -55,6 +56,7 @@
 		copy.t_t_open=self.t_t_open;
 		copy.t_t_close=self.t_t_close;
 		copy.avg_price=self.avg_price;
+		copy.discount=self.discount;
 		copy.score=self.score;
 		copy.totalTables=self.totalTables;
 		copy.bookTables=self.bookTables;
@@ -85,6 +87,7 @@
 	self.t_t_open = [decoder decodeObjectForKey:@"t_t_open"];
 	self.t_t_close = [decoder decodeObjectForKey:@"t_t_close"];
 	self.avg_price = [decoder decodeObjectForKey:@"avg_price"];
+	self.discount = [decoder decodeObjectForKey:@"discount"];
 	self.score = [decoder decodeObjectForKey:@"score"];
 	self.totalTables = [decoder decodeObjectForKey:@"totalTables"];
 	self.bookTables = [decoder decodeObjectForKey:@"bookTables"];
@@ -109,6 +112,7 @@
 	[encoder encodeObject:self.t_t_open forKey:@"t_t_open"];
 	[encoder encodeObject:self.t_t_close forKey:@"t_t_close"];
 	[encoder encodeObject:self.avg_price forKey:@"avg_price"];
+	[encoder encodeObject:self.discount forKey:@"discount"];
 	[encoder encodeObject:self.score forKey:@"score"];
 	[encoder encodeObject:self.totalTables forKey:@"totalTables"];
 	[encoder encodeObject:self.bookTables forKey:@"bookTables"];
@@ -136,6 +140,7 @@
     equals = equals && (self.t_t_open == other.t_t_open || [self.t_t_open isEqual:other.t_t_open]);
     equals = equals && (self.t_t_close == other.t_t_close || [self.t_t_close isEqual:other.t_t_close]);
     equals = equals && (self.avg_price == other.avg_price || [self.avg_price isEqual:other.avg_price]);
+    equals = equals && (self.discount == other.discount || [self.discount isEqual:other.discount]);
     equals = equals && (self.score == other.score || [self.score isEqual:other.score]);
     equals = equals && (self.totalTables == other.totalTables || [self.totalTables isEqual:other.totalTables]);
     equals = equals && (self.bookTables == other.bookTables || [self.bookTables isEqual:other.bookTables]);
@@ -169,6 +174,7 @@
     theHash = theHash ^ [self.t_t_open hash];
     theHash = theHash ^ [self.t_t_close hash];
     theHash = theHash ^ [self.avg_price hash];
+    theHash = theHash ^ [self.discount hash];
     theHash = theHash ^ [self.score hash];
     theHash = theHash ^ [self.totalTables hash];
     theHash = theHash ^ [self.bookTables hash];

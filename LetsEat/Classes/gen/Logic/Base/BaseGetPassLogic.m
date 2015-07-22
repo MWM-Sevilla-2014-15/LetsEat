@@ -1,6 +1,6 @@
 //
 //  GetPass.m
-//  LetsEat
+//  LetsGoEat
 //  Version: 10.0
 //
 //  Created by Service Generator
@@ -10,7 +10,7 @@
 
 #import "AFHTTPRequestOperation.h"
 #import "GenDefines.h"
-#import "LetsEatHelper.h"
+#import "LetsGoEatHelper.h"
 #import "UnlimitedDiskCache.h"
 #import "UnlimitedMemoryCache.h"
 #import "GetPassRequestDTO.h"
@@ -34,7 +34,7 @@
     self = [super init];
 
     if(self) {
-        [self addFilter:[LetsEatHelper sharedInstance]];
+        [self addFilter:[LetsGoEatHelper sharedInstance]];
     }
 
     return self;

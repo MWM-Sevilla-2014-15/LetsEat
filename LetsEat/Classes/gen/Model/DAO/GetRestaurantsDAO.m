@@ -59,6 +59,9 @@
         if (instance.avg_price) {
 			dict[@"avg_price"] = instance.avg_price;
         }
+        if (instance.discount) {
+			dict[@"discount"] = instance.discount;
+        }
         if (instance.score) {
 			dict[@"score"] = instance.score;
         }
@@ -190,6 +193,16 @@
 	else
 	{
 		instance.avg_price=[NSString stringWithFormat:@"%@",dict[@"avg_price"]];
+	}
+        }
+    if (dict[@"discount"] && ![dict[@"discount"] isKindOfClass:[NSNull class]]) {
+	if([dict[@"discount"] isKindOfClass:[NSString class]])
+	{
+		instance.discount=dict[@"discount"];
+	}
+	else
+	{
+		instance.discount=[NSString stringWithFormat:@"%@",dict[@"discount"]];
 	}
         }
     if (dict[@"score"] && ![dict[@"score"] isKindOfClass:[NSNull class]]) {

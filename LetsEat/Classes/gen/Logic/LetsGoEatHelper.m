@@ -1,22 +1,22 @@
 //
-//  LetsEatHelper.m
-//  LetsEat
+//  LetsGoEatHelper.m
+//  LetsGoEat
 //  Version: 10.0
 //
 //  Created by Service Generator
 //
 
-#import "LetsEatHelper.h"
+#import "LetsGoEatHelper.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation LetsEatHelper
+@implementation LetsGoEatHelper
 
 
 // Get the shared instance and create it if necessary.
-+ (LetsEatHelper *)sharedInstance {
++ (LetsGoEatHelper *)sharedInstance {
     
     static dispatch_once_t onceQueue;
-    static LetsEatHelper *instance = nil;
+    static LetsGoEatHelper *instance = nil;
     
     dispatch_once(&onceQueue, ^{ instance = [[self alloc] init]; });
     return instance;
