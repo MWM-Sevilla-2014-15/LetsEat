@@ -175,7 +175,8 @@
     
     self.labelInfoDiscount.textColor = [UIColor customThirdColor];
     self.labelInfoDiscount.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
-    self.labelInfoDiscount.text = @"10% en postres";
+    NSString *concat = self.restaurant.discount;
+    self.labelInfoDiscount.text = [concat stringByAppendingString:@"% de descuento"];
     
     //Customizar button
     [self.buttonBook setTitle:@"Reservar" forState:UIControlStateNormal];

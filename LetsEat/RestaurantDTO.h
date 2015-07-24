@@ -28,6 +28,7 @@
 @property (strong, nonatomic) NSNumber *lon;
 @property (strong, nonatomic) NSString *prov;
 @property (strong, nonatomic) NSString *telf;
+@property (strong, nonatomic) NSString *discount;
 @property (strong, nonatomic) NSNumber *Ntables2Book;
 
 @end

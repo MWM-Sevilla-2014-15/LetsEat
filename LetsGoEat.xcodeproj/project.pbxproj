@@ -12,14 +12,14 @@
 		1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D78429D1B4FCE710056A40D /* LEMenuListController.xib */; };
 		1D7842A41B4FE8E80056A40D /* LEDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7842A21B4FE8E80056A40D /* LEDetailController.m */; };
 		1D7842A51B4FE8E80056A40D /* LEDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7842A31B4FE8E80056A40D /* LEDetailController.xib */; };
-		1DEDD04E1B5FA71B00A19010 /* LEBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD04C1B5FA71B00A19010 /* LEBookController.m */; };
-		1DEDD04F1B5FA71B00A19010 /* LEBookController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */; };
 		3309FDD91B58658B0014F53C /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3313258A1B556DB800CE5801 /* Dosis-ExtraLight.ttf */; };
 		330D5B401B4B22DE006920C4 /* LERegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B3E1B4B22DE006920C4 /* LERegisterController.m */; };
 		330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */; };
 		330D5B451B4B22EF006920C4 /* LERecoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D5B431B4B22EF006920C4 /* LERecoverController.m */; };
 		330D5B461B4B22EF006920C4 /* LERecoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330D5B441B4B22EF006920C4 /* LERecoverController.xib */; };
 		331325991B5570D700CE5801 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3313258B1B556DB800CE5801 /* Dosis-Light.ttf */; };
+		3323A9FE1B62788600E83F75 /* CustomEmpyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323A9FC1B62788600E83F75 /* CustomEmpyCell.m */; };
+		3323A9FF1B62788600E83F75 /* CustomEmpyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3323A9FD1B62788600E83F75 /* CustomEmpyCell.xib */; };
 		3347E8DF1B4844DA00F9F754 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */; };
 		33595E451B517C8B00254DE7 /* LetsGoEat.xml in Resources */ = {isa = PBXBuildFile; fileRef = 33595E441B517C8B00254DE7 /* LetsGoEat.xml */; };
 		33595F2D1B51812E00254DE7 /* RegisterDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33595F2C1B51812E00254DE7 /* RegisterDTO.m */; };
@@ -139,9 +139,6 @@
 		1D7842A11B4FE8E80056A40D /* LEDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDetailController.h; sourceTree = "<group>"; };
 		1D7842A21B4FE8E80056A40D /* LEDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDetailController.m; sourceTree = "<group>"; };
 		1D7842A31B4FE8E80056A40D /* LEDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEDetailController.xib; sourceTree = "<group>"; };
-		1DEDD04B1B5FA71B00A19010 /* LEBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEBookController.h; sourceTree = "<group>"; };
-		1DEDD04C1B5FA71B00A19010 /* LEBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEBookController.m; sourceTree = "<group>"; };
-		1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LEBookController.xib; sourceTree = "<group>"; };
 		330D5B3D1B4B22DE006920C4 /* LERegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERegisterController.h; sourceTree = "<group>"; };
 		330D5B3E1B4B22DE006920C4 /* LERegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERegisterController.m; sourceTree = "<group>"; };
 		330D5B3F1B4B22DE006920C4 /* LERegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERegisterController.xib; sourceTree = "<group>"; };
@@ -155,6 +152,9 @@
 		3313258C1B556DB800CE5801 /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.ttf"; sourceTree = "<group>"; };
 		3313258D1B556DB800CE5801 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		3313258E1B556DB800CE5801 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
+		3323A9FB1B62788600E83F75 /* CustomEmpyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEmpyCell.h; sourceTree = "<group>"; };
+		3323A9FC1B62788600E83F75 /* CustomEmpyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEmpyCell.m; sourceTree = "<group>"; };
+		3323A9FD1B62788600E83F75 /* CustomEmpyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomEmpyCell.xib; sourceTree = "<group>"; };
 		3347E8DD1B4844DA00F9F754 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
 		3347E8DE1B4844DA00F9F754 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
 		3347E8E01B48458800F9F754 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -368,16 +368,6 @@
 			name = Detail;
 			sourceTree = "<group>";
 		};
-		1DEDD04A1B5FA6F700A19010 /* Book */ = {
-			isa = PBXGroup;
-			children = (
-				1DEDD04B1B5FA71B00A19010 /* LEBookController.h */,
-				1DEDD04C1B5FA71B00A19010 /* LEBookController.m */,
-				1DEDD04D1B5FA71B00A19010 /* LEBookController.xib */,
-			);
-			name = Book;
-			sourceTree = "<group>";
-		};
 		31215B0515DA5CFAE98CEF4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +417,16 @@
 				3313258E1B556DB800CE5801 /* Dosis-SemiBold.ttf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		3323A9FA1B62786E00E83F75 /* CustomEmptyCellTable */ = {
+			isa = PBXGroup;
+			children = (
+				3323A9FB1B62788600E83F75 /* CustomEmpyCell.h */,
+				3323A9FC1B62788600E83F75 /* CustomEmpyCell.m */,
+				3323A9FD1B62788600E83F75 /* CustomEmpyCell.xib */,
+			);
+			name = CustomEmptyCellTable;
 			sourceTree = "<group>";
 		};
 		3347E8DA1B4844C400F9F754 /* Model */ = {
@@ -744,6 +744,7 @@
 		33C3034F1B4D8B6A0058C9E3 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				3323A9FA1B62786E00E83F75 /* CustomEmptyCellTable */,
 				33942DE31B52EBC10001274D /* CustomAnnotation */,
 				33BB443A1B4EEBBA0060FA7E /* CustomCellTable */,
 			);
@@ -782,7 +783,6 @@
 				33C303401B4D785E0058C9E3 /* MenuList */,
 				33C3033A1B4D78410058C9E3 /* Map */,
 				1D7842A01B4FE8790056A40D /* Detail */,
-				1DEDD04A1B5FA6F700A19010 /* Book */,
 				33DEFA631B46E69400053B72 /* AppDelegate.h */,
 				33DEFA641B46E69400053B72 /* AppDelegate.m */,
 				33DEFA691B46E69400053B72 /* Main.storyboard */,
@@ -953,8 +953,8 @@
 				330D5B411B4B22DE006920C4 /* LERegisterController.xib in Resources */,
 				33C3033F1B4D78560058C9E3 /* LEMapController.xib in Resources */,
 				33DEFA8A1B46E90400053B72 /* LEMainController.xib in Resources */,
-				1DEDD04F1B5FA71B00A19010 /* LEBookController.xib in Resources */,
 				33DEFA8F1B46EFB100053B72 /* LELoginController.xib in Resources */,
+				3323A9FF1B62788600E83F75 /* CustomEmpyCell.xib in Resources */,
 				1D78429F1B4FCE710056A40D /* LEMenuListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1028,6 +1028,7 @@
 				33595F781B518FF900254DE7 /* SecondCustomSegue.m in Sources */,
 				33595F7B1B51B6B400254DE7 /* LoginDTO.m in Sources */,
 				337A475D1B5FF8440044B418 /* BookRestaurantRequestDAO.m in Sources */,
+				3323A9FE1B62788600E83F75 /* CustomEmpyCell.m in Sources */,
 				337A477F1B5FF8440044B418 /* GetPassRequestDTO.m in Sources */,
 				337A47461B5FF8440044B418 /* BaseLogic.m in Sources */,
 				337A474E1B5FF8440044B418 /* BaseGetPassLogic.m in Sources */,
@@ -1084,7 +1085,6 @@
 				337A47771B5FF8440044B418 /* BaseSignInResponseDTO.m in Sources */,
 				337A47861B5FF8440044B418 /* SignInResponseDTO.m in Sources */,
 				337A47701B5FF8440044B418 /* BaseGetPassRequestDTO.m in Sources */,
-				1DEDD04E1B5FA71B00A19010 /* LEBookController.m in Sources */,
 				337A476D1B5FF8440044B418 /* BaseBookRestaurantResponseDTO.m in Sources */,
 				33595F2D1B51812E00254DE7 /* RegisterDTO.m in Sources */,
 				337A477A1B5FF8440044B418 /* BaseSignUpResponseDTO.m in Sources */,

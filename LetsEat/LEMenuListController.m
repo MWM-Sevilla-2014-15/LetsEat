@@ -19,7 +19,7 @@
 
 @interface LEMenuListController ()
 
-@property (nonatomic, strong) NSArray *arrayRestaurants;
+@property (nonatomic, strong) NSMutableArray *arrayRestaurants;
 @property (strong, nonatomic) RestaurantDTO *restaurant;
 
 @end
@@ -46,12 +46,13 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorStyle = NO;
     
-    [self loadRestaurants];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.userData = [NSUserDefaults standardUserDefaults];
+    self.arrayRestaurants = [[NSMutableArray alloc] init];
     [self loadRestaurants];
 }
 
@@ -60,9 +61,6 @@
     NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
     
     MenuItem *menuItem = [MenuItem itemWithTitle:@"Cambiar ciudad" iconName:@"cambiar-ciudad"];
-    [items addObject:menuItem];
-    
-    menuItem = [MenuItem itemWithTitle:@"Mis reservas" iconName:@"reservas"];
     [items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Cerrar sesión" iconName:@"cerrar-sesion"];
@@ -92,8 +90,6 @@
             [alert showNotice:weakSelf title:@"AVISO" subTitle:@"¿Desea cerrar sesión?" closeButtonTitle:@"Cancelar" duration:0.0f];
         } else if ([selectedItem.title isEqualToString:@"Cambiar ciudad"]) {
             [weakSelf dismissViewControllerAnimated:YES completion:nil];
-        } else if ([selectedItem.title isEqualToString:@"Mis reservas"]) {
-            [weakSelf performSegueWithIdentifier:@"openBook" sender:nil];
         }
     };
     
@@ -105,7 +101,12 @@
     [SVProgressHUD showWithStatus:@"Cargando..."];
     
     [GetRestaurantActionTask getRestaurantActionTaskForRequest:nil showLoadingView:NO completed:^(NSInteger statusCode, GetRestaurantResponseDTO *response) {
-        self.arrayRestaurants = response.items;
+        NSString *nameCity = [self.userData objectForKey:@"CurrentCity"];
+        for(RestaurantDTO *item in response.items){
+            if([item.prov isEqualToString:nameCity]){
+                [self.arrayRestaurants addObject:item];
+            }
+        }
         [self.tableView reloadData];
         [SVProgressHUD dismiss];
     } error:^(NSError *error) {
@@ -149,7 +150,8 @@
     cell.labelType.text = rest.type;
     cell.labelHour.text = [self concatString:rest.m_t_open second:rest.m_t_close third:rest.t_t_open fourth:rest.t_t_close];
     cell.labelNumberTables.text = [rest.totalTables stringValue];
-    cell.labelInfoDesc.text = @"10% en postres";
+    NSString *concat = rest.discount;
+    cell.labelInfoDesc.text = [concat stringByAppendingString:@"% de descuento"];
     cell.imageRest.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zd", indexPath.row + 1]];
     
     //Añadir badge

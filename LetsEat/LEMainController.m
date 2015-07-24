@@ -29,10 +29,10 @@ static NSString *kCellId = @"cellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.userData = [NSUserDefaults standardUserDefaults];
     [self createMPSkewed];
     
     rootView = self.navigationController.view;
-    self.userData = [NSUserDefaults standardUserDefaults];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -73,7 +73,7 @@ static NSString *kCellId = @"cellId";
             text = @"Sevilla";
             break;
         case 2:
-            text = @"Cádiz";
+            text = @"Cadiz";
             break;
         case 3:
             text = @"Granada";
@@ -116,10 +116,19 @@ static NSString *kCellId = @"cellId";
     } else if(indexPath.item == 0){
         [self performSegueWithIdentifier:@"openMap" sender:nil];
     } else if(indexPath.item == 1){
+        self.nameCity = @"Sevilla";
+        [self.userData setObject:self.nameCity forKey:@"CurrentCity"];
+        [self.userData synchronize];
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 2){
+        self.nameCity = @"Cadiz";
+        [self.userData setObject:self.nameCity forKey:@"CurrentCity"];
+        [self.userData synchronize];
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 3){
+        self.nameCity = @"Granada";
+        [self.userData setObject:self.nameCity forKey:@"CurrentCity"];
+        [self.userData synchronize];
         [self performSegueWithIdentifier:@"openMenuList" sender:nil];
     } else if(indexPath.item == 5){
         SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];

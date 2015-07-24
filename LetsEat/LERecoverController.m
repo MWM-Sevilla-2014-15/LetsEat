@@ -131,6 +131,7 @@
         
         self.textEmail.layer.borderWidth = 1.0;
         self.textEmail.layer.cornerRadius = 7.0;
+        self.textEmail.font = [UIFont fontWithName:@"Dosis-Medium" size:18];
         self.textEmail.layer.borderColor = [UIColor customErrorColor].CGColor;
     }
 }
