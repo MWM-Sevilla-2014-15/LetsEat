@@ -1,22 +1,22 @@
 # Let's Go and Eat | Capa de Cliente
 
-## Autores:
+## Autores
 
 - Daniel Martin Jimenez
 - Carlos Rodríguez Lopez
 
-## Descripción:
+## Descripción
 
 Se trata del 2º Proyecto fin de Master de de Desarrollo de Aplicaciones Web y Móviles por la Universidad de Sevilla, 2014-2015.
 
 Consiste en una Capa de Cliente para iOS, concretamente enfocada para iPhone 6 e iOS 8.0. 
 
-## Tecnologías:
+## Tecnologías
 
 - Objective - C
 - CocoaPods
 
-## Librerías:
+## Librerías
 
 - service-generator --> https://github.com/drmillan/service-generator
 - MPSkewed --> https://github.com/MP0w/MPSkewed
@@ -30,10 +30,10 @@ Consiste en una Capa de Cliente para iOS, concretamente enfocada para iPhone 6 e
 - PopMenu --> https://github.com/xhzengAIB/PopMenu
 - SVProgressHUD --> https://github.com/TransitApp/SVProgressHUD
 
-## IDE:
+## IDE
 
 - Xcode 6.4
 
-## Dispositivo:
+## Dispositivo
 
 - Iphone 6 iOS 8.4
