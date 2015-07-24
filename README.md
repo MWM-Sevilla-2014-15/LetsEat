@@ -1,6 +1,6 @@
 # Let's Go and Eat | Capa de Cliente
 
-## Autor:
+## Autores:
 
 - Daniel Martin Jimenez
 - Carlos Rodríguez Lopez
