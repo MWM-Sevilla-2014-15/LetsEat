@@ -3,6 +3,7 @@
 ## Autor:
 
 - Daniel Martin Jimenez
+- Carlos Rodríguez Lopez
 
 ## Descripción:
 
