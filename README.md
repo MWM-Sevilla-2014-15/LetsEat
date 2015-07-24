@@ -16,15 +16,25 @@ CocoaPods
 Librerías
 
 service-generator --> https://github.com/drmillan/service-generator
+
 MPSkewed --> https://github.com/MP0w/MPSkewed
+
 EAIntroView --> https://github.com/ealeksandrov/EAIntroView
+
 SMPageControl --> https://github.com/Spaceman-Labs/SMPageControl
+
 SCLAlertView-Objective-C --> https://github.com/akring/SCLAlertView-Objective-C
+
 JSBadgeView --> https://github.com/JaviSoto/JSBadgeView
+
 SplunkMint --> https://mint.splunk.com
+
 MAKImageGalleryView --> https://github.com/diniska/MAKImageGalleryView
+
 AFNetworking --> https://github.com/AFNetworking/AFNetworking
+
 PopMenu --> https://github.com/xhzengAIB/PopMenu
+
 SVProgressHUD --> https://github.com/TransitApp/SVProgressHUD
 
 IDE
