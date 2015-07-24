@@ -2,6 +2,7 @@ Let's Go and Eat | Capa de Cliente
 Autor
 
 Daniel Martin Jimenez
+
 Descripción
 
 Se trata del 2º Proyecto fin de Master de de Desarrollo de Aplicaciones Web y Móviles por la Universidad de Sevilla, 2014-2015.
